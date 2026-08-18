@@ -1,0 +1,77 @@
+name: Update Relic & Price Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
+
+concurrency:
+  group: relic-data-update
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Relic Database (A)
+        run: python scripts/build_relic_db.py
+
+      - name: Build Price Database (B)
+        run: python scripts/build_price_db.py
+
+      - name: Commit and push changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: update relic & price database [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Write data to EdgeOne KV
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
+        run: |
+          set +e
+          fail=0
+          for f in relics.json prices-summary.json reward-items.json item-categories.json item-names-zh.json relic-deep-date-summary.json relic-deep-date.json; do
+            k="${f//[.-]/_}"
+            python3 -c "import json; content=open('data/$f').read(); open('/tmp/kv-payload.json','w').write(json.dumps({'key':'$k','value':content}))"
+            code=""
+            # 每个文件最多重试 3 次，超时 300s（大文件偶发慢，避免 120s 超时导致整批失败）
+            for attempt in 1 2 3; do
+              code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 300 \
+                -X POST "https://relic.wfspeed.run/api/update-kv" \
+                -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
+                -H "Content-Type: application/json" \
+                --data-binary "@/tmp/kv-payload.json")
+              if [ "$code" = "200" ]; then break; fi
+              echo "kv $f 第 $attempt 次写入 HTTP $code，稍后重试..."
+              sleep 5
+            done
+            echo "kv $f -> HTTP $code"
+            if [ "$code" != "200" ]; then fail=1; fi
+            rm -f /tmp/kv-payload.json
+          done
+          if [ "$fail" != "0" ]; then echo "存在 KV 写入失败，请检查"; exit 1; fi
