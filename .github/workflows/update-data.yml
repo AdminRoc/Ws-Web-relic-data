@@ -3,7 +3,7 @@ name: Update Relic & Price Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '5 * * * *'
 
 concurrency:
   group: relic-data-update
