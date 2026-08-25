@@ -1,0 +1,13 @@
+{
+  "headers": [
+    { "source": "/*", "headers": [{ "key": "Cache-Control", "value": "public, max-age=600, s-maxage=86400" }] },
+    { "source": "/*.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" }] },
+    { "source": "/data/prices.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=120, s-maxage=600" }] },
+    { "source": "/data/relics.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" }] },
+    { "source": "/data/reward-items.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" }] },
+    { "source": "/data/item-categories.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=2592000" }] },
+    { "source": "/data/item-names-zh.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=2592000" }] },
+    { "source": "/data/relic-deep-date-summary.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" }] },
+    { "source": "/data/relic-deep-date.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" }] }
+  ]
+}
