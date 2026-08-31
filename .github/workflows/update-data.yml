@@ -31,6 +31,34 @@ jobs:
 
       - name: Build Price Database (B)
         run: python scripts/build_price_db.py
+        env:
+          PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
+
+      - name: 兜底加密（仅公库暴露内容，含历史明文补加密）
+        run: python scripts/encrypt_price.py --all
+        env:
+          PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
+
+      - name: 校验回环（阻断失真）
+        run: |
+          python3 -c "
+          import sys; sys.path.insert(0, 'scripts'); import crypto_price, glob, json
+          files=['data/prices.json','data/prices-summary.json','data/item-categories.json','data/relics.json','data/reward-items.json','data/item-names-zh.json']
+          bad=[]
+          for p in files:
+              import os
+              if not os.path.exists(p): continue
+              try:
+                  obj=crypto_price.load_json(p)
+                  assert obj is not None, 'load fail'
+                  raw=crypto_price.load_raw(p)
+                  assert isinstance(raw, dict) and raw.get('ct'), 'not encrypted'
+              except Exception as e:
+                  bad.append(p+':'+str(e))
+          if bad:
+              print('VERIFY FAIL:'+'\n'.join(bad)); sys.exit(1)
+          print('VERIFY OK relic-data')
+          "
 
       - name: Commit and push changes
         id: commit
