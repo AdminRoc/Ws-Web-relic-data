@@ -29,6 +29,9 @@ jobs:
       - name: Build Relic Database (A)
         run: python scripts/build_relic_db.py
 
+      - name: 安装加密依赖
+        run: pip install cryptography -q
+
       - name: Build Price Database (B)
         run: python scripts/build_price_db.py
         env:
