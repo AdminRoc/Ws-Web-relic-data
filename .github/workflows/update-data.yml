@@ -81,30 +81,23 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Write data to EdgeOne KV
+      - name: Write data to EdgeOne KV (直写 KV，不经自定义域)
         if: steps.commit.outputs.changed == 'true'
         env:
-          KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
+          TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+          ZONE_ID: ${{ secrets.ZONE_ID }}
+          KV_NAMESPACE: ${{ secrets.KV_NAMESPACE_RELIC }}
         run: |
-          set +e
-          fail=0
+          set -euo pipefail
+          test -n "${TENCENTCLOUD_SECRET_ID}" || { echo 'Missing TENCENTCLOUD_SECRET_ID'; exit 1; }
+          test -n "${TENCENTCLOUD_SECRET_KEY}" || { echo 'Missing TENCENTCLOUD_SECRET_KEY'; exit 1; }
+          test -n "${ZONE_ID}" || { echo 'Missing ZONE_ID'; exit 1; }
+          test -n "${KV_NAMESPACE}" || { echo 'Missing KV_NAMESPACE_RELIC'; exit 1; }
+          pip install -q tencentcloud-sdk-python cryptography
           for f in relics.json prices-summary.json reward-items.json item-categories.json item-names-zh.json relic-deep-date-summary.json relic-deep-date.json; do
+            test -f "data/$f" || { echo "skip $f not exists"; continue; }
             k="${f//[.-]/_}"
-            python3 -c "import json; content=open('data/$f').read(); open('/tmp/kv-payload.json','w').write(json.dumps({'key':'$k','value':content}))"
-            code=""
-            # 每个文件最多重试 3 次，超时 300s（大文件偶发慢，避免 120s 超时导致整批失败）
-            for attempt in 1 2 3; do
-              code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 300 \
-                -X POST "https://relic.wfspeed.run/api/update-kv" \
-                -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
-                -H "Content-Type: application/json" \
-                --data-binary "@/tmp/kv-payload.json")
-              if [ "$code" = "200" ]; then break; fi
-              echo "kv $f 第 $attempt 次写入 HTTP $code，稍后重试..."
-              sleep 5
-            done
-            echo "kv $f -> HTTP $code"
-            if [ "$code" != "200" ]; then fail=1; fi
-            rm -f /tmp/kv-payload.json
+            echo "KV put $k <- data/$f"
+            python3 scripts/kv_put.py --zone "${ZONE_ID}" --ns "${KV_NAMESPACE}" --key "${k}" --file "data/$f"
           done
-          if [ "$fail" != "0" ]; then echo "存在 KV 写入失败，请检查"; exit 1; fi
