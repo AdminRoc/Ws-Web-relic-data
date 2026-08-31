@@ -26,8 +26,13 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: 安装加密依赖
+        run: pip install cryptography -q
+
       - name: Rebuild relic deep-date DB (wiki module + version maps + patchlogs)
         run: python scripts/build_deep_date_db.py
+        env:
+          PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
 
       - name: Show detected changes (diff vs previous run)
         run: |

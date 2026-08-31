@@ -347,8 +347,26 @@ def load_local_relics():
     path = os.path.join(DATA_DIR, "relics.json")
     if not os.path.exists(path):
         raise SystemExit("ERROR: data/relics.json not found. Run build_relic_db.py first.")
+    # 兼容加密：透传解密（公库已密文）
+    if os.environ.get("PRICE_DATA_SECRET"):
+        try:
+            import crypto_price as _cp
+            v = _cp.load_json(path)
+            if isinstance(v, dict) and v.get("relics"):
+                return v.get("relics") or v
+            if v is not None:
+                return v
+        except Exception:
+            pass
     with open(path, "r", encoding="utf-8-sig") as f:
-        return json.load(f)
+        data = json.load(f)
+        # 若为包装但未解密（无 SECRET），则 data 为 {v,alg,iv,ct,sha256}，需提示
+        if isinstance(data, dict) and data.get("ct"):
+            raise SystemExit("ERROR: data/relics.json is encrypted but PRICE_DATA_SECRET not set")
+        # 兼容新旧结构：新版 relics.json 为 {relics: {...}} 旧版直接 {...}
+        if isinstance(data, dict) and "relics" in data and isinstance(data["relics"], dict):
+            return data["relics"]
+        return data
 
 
 def fetch_varzia_relics():
@@ -592,9 +610,20 @@ def main():
         "varziaRelics": list(varzia_relic_map.keys()),
     }
     full_path = os.path.join(DATA_DIR, "relic-deep-date.json")
-    with open(full_path, "w", encoding="utf-8") as f:
-        json.dump(full, f, ensure_ascii=False, indent=1)
-    print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
+    if os.environ.get("PRICE_DATA_SECRET"):
+        try:
+            import crypto_price as _cp
+            _cp.save_json_encrypt(full_path, full)
+            print("  Wrote(加密) %s (%d relics)" % (full_path, len(relics_db)))
+        except Exception as e:
+            print(f"  WARN 加密失败回退明文: {e}")
+            with open(full_path, "w", encoding="utf-8") as f:
+                json.dump(full, f, ensure_ascii=False, indent=1)
+            print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
+    else:
+        with open(full_path, "w", encoding="utf-8") as f:
+            json.dump(full, f, ensure_ascii=False, indent=1)
+        print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
 
     # 页面摘要（KV 友好）：每个遗物一行短数据
     summary_items = {}
@@ -617,10 +646,21 @@ def main():
         }
     summary = {"generated": full["generated"], "items": summary_items, "varziaRelics": list(varzia_relic_map.keys())}
     summary_path = os.path.join(DATA_DIR, "relic-deep-date-summary.json")
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(summary, f, ensure_ascii=False)
-    print("  Wrote %s (%d items, %.1f KB)"
-          % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
+    if os.environ.get("PRICE_DATA_SECRET"):
+        try:
+            import crypto_price as _cp
+            _cp.save_json_encrypt(summary_path, summary)
+            print("  Wrote(加密) %s (%d items, %.1f KB)" % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
+        except Exception as e:
+            print(f"  WARN 加密失败回退明文: {e}")
+            with open(summary_path, "w", encoding="utf-8") as f:
+                json.dump(summary, f, ensure_ascii=False)
+            print("  Wrote %s (%d items, %.1f KB)" % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
+    else:
+        with open(summary_path, "w", encoding="utf-8") as f:
+            json.dump(summary, f, ensure_ascii=False)
+        print("  Wrote %s (%d items, %.1f KB)"
+              % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
 
     cache = {"generated": full["generated"],
              "versions": {v: version_map[v] for v in version_map}}
