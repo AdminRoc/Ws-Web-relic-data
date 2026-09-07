@@ -61,7 +61,8 @@ jobs:
         run: |
           set -euo pipefail
           publish() {
-            local file="$1" key="$2"
+            local file="$1"
+            local key="$2"
             python3 - "$key" "data/$file" /tmp/kv-payload.json <<'PY'
           import json, pathlib, sys
           key, source, target = sys.argv[1:]
