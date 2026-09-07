@@ -214,7 +214,7 @@ def build():
         reward_items = json.load(f)
     print(f"Loaded {len(reward_items)} reward items")
 
-    # Load existing prices（兼容加密：透传解密）
+    # 迁移期间可读取旧密文；正常生产始终写明文。
     prices_path = os.path.join(DATA_DIR, "prices.json")
     prices_data = {}
     if os.path.exists(prices_path):
@@ -343,21 +343,9 @@ def build():
     prices_data["generated"] = now_iso()
     prices_data["items"] = items_data
 
-    # 写盘：若有 SECRET 则加密包装（仅公库暴露内容）
-    if os.environ.get("PRICE_DATA_SECRET"):
-        try:
-            import crypto_price as _cp
-            _cp.save_json_encrypt(prices_path, prices_data)
-            print(f"  Wrote(加密) {prices_path} ({len(items_data)} items)")
-        except Exception as e:
-            print(f"  WARN 加密失败回退明文: {e}")
-            with open(prices_path, "w", encoding="utf-8") as f:
-                json.dump(prices_data, f, ensure_ascii=False, indent=2)
-            print(f"  Wrote {prices_path} ({len(items_data)} items)")
-    else:
-        with open(prices_path, "w", encoding="utf-8") as f:
-            json.dump(prices_data, f, ensure_ascii=False, indent=2)
-        print(f"  Wrote {prices_path} ({len(items_data)} items)")
+    with open(prices_path, "w", encoding="utf-8") as f:
+        json.dump(prices_data, f, ensure_ascii=False, indent=2)
+    print(f"  Wrote {prices_path} ({len(items_data)} items)")
 
     # 摘要版（供 EdgeOne KV 存储，KV 单请求体有限制）：只保留页面实际用到的字段
     summary_items = {}
@@ -370,37 +358,15 @@ def build():
         summary_items[url_name] = s
     summary = {"generated": prices_data["generated"], "items": summary_items}
     summary_path = os.path.join(DATA_DIR, "prices-summary.json")
-    if os.environ.get("PRICE_DATA_SECRET"):
-        try:
-            import crypto_price as _cp
-            _cp.save_json_encrypt(summary_path, summary)
-            print(f"  Wrote(加密) {summary_path} ({len(summary_items)} items)")
-        except Exception as e:
-            print(f"  WARN 加密失败回退明文: {e}")
-            with open(summary_path, "w", encoding="utf-8") as f:
-                json.dump(summary, f, ensure_ascii=False, indent=2)
-            print(f"  Wrote {summary_path} ({len(summary_items)} items)")
-    else:
-        with open(summary_path, "w", encoding="utf-8") as f:
-            json.dump(summary, f, ensure_ascii=False, indent=2)
-        print(f"  Wrote {summary_path} ({len(summary_items)} items)")
+    with open(summary_path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+    print(f"  Wrote {summary_path} ({len(summary_items)} items)")
 
-    # Write categories（文字库扩面，同 SECRET）
+    # Write categories
     cat_path = os.path.join(DATA_DIR, "item-categories.json")
-    if os.environ.get("PRICE_DATA_SECRET"):
-        try:
-            import crypto_price as _cp
-            _cp.save_json_encrypt(cat_path, categories)
-            print(f"  Wrote(加密) {cat_path}")
-        except Exception as e:
-            print(f"  WARN 加密失败回退明文: {e}")
-            with open(cat_path, "w", encoding="utf-8") as f:
-                json.dump(categories, f, ensure_ascii=False, indent=2)
-            print(f"  Wrote {cat_path}")
-    else:
-        with open(cat_path, "w", encoding="utf-8") as f:
-            json.dump(categories, f, ensure_ascii=False, indent=2)
-        print(f"  Wrote {cat_path}")
+    with open(cat_path, "w", encoding="utf-8") as f:
+        json.dump(categories, f, ensure_ascii=False, indent=2)
+    print(f"  Wrote {cat_path}")
 
     print("Done.")
 

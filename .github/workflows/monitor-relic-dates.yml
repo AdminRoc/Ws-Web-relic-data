@@ -3,11 +3,11 @@ name: Monitor Relic Deep-Date DB
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1,13 * * *'   # 每天 UTC 01:00 + 13:00 = 北京时间 09:00 + 21:00
+    - cron: "0 1,13 * * *" # 每天 UTC 01:00 + 13:00 = 北京时间 09:00 + 21:00
 
 concurrency:
-  group: relic-deep-date
-  cancel-in-progress: true
+  group: relic-data-publish
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -24,14 +24,12 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-
-      - name: 安装加密依赖
-        run: pip install cryptography -q
+          python-version: "3.12"
 
       - name: Rebuild relic deep-date DB (wiki module + version maps + patchlogs)
         run: python scripts/build_deep_date_db.py
         env:
+          # Legacy read-only compatibility until the one-time plaintext migration finishes.
           PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
 
       - name: Show detected changes (diff vs previous run)
@@ -57,21 +55,24 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Write summary to EdgeOne KV
-        if: steps.commit.outputs.changed == 'true'
+      - name: Write deep-date data to EdgeOne KV
         env:
           KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
         run: |
-          python3 -c "import json; content=open('data/relic-deep-date-summary.json').read(); open('/tmp/kv-payload.json','w').write(json.dumps({'key':'relic_deep_date_summary_json','value':content}))"
-          code=""
-          for attempt in 1 2 3; do
-            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 300 \
+          set -euo pipefail
+          publish() {
+            local file="$1" key="$2"
+            python3 - "$key" "data/$file" /tmp/kv-payload.json <<'PY'
+          import json, pathlib, sys
+          key, source, target = sys.argv[1:]
+          value = pathlib.Path(source).read_text(encoding='utf-8')
+          json.loads(value)
+          pathlib.Path(target).write_text(json.dumps({'key': key, 'value': value}, ensure_ascii=False), encoding='utf-8')
+          PY
+            curl --fail-with-body --retry 3 --retry-all-errors --max-time 300 \
               -X POST "https://relic.wfspeed.run/api/update-kv" \
               -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
-              -H "Content-Type: application/json" \
-              --data-binary "@/tmp/kv-payload.json")
-            if [ "$code" = "200" ]; then break; fi
-            echo "kv relic_deep_date_summary_json 第 $attempt 次写入 HTTP $code，稍后重试..."
-            sleep 5
-          done
-          if [ "$code" != "200" ]; then echo "KV 写入失败 HTTP $code"; exit 1; fi
+              -H "Content-Type: application/json" --data-binary @/tmp/kv-payload.json
+          }
+          publish relic-deep-date.json relic_deep_date_json
+          publish relic-deep-date-summary.json relic_deep_date_summary_json

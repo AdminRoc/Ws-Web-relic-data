@@ -347,7 +347,7 @@ def load_local_relics():
     path = os.path.join(DATA_DIR, "relics.json")
     if not os.path.exists(path):
         raise SystemExit("ERROR: data/relics.json not found. Run build_relic_db.py first.")
-    # 兼容加密：透传解密（公库已密文）
+    # 迁移期间兼容旧密文；正常生产读取和写入均为明文。
     if os.environ.get("PRICE_DATA_SECRET"):
         try:
             import crypto_price as _cp
@@ -610,20 +610,9 @@ def main():
         "varziaRelics": list(varzia_relic_map.keys()),
     }
     full_path = os.path.join(DATA_DIR, "relic-deep-date.json")
-    if os.environ.get("PRICE_DATA_SECRET"):
-        try:
-            import crypto_price as _cp
-            _cp.save_json_encrypt(full_path, full)
-            print("  Wrote(加密) %s (%d relics)" % (full_path, len(relics_db)))
-        except Exception as e:
-            print(f"  WARN 加密失败回退明文: {e}")
-            with open(full_path, "w", encoding="utf-8") as f:
-                json.dump(full, f, ensure_ascii=False, indent=1)
-            print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
-    else:
-        with open(full_path, "w", encoding="utf-8") as f:
-            json.dump(full, f, ensure_ascii=False, indent=1)
-        print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
+    with open(full_path, "w", encoding="utf-8") as f:
+        json.dump(full, f, ensure_ascii=False, indent=1)
+    print("  Wrote %s (%d relics)" % (full_path, len(relics_db)))
 
     # 页面摘要（KV 友好）：每个遗物一行短数据
     summary_items = {}
@@ -646,21 +635,10 @@ def main():
         }
     summary = {"generated": full["generated"], "items": summary_items, "varziaRelics": list(varzia_relic_map.keys())}
     summary_path = os.path.join(DATA_DIR, "relic-deep-date-summary.json")
-    if os.environ.get("PRICE_DATA_SECRET"):
-        try:
-            import crypto_price as _cp
-            _cp.save_json_encrypt(summary_path, summary)
-            print("  Wrote(加密) %s (%d items, %.1f KB)" % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
-        except Exception as e:
-            print(f"  WARN 加密失败回退明文: {e}")
-            with open(summary_path, "w", encoding="utf-8") as f:
-                json.dump(summary, f, ensure_ascii=False)
-            print("  Wrote %s (%d items, %.1f KB)" % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
-    else:
-        with open(summary_path, "w", encoding="utf-8") as f:
-            json.dump(summary, f, ensure_ascii=False)
-        print("  Wrote %s (%d items, %.1f KB)"
-              % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
+    with open(summary_path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False)
+    print("  Wrote %s (%d items, %.1f KB)"
+          % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
 
     cache = {"generated": full["generated"],
              "versions": {v: version_map[v] for v in version_map}}

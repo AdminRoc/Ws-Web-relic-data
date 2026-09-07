@@ -1,0 +1,75 @@
+name: Migrate relic data to plaintext
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: Type PLAINTEXT to convert the current tracked data files in place.
+        required: true
+
+concurrency:
+  group: relic-data-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: inputs.confirm == 'PLAINTEXT'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - run: pip install cryptography -q
+      - name: Convert existing artifacts without changing paths
+        env:
+          PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
+        run: python3 scripts/encrypt_price.py --decrypt-all
+      - name: Validate plaintext artifacts
+        run: |
+          python3 - <<'PY'
+          import glob, json
+          bad = []
+          for path in glob.glob('data/**/*.json', recursive=True):
+              obj = json.load(open(path, encoding='utf-8'))
+              if isinstance(obj, dict) and obj.get('ct'):
+                  bad.append(path)
+          if bad:
+              raise SystemExit('encrypted files remain: ' + ', '.join(bad))
+          print('all tracked data artifacts are plaintext JSON')
+          PY
+      - name: Commit migration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && exit 0
+          git commit -m "data: migrate current relic artifacts to plaintext [skip ci]"
+          git pull --rebase origin main
+          git push origin main
+      - name: Publish current plaintext data to wfspeed-relic KV
+        env:
+          KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
+        run: |
+          set -euo pipefail
+          publish() {
+            local file="$1" key="$2"
+            python3 - "$key" "data/$file" /tmp/kv-payload.json <<'PY'
+          import json, pathlib, sys
+          key, source, target = sys.argv[1:]
+          value = pathlib.Path(source).read_text(encoding='utf-8')
+          json.loads(value)
+          pathlib.Path(target).write_text(json.dumps({'key': key, 'value': value}, ensure_ascii=False), encoding='utf-8')
+          PY
+            curl --fail-with-body --retry 3 --retry-all-errors --max-time 300 \
+              -X POST "https://relic.wfspeed.run/api/update-kv" \
+              -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
+              -H "Content-Type: application/json" --data-binary @/tmp/kv-payload.json
+          }
+          for file in relics.json reward-items.json item-categories.json item-names-zh.json relic-deep-date.json; do
+            publish "$file" "${file//[.-]/_}"
+          done
+          publish prices-summary.json prices_summary_json
+          publish relic-deep-date-summary.json relic_deep_date_summary_json
