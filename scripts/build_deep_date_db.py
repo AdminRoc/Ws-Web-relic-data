@@ -95,10 +95,17 @@ def fetch_text(url, timeout=90, retries=3):
     raise last_err
 
 
-def fetch_json(url, timeout=120):
-    req = urllib.request.Request(url, headers={"User-Agent": "Ws-Web-relic/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8", errors="replace"))
+def fetch_json(url, timeout=120, retries=3):
+    last_err = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Ws-Web-relic/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="replace"))
+        except Exception as e:
+            last_err = e
+            time.sleep(1.0 * (attempt + 1))
+    raise last_err
 
 
 def parse_wiki_module(html):
@@ -418,6 +425,25 @@ def fetch_varzia_relics():
     return results
 
 
+def _load_previous_varzia():
+    """读取磁盘上一次的当期阿耶（空保护用：API 偶发失败时沿用，不全量覆写为空）。"""
+    summary_path = os.path.join(DATA_DIR, "relic-deep-date-summary.json")
+    try:
+        with open(summary_path, "r", encoding="utf-8") as f:
+            prev = json.load(f)
+        carried = {}
+        for key, info in (prev.get("items") or {}).items():
+            if isinstance(info, dict) and info.get("varzia"):
+                carried[key] = info.get("varziaSet") or key
+        if carried:
+            return carried
+        for key in prev.get("varziaRelics") or []:
+            carried.setdefault(key, key)
+        return carried
+    except Exception:
+        return {}
+
+
 def load_version_cache():
     """读取已缓存的 update-versions.json（断点续跑/每日重建用）。"""
     path = os.path.join(DATA_DIR, "update-versions.json")
@@ -468,6 +494,13 @@ def main():
     print("5/6 Loading Varzia/Aya relics from world state API ...")
     varzia_relics = fetch_varzia_relics()  # [(urlName, internalName), ...]
     varzia_relic_map = {url: name for url, name in varzia_relics}
+    if not varzia_relic_map:
+        # 空保护：世界状态 API 偶发失败（如 502）时沿用上一次，绝不把线上全量洗成 0
+        varzia_relic_map = _load_previous_varzia()
+        if varzia_relic_map:
+            print("  WARN: varzia fetch empty, carried over %d previous entries" % len(varzia_relic_map))
+        else:
+            raise SystemExit("ERROR: varzia fetch empty and no previous data to carry over; aborting without overwrite")
     print("  %d Varzia (Aya) relics" % len(varzia_relic_map))
 
     # 检查所有版本的可解析性
