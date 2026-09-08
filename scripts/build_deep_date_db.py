@@ -444,6 +444,22 @@ def _load_previous_varzia():
         return {}
 
 
+def _load_pinned_varzia():
+    """Manual pinned list (data/varzia-pin.json) as last-resort fallback."""
+    pin_path = os.path.join(DATA_DIR, "varzia-pin.json")
+    try:
+        with open(pin_path, "r", encoding="utf-8") as f:
+            pin = json.load(f)
+        pinned = {}
+        for entry in pin.get("relics") or []:
+            key = (entry or {}).get("key", "")
+            if key:
+                pinned[key] = (entry or {}).get("set") or key
+        return pinned
+    except Exception:
+        return {}
+
+
 def load_version_cache():
     """读取已缓存的 update-versions.json（断点续跑/每日重建用）。"""
     path = os.path.join(DATA_DIR, "update-versions.json")
@@ -495,12 +511,17 @@ def main():
     varzia_relics = fetch_varzia_relics()  # [(urlName, internalName), ...]
     varzia_relic_map = {url: name for url, name in varzia_relics}
     if not varzia_relic_map:
-        # 空保护：世界状态 API 偶发失败（如 502）时沿用上一次，绝不把线上全量洗成 0
+        # Empty-guard: transient worldstate failure must never wipe production.
+        # Order: live fetch (above) -> previous on-disk -> pinned manual list.
         varzia_relic_map = _load_previous_varzia()
         if varzia_relic_map:
             print("  WARN: varzia fetch empty, carried over %d previous entries" % len(varzia_relic_map))
         else:
-            raise SystemExit("ERROR: varzia fetch empty and no previous data to carry over; aborting without overwrite")
+            varzia_relic_map = _load_pinned_varzia()
+            if varzia_relic_map:
+                print("  WARN: varzia fetch empty and no previous data, using pinned list (%d entries)" % len(varzia_relic_map))
+            else:
+                raise SystemExit("ERROR: varzia fetch empty and no previous/pinned data; aborting without overwrite")
     print("  %d Varzia (Aya) relics" % len(varzia_relic_map))
 
     # 检查所有版本的可解析性
