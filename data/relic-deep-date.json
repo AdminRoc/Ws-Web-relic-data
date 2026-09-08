@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07T18:11:25Z",
+ "generated": "2026-09-08T04:32:07Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -751,8 +751,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T4VoidProjectionBansheeMirageVaultBBronze"
   },
   "axi_a13_relic": {
    "name": "Axi A13",
@@ -4632,8 +4632,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T4VoidProjectionBansheeMirageVaultABronze"
   },
   "axi_h6_relic": {
    "name": "Axi H6",
@@ -17220,8 +17220,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T1VoidProjectionBansheeMirageVaultABronze"
   },
   "lith_k6_relic": {
    "name": "Lith K6",
@@ -18557,8 +18557,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T1VoidProjectionBansheeMirageVaultBBronze"
   },
   "lith_m8_relic": {
    "name": "Lith M8",
@@ -27533,8 +27533,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T2VoidProjectionBansheeMirageVaultABronze"
   },
   "meso_e6_relic": {
    "name": "Meso E6",
@@ -38034,8 +38034,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T3VoidProjectionBansheeMirageVaultABronze"
   },
   "neo_b7_relic": {
    "name": "Neo B7",
@@ -48791,5 +48791,12 @@
    "varziaSet": null
   }
  },
- "varziaRelics": []
+ "varziaRelics": [
+  "lith_k5_relic",
+  "lith_m7_relic",
+  "meso_e5_relic",
+  "neo_b6_relic",
+  "axi_h5_relic",
+  "axi_a12_relic"
+ ]
 }
