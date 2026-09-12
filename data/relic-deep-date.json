@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T16:58:27Z",
+ "generated": "2026-09-12T05:33:21Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -48792,11 +48792,11 @@
   }
  },
  "varziaRelics": [
+  "axi_a12_relic",
+  "axi_h5_relic",
   "lith_k5_relic",
   "lith_m7_relic",
   "meso_e5_relic",
-  "neo_b6_relic",
-  "axi_h5_relic",
-  "axi_a12_relic"
+  "neo_b6_relic"
  ]
 }
