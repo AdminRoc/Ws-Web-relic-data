@@ -951,7 +951,7 @@
   "axi_a21_relic": {
     "name": "Axi A21",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Alternox Prime Stock",
@@ -1024,7 +1024,7 @@
   "axi_a22_relic": {
     "name": "Axi A22",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Afentis Prime Blueprint",
@@ -3433,7 +3433,7 @@
   "axi_d6_relic": {
     "name": "Axi D6",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Dual Zoren Prime Blade",
@@ -8981,7 +8981,7 @@
   "axi_p10_relic": {
     "name": "Axi P10",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Perigale Prime Barrel",
@@ -10806,7 +10806,7 @@
   "axi_s20_relic": {
     "name": "Axi S20",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Sarofang Prime Blade",
@@ -11244,7 +11244,7 @@
   "axi_s8_relic": {
     "name": "Axi S8",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Scindo Prime Blade",
@@ -11682,7 +11682,7 @@
   "axi_t13_relic": {
     "name": "Axi T13",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Trumna Prime Barrel",
@@ -12412,7 +12412,7 @@
   "axi_v10_relic": {
     "name": "Axi V10",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Venka Prime Gauntlet",
@@ -12704,7 +12704,7 @@
   "axi_v14_relic": {
     "name": "Axi V14",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Voruna Prime Blueprint",
@@ -14237,7 +14237,7 @@
   "lith_a12_relic": {
     "name": "Lith A12",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Alternox Prime Blueprint",
@@ -16500,7 +16500,7 @@
   "lith_c7_relic": {
     "name": "Lith C7",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Cernos Prime Lower Limb",
@@ -17960,7 +17960,7 @@
   "lith_g14_relic": {
     "name": "Lith G14",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Gyre Prime Neuroptics Blueprint",
@@ -19639,7 +19639,7 @@
   "lith_k12_relic": {
     "name": "Lith K12",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Kompressa Prime Barrel",
@@ -24019,7 +24019,7 @@
   "lith_q3_relic": {
     "name": "Lith Q3",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Quassus Prime Blade",
@@ -25114,7 +25114,7 @@
   "lith_s18_relic": {
     "name": "Lith S18",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Styanax Prime Neuroptics Blueprint",
@@ -26136,7 +26136,7 @@
   "lith_t14_relic": {
     "name": "Lith T14",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Trumna Prime Barrel",
@@ -26939,7 +26939,7 @@
   "lith_v11_relic": {
     "name": "Lith V11",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Voruna Prime Systems Blueprint",
@@ -28545,7 +28545,7 @@
   "meso_a12_relic": {
     "name": "Meso A12",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Afentis Prime Blade",
@@ -31162,7 +31162,7 @@
   "meso_d8_relic": {
     "name": "Meso D8",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Daikyu Prime Grip",
@@ -34082,7 +34082,7 @@
   "meso_k8_relic": {
     "name": "Meso K8",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Kestrel Prime Grip",
@@ -34447,7 +34447,7 @@
   "meso_l5_relic": {
     "name": "Meso L5",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Lavos Prime Systems Blueprint",
@@ -35031,7 +35031,7 @@
   "meso_n11_relic": {
     "name": "Meso N11",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Nyx Prime Neuroptics Blueprint",
@@ -40214,7 +40214,7 @@
   "meso_v13_relic": {
     "name": "Meso V13",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Venato Prime Blade",
@@ -40360,7 +40360,7 @@
   "meso_v15_relic": {
     "name": "Meso V15",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Vadarya Prime Blueprint",
@@ -41382,7 +41382,7 @@
   "meso_x1_relic": {
     "name": "Meso X1",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Xaku Prime Blueprint",
@@ -41528,7 +41528,7 @@
   "meso_y2_relic": {
     "name": "Meso Y2",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Yareli Prime Neuroptics Blueprint",
@@ -42550,7 +42550,7 @@
   "neo_a16_relic": {
     "name": "Neo A16",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Athodai Prime Barrel",
@@ -44302,7 +44302,7 @@
   "neo_c7_relic": {
     "name": "Neo C7",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Caliban Prime Neuroptics Blueprint",
@@ -44375,7 +44375,7 @@
   "neo_c8_relic": {
     "name": "Neo C8",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Caliban Prime Systems Blueprint",
@@ -44448,7 +44448,7 @@
   "neo_c9_relic": {
     "name": "Neo C9",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Cedo Prime Blueprint",
@@ -53062,7 +53062,7 @@
   "neo_t11_relic": {
     "name": "Neo T11",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Trumna Prime Receiver",
@@ -53938,7 +53938,7 @@
   "neo_v12_relic": {
     "name": "Neo V12",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Voruna Prime Systems Blueprint",
@@ -54522,7 +54522,7 @@
   "neo_v9_relic": {
     "name": "Neo V9",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Valkyr Prime Chassis Blueprint",
@@ -54814,7 +54814,7 @@
   "neo_y1_relic": {
     "name": "Neo Y1",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Yareli Prime Systems Blueprint",
