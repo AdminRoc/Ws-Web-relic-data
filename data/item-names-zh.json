@@ -827,13 +827,13 @@
     "zh": "降灵追猎者 Prime 蓝图",
     "en": "Ninkondi Prime Blueprint"
   },
-  "zephyr_prime_blueprint": {
-    "zh": "Zephyr Prime 蓝图",
-    "en": "Zephyr Prime Blueprint"
-  },
   "burston_prime_stock": {
     "zh": "伯斯顿 Prime 枪托",
     "en": "Burston Prime Stock"
+  },
+  "zephyr_prime_blueprint": {
+    "zh": "Zephyr Prime 蓝图",
+    "en": "Zephyr Prime Blueprint"
   },
   "gara_prime_blueprint": {
     "zh": "Gara Prime 蓝图",
@@ -1427,6 +1427,10 @@
     "zh": "丧钟 Prime 枪机",
     "en": "Knell Prime Receiver"
   },
+  "protea_prime_neuroptics_blueprint": {
+    "zh": "Protea Prime 头部神经光元 蓝图",
+    "en": "Protea Prime Neuroptics Blueprint"
+  },
   "shade_prime_carapace": {
     "zh": "阴影 Prime 外壳",
     "en": "Shade Prime Carapace"
@@ -1434,10 +1438,6 @@
   "nautilus_prime_systems": {
     "zh": "鹦鹉螺 Prime 系统",
     "en": "Nautilus Prime Systems"
-  },
-  "protea_prime_neuroptics_blueprint": {
-    "zh": "Protea Prime 头部神经光元 蓝图",
-    "en": "Protea Prime Neuroptics Blueprint"
   },
   "larkspur_prime_blueprint": {
     "zh": "翠雀 Prime 蓝图",
@@ -1619,21 +1619,21 @@
     "zh": "Xaku Prime 机体 蓝图",
     "en": "Xaku Prime Chassis Blueprint"
   },
-  "venato_prime_blade": {
-    "zh": "脉纹 Prime 刀刃",
-    "en": "Venato Prime Blade"
-  },
   "nautilus_prime_carapace": {
     "zh": "鹦鹉螺 Prime 外壳",
     "en": "Nautilus Prime Carapace"
   },
-  "voruna_prime_blueprint": {
-    "zh": "Voruna Prime 蓝图",
-    "en": "Voruna Prime Blueprint"
+  "venato_prime_blade": {
+    "zh": "脉纹 Prime 刀刃",
+    "en": "Venato Prime Blade"
   },
   "alternox_prime_receiver": {
     "zh": "电幻步枪 Prime 枪机",
     "en": "Alternox Prime Receiver"
+  },
+  "voruna_prime_blueprint": {
+    "zh": "Voruna Prime 蓝图",
+    "en": "Voruna Prime Blueprint"
   },
   "valkyr_prime_chassis_blueprint": {
     "zh": "Valkyr Prime 机体 蓝图",
@@ -1811,13 +1811,13 @@
     "zh": "Nova Prime 头部神经光元 蓝图",
     "en": "Nova Prime Neuroptics Blueprint"
   },
-  "caliban_prime_neuroptics_blueprint": {
-    "zh": "Caliban Prime 头部神经光元 蓝图",
-    "en": "Caliban Prime Neuroptics Blueprint"
-  },
   "dual_zoren_prime_blueprint": {
     "zh": "佐伦双斧 Prime 蓝图",
     "en": "Dual Zoren Prime Blueprint"
+  },
+  "caliban_prime_neuroptics_blueprint": {
+    "zh": "Caliban Prime 头部神经光元 蓝图",
+    "en": "Caliban Prime Neuroptics Blueprint"
   },
   "gauss_prime_chassis_blueprint": {
     "zh": "Gauss Prime 机体 蓝图",
@@ -1907,6 +1907,10 @@
     "zh": "螺钉步枪 Prime 枪管",
     "en": "Boltor Prime Barrel"
   },
+  "daikyu_prime_blueprint": {
+    "zh": "大久和弓 Prime 蓝图",
+    "en": "Daikyu Prime Blueprint"
+  },
   "epitaph_prime_receiver": {
     "zh": "葬铭 Prime 枪机",
     "en": "Epitaph Prime Receiver"
@@ -1914,10 +1918,6 @@
   "venato_prime_blueprint": {
     "zh": "脉纹 Prime 蓝图",
     "en": "Venato Prime Blueprint"
-  },
-  "daikyu_prime_blueprint": {
-    "zh": "大久和弓 Prime 蓝图",
-    "en": "Daikyu Prime Blueprint"
   },
   "glaive_prime_blueprint": {
     "zh": "战刃 Prime 蓝图",
@@ -2179,6 +2179,10 @@
     "zh": "阿利乌双枪 Prime 蓝图",
     "en": "Akarius Prime Blueprint"
   },
+  "perigale_prime_blueprint": {
+    "zh": "月面狂风 Prime 蓝图",
+    "en": "Perigale Prime Blueprint"
+  },
   "afentis_prime_blade": {
     "zh": "圣英 Prime 刀刃",
     "en": "Afentis Prime Blade"
@@ -2190,10 +2194,6 @@
   "sarofang_prime_handle": {
     "zh": "沙罗之牙 Prime 握柄",
     "en": "Sarofang Prime Handle"
-  },
-  "perigale_prime_blueprint": {
-    "zh": "月面狂风 Prime 蓝图",
-    "en": "Perigale Prime Blueprint"
   },
   "nidus_prime_systems_blueprint": {
     "zh": "Nidus Prime 系统 蓝图",
@@ -2231,13 +2231,13 @@
     "zh": "Equinox Prime 系统 蓝图",
     "en": "Equinox Prime Systems Blueprint"
   },
-  "sarofang_prime_blueprint": {
-    "zh": "沙罗之牙 Prime 蓝图",
-    "en": "Sarofang Prime Blueprint"
-  },
   "daikyu_prime_upper_limb": {
     "zh": "大久和弓 Prime 上弓臂",
     "en": "Daikyu Prime Upper Limb"
+  },
+  "sarofang_prime_blueprint": {
+    "zh": "沙罗之牙 Prime 蓝图",
+    "en": "Sarofang Prime Blueprint"
   },
   "gyre_prime_systems_blueprint": {
     "zh": "Gyre Prime 系统 蓝图",
