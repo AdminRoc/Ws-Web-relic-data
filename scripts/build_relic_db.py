@@ -28,6 +28,10 @@ NAMES_SOURCE_URLS = [
     "https://raw.githubusercontent.com/AdminRoc/Ws-Web-assets/main/data/item/wm-items.json",
     "https://cdn.jsdelivr.net/gh/AdminRoc/Ws-Web-assets@main/data/item/wm-items.json",
 ]
+DROPS_SOURCE_URLS = [
+    "https://raw.githubusercontent.com/AdminRoc/Ws-Web-assets/main/data/item/drops-index.json",
+    "https://cdn.jsdelivr.net/gh/AdminRoc/Ws-Web-assets@main/data/item/drops-index.json",
+]
 # Local fallback for development
 LOCAL_RELIC_PATH = os.path.join(
     os.path.dirname(REPO_ROOT), "How-To-Design-The-UI", "warframe-items", "data", "json", "Relics.json"
@@ -70,6 +74,80 @@ def relic_tier(name):
         if name.startswith(tier):
             return tier
     return "Other"
+
+
+def fetch_asset(urls, item_type, minimum):
+    """Require a complete shared artifact before replacing published relic data."""
+    for url in urls:
+        try:
+            data = fetch_json(url)
+            if isinstance(data, dict) and isinstance(data.get("items"), item_type) and len(data["items"]) >= minimum:
+                return data["items"]
+            print(f"  Incomplete artifact: {url}")
+        except Exception as exc:
+            print(f"  Failed: {url}: {exc}")
+    raise RuntimeError("Could not load complete shared item artifacts")
+
+
+def add_missing_official_relics(relics, reward_set, drops, market_items):
+    """Fill the lag between official drop-table updates and WFCD Relics.json."""
+    market_slugs = {
+        item["en"].casefold(): item["slug"]
+        for item in market_items if item.get("en") and item.get("slug")
+    }
+    known_names = {relic["name"] for relic in relics.values()}
+    missing = {}
+    source_pattern = re.compile(
+        r"^((?:Lith|Meso|Neo|Axi|Requiem|Vanguard) [A-Za-z0-9]+) Relic "
+        r"\((Intact|Exceptional|Flawless|Radiant)\)$"
+    )
+    for item_name, item in drops.items():
+        for source in item.get("sources", []):
+            if source.get("section") != "Relics":
+                continue
+            match = source_pattern.match(source.get("source", ""))
+            if not match or match.group(1) in known_names:
+                continue
+            base, refinement = match.groups()
+            slug = market_slugs.get((base + " Relic").casefold())
+            if not slug:
+                slug = base.lower().replace(" ", "_") + "_relic"
+            if slug in relics:
+                continue
+            info = missing.setdefault(slug, {
+                "name": base, "tier": relic_tier(base), "vaulted": False, "rewards": {}
+            })
+            reward = info["rewards"].setdefault(item_name, {
+                "name": item_name,
+                "urlName": market_slugs.get(item_name.casefold(), ""),
+                "rarity": "",
+                "chances": {},
+            })
+            reward["chances"][refinement] = source.get("chance", 0)
+            if refinement == "Intact":
+                chance = source.get("chance", 0)
+                reward["rarity"] = "Rare" if chance <= 5 else "Uncommon" if chance <= 15 else "Common"
+
+    for slug, info in missing.items():
+        rewards = list(info.pop("rewards").values())
+        if len(rewards) < 4 or any("Intact" not in reward["chances"] for reward in rewards):
+            raise RuntimeError(f"Incomplete official reward table for {info['name']}: {len(rewards)} rewards")
+        info["rewards"] = rewards
+        relics[slug] = info
+        known_names.add(info["name"])
+        for reward in rewards:
+            item_slug = reward["urlName"]
+            if not item_slug:
+                continue
+            previous = reward_set.get(item_slug)
+            if previous is None:
+                reward_set[item_slug] = {
+                    "name": reward["name"], "urlName": item_slug,
+                    "highestRarity": reward["rarity"],
+                }
+            elif reward["rarity"] == "Rare":
+                previous["highestRarity"] = "Rare"
+    print(f"  Added {len(missing)} relics from the official drop-table index")
 
 
 def build():
@@ -136,10 +214,20 @@ def build():
                     "chances": {refinement: chance} if refinement else {},
                 })
 
+    print("Loading shared market names and official drop-table index...")
+    market_items = fetch_asset(NAMES_SOURCE_URLS, list, 1500)
+    drops = fetch_asset(DROPS_SOURCE_URLS, dict, 2000)
+    add_missing_official_relics(relics, reward_set, drops, market_items)
     print(f"  Grouped into {len(relics)} unique relics ({len(reward_set)} unique reward items)")
 
-    # Write relics.json
     relics_path = os.path.join(DATA_DIR, "relics.json")
+    if os.path.exists(relics_path):
+        with open(relics_path, "r", encoding="utf-8") as f:
+            previous_relics = json.load(f)
+        if len(relics) < len(previous_relics):
+            raise RuntimeError("Relic count regressed; keeping the previously published data")
+
+    # Write relics.json
     with open(relics_path, "w", encoding="utf-8") as f:
         json.dump(relics, f, ensure_ascii=False, indent=2)
     print(f"  Wrote {relics_path}")
@@ -152,7 +240,7 @@ def build():
     print(f"  Wrote {reward_items_path}")
 
     # Write item-names-zh.json (EN -> ZH mapping from Ws-Web-assets wm-items.json)
-    build_names_zh(reward_set)
+    build_names_zh(reward_set, market_items)
 
     # Summary
     tier_counts = {}
@@ -162,41 +250,25 @@ def build():
     print("Done.")
 
 
-def build_names_zh(reward_set):
+def build_names_zh(reward_set, market_items):
     """Fetch Ws-Web-assets's wm-items.json and extract zh/en names for reward slugs.
 
     Writes data/item-names-zh.json: { urlName: { zh, en } }
     """
     names = {}
-    try:
-        print("Fetching wm-items.json (EN->ZH names)...")
-        last_err = None
-        for url in NAMES_SOURCE_URLS:
-            try:
-                data = fetch_json(url)
-                last_err = None
-                break
-            except Exception as e:
-                last_err = e
-                print(f"  Failed: {e}")
-        if last_err:
-            raise last_err
-
-        all_map = {}
-        for it in data.get("items", []):
-            slug = it.get("slug")
-            if slug and (it.get("zh") or it.get("en")):
-                all_map[slug] = {
-                    "zh": it.get("zh") or "",
-                    "en": it.get("en") or "",
-                }
-        for r in reward_set.values():
-            u = r.get("urlName")
-            if u and u in all_map:
-                names[u] = all_map[u]
-        print(f"  Matched {len(names)}/{len(reward_set)} names")
-    except Exception as e:
-        print(f"  WARN: name fetch failed ({e}); writing empty name map")
+    all_map = {}
+    for it in market_items:
+        slug = it.get("slug")
+        if slug and (it.get("zh") or it.get("en")):
+            all_map[slug] = {
+                "zh": it.get("zh") or "",
+                "en": it.get("en") or "",
+            }
+    for r in reward_set.values():
+        u = r.get("urlName")
+        if u and u in all_map:
+            names[u] = all_map[u]
+    print(f"  Matched {len(names)}/{len(reward_set)} names")
 
     out = os.path.join(DATA_DIR, "item-names-zh.json")
     with open(out, "w", encoding="utf-8") as f:

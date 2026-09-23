@@ -19,5 +19,6 @@ Warframe 遗物（核桃）相关数据的自动收集仓库，供 Ws-Web-relic 
 
 ## 说明
 
-- 数据来自 warframe.market、WFCD、wiki 等公开来源
+- 遗物定义优先读取 WFCD，并用 `Ws-Web-assets/data/item/drops-index.json` 中的官方掉落表补齐 WFCD 尚未收录的新遗物；奖励物品的交易链接和中英名称取自同仓 `wm-items.json`
+- 每小时更新遗物及价格后，自动触发生命周期数据刷新，供 `relic-vault` 搜索新遗物
 - 非官方项目，和 Digital Extremes 没关系

@@ -2,6 +2,9 @@ name: Monitor Relic Deep-Date DB
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Update Relic & Price Data"]
+    types: [completed]
   schedule:
     - cron: "0 1,13 * * *" # 每天 UTC 01:00 + 13:00 = 北京时间 09:00 + 21:00
 
@@ -14,6 +17,7 @@ permissions:
 
 jobs:
   monitor:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
