@@ -318,6 +318,8 @@ def build():
         time.sleep(REQUEST_DELAY)
 
     print(f"  Done: {new_snapshots} new price snapshots, {errors} errors, {skipped} skipped")
+    if (errors and not new_snapshots) or errors > max(20, len(tradable_items) // 4):
+        raise RuntimeError(f"WM order API failed for {errors}/{len(tradable_items)} items; keeping previous price data")
 
     # Compute averages
     for url_name, item_data in items_data.items():

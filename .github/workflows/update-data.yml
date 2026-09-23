@@ -30,10 +30,16 @@ jobs:
         run: python scripts/build_relic_db.py
 
       - name: Build Price Database (B)
+        id: price
+        continue-on-error: true
         run: python scripts/build_price_db.py
         env:
           # Legacy read-only compatibility until the one-time plaintext migration finishes.
           PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
+
+      - name: Note retained prices after WM order outage
+        if: steps.price.outcome == 'failure'
+        run: echo '::warning::Price refresh failed; publishing relic definitions with previous price artifacts.'
 
       - name: 校验明文产物
         run: |
@@ -46,6 +52,7 @@ jobs:
           bad = []
           for path in files:
               if not os.path.exists(path):
+                  bad.append(path + ': missing')
                   continue
               try:
                   obj = json.load(open(path, encoding='utf-8'))
@@ -56,6 +63,16 @@ jobs:
           if bad:
               print('VERIFY FAIL:\n' + '\n'.join(bad))
               sys.exit(1)
+          relics = json.load(open('data/relics.json', encoding='utf-8'))
+          rewards = json.load(open('data/reward-items.json', encoding='utf-8'))
+          names = json.load(open('data/item-names-zh.json', encoding='utf-8'))
+          slugs = {item['urlName'] for item in rewards}
+          if len(relics) < 700 or len(slugs) != len(rewards) or slugs != set(names):
+              sys.exit('VERIFY FAIL: relic/reward/translation coverage mismatch')
+          prices = json.load(open('data/prices.json', encoding='utf-8'))
+          price_summary = json.load(open('data/prices-summary.json', encoding='utf-8'))
+          if prices.get('generated') != price_summary.get('generated'):
+              sys.exit('VERIFY FAIL: price full/summary generations differ')
           print('VERIFY OK relic-data')
           PY
 

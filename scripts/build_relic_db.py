@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build Database A: relic drop table from warframe-items Relics.json.
+"""Build Database A: relic identities from WFCD and rewards from official drops.
 
-Fetches Relics.json from WFCD/warframe-items via jsDelivr CDN,
-groups relics by base name (merging 4 refinement levels),
-extracts unique reward items with their warframe.market urlNames.
+Groups WFCD relics by base name, then applies the official drop table to all
+ordinary relics (including new ones not yet in WFCD). Tradable reward slugs
+and translations come from the shared warframe.market item manifest.
 
 Outputs:
   data/relics.json       — { relic_url_name: { name, tier, vaulted, rewards[] } }
@@ -89,65 +89,77 @@ def fetch_asset(urls, item_type, minimum):
     raise RuntimeError("Could not load complete shared item artifacts")
 
 
-def add_missing_official_relics(relics, reward_set, drops, market_items):
-    """Fill the lag between official drop-table updates and WFCD Relics.json."""
+def merge_official_relics(relics, drops, market_items):
+    """Use official reward tables for every normal relic, including WFCD gaps."""
     market_slugs = {
         item["en"].casefold(): item["slug"]
         for item in market_items if item.get("en") and item.get("slug")
     }
-    known_names = {relic["name"] for relic in relics.values()}
-    missing = {}
+    known_names = {relic["name"]: slug for slug, relic in relics.items()}
+    official = {}
     source_pattern = re.compile(
-        r"^((?:Lith|Meso|Neo|Axi|Requiem|Vanguard) [A-Za-z0-9]+) Relic "
+        r"^((?:Lith|Meso|Neo|Axi|Vanguard) [A-Za-z0-9]+) Relic "
         r"\((Intact|Exceptional|Flawless|Radiant)\)$"
     )
+    chance_rarity = {
+        "Intact": {25.33: "Common", 11: "Uncommon", 2: "Rare"},
+        "Exceptional": {23.33: "Common", 13: "Uncommon", 4: "Rare"},
+        "Flawless": {20: "Common", 17: "Uncommon", 6: "Rare"},
+        "Radiant": {16.67: "Common", 20: "Uncommon", 10: "Rare"},
+    }
     for item_name, item in drops.items():
         for source in item.get("sources", []):
             if source.get("section") != "Relics":
                 continue
             match = source_pattern.match(source.get("source", ""))
-            if not match or match.group(1) in known_names:
+            if not match:
                 continue
             base, refinement = match.groups()
+            chance = source.get("chance")
+            rarity = chance_rarity[refinement].get(chance)
+            if not rarity:
+                raise RuntimeError(f"Unknown official chance for {base}: {refinement} {chance}")
             slug = market_slugs.get((base + " Relic").casefold())
             if not slug:
                 slug = base.lower().replace(" ", "_") + "_relic"
-            if slug in relics:
-                continue
-            info = missing.setdefault(slug, {
-                "name": base, "tier": relic_tier(base), "vaulted": False, "rewards": {}
-            })
-            reward = info["rewards"].setdefault(item_name, {
+            slug = known_names.get(base, slug)
+            info = official.setdefault(slug, {"name": base, "rewards": {}})
+            reward = info["rewards"].setdefault((item_name, rarity), {
                 "name": item_name,
                 "urlName": market_slugs.get(item_name.casefold(), ""),
-                "rarity": "",
+                "rarity": rarity,
                 "chances": {},
             })
-            reward["chances"][refinement] = source.get("chance", 0)
-            if refinement == "Intact":
-                chance = source.get("chance", 0)
-                reward["rarity"] = "Rare" if chance <= 5 else "Uncommon" if chance <= 15 else "Common"
+            previous = reward["chances"].get(refinement)
+            if previous is not None and previous != chance:
+                raise RuntimeError(f"Conflicting official chances for {base}: {item_name} {refinement}")
+            reward["chances"][refinement] = chance
 
-    for slug, info in missing.items():
+    added = 0
+    for slug, info in official.items():
         rewards = list(info.pop("rewards").values())
-        if len(rewards) < 4 or any("Intact" not in reward["chances"] for reward in rewards):
+        unmapped = [reward["name"] for reward in rewards
+                    if "Prime" in reward["name"] and not reward["urlName"]]
+        if unmapped:
+            raise RuntimeError(f"Official rewards missing market mappings for {info['name']}: {unmapped}")
+        rarities = sorted(reward["rarity"] for reward in rewards)
+        if (len(rewards) != 6 or rarities != sorted(["Common"] * 3 + ["Uncommon"] * 2 + ["Rare"])
+                or any(len(reward["chances"]) != 4 for reward in rewards)):
             raise RuntimeError(f"Incomplete official reward table for {info['name']}: {len(rewards)} rewards")
+        for refinement in chance_rarity:
+            total = sum(reward["chances"][refinement] for reward in rewards)
+            if abs(total - 100) > 0.05:
+                raise RuntimeError(f"Invalid official chance total for {info['name']} {refinement}: {total}")
         info["rewards"] = rewards
-        relics[slug] = info
-        known_names.add(info["name"])
-        for reward in rewards:
-            item_slug = reward["urlName"]
-            if not item_slug:
-                continue
-            previous = reward_set.get(item_slug)
-            if previous is None:
-                reward_set[item_slug] = {
-                    "name": reward["name"], "urlName": item_slug,
-                    "highestRarity": reward["rarity"],
-                }
-            elif reward["rarity"] == "Rare":
-                previous["highestRarity"] = "Rare"
-    print(f"  Added {len(missing)} relics from the official drop-table index")
+        if slug in relics and relics[slug]["name"] != info["name"]:
+            raise RuntimeError(f"Relic slug collision: {slug}")
+        if slug in relics:
+            relics[slug]["rewards"] = rewards
+        else:
+            relics[slug] = {"name": info["name"], "tier": relic_tier(info["name"]),
+                            "vaulted": False, "rewards": rewards}
+            added += 1
+    print(f"  Applied official rewards to {len(official)} relics; added {added} missing relics")
 
 
 def build():
@@ -159,7 +171,6 @@ def build():
 
     # Group by base relic name
     relics = {}
-    reward_set = {}  # urlName -> { name, rarity, relic_count }
 
     for entry in all_relics:
         base = base_relic_name(entry["name"])
@@ -189,16 +200,6 @@ def build():
             if not item_name:
                 continue
 
-            # Track unique reward items
-            if item_url and item_url not in reward_set:
-                reward_set[item_url] = {
-                    "name": item_name,
-                    "urlName": item_url,
-                    "highestRarity": rarity,
-                }
-            elif item_url and reward_set[item_url]["highestRarity"] == "Uncommon" and rarity == "Rare":
-                reward_set[item_url]["highestRarity"] = "Rare"
-
             # Check if reward already in this relic
             existing = next(
                 (r for r in relics[url_name]["rewards"] if r.get("urlName") == item_url),
@@ -217,15 +218,27 @@ def build():
     print("Loading shared market names and official drop-table index...")
     market_items = fetch_asset(NAMES_SOURCE_URLS, list, 1500)
     drops = fetch_asset(DROPS_SOURCE_URLS, dict, 2000)
-    add_missing_official_relics(relics, reward_set, drops, market_items)
+    merge_official_relics(relics, drops, market_items)
+    reward_set = {}
+    rarity_rank = {"Common": 0, "Uncommon": 1, "Rare": 2}
+    for relic in relics.values():
+        for reward in relic["rewards"]:
+            slug = reward.get("urlName")
+            if not slug:
+                continue
+            previous = reward_set.get(slug)
+            if previous is None or rarity_rank.get(reward["rarity"], -1) > rarity_rank.get(previous["highestRarity"], -1):
+                reward_set[slug] = {"name": reward["name"], "urlName": slug,
+                                    "highestRarity": reward["rarity"]}
     print(f"  Grouped into {len(relics)} unique relics ({len(reward_set)} unique reward items)")
 
     relics_path = os.path.join(DATA_DIR, "relics.json")
     if os.path.exists(relics_path):
         with open(relics_path, "r", encoding="utf-8") as f:
             previous_relics = json.load(f)
-        if len(relics) < len(previous_relics):
-            raise RuntimeError("Relic count regressed; keeping the previously published data")
+        missing_keys = previous_relics.keys() - relics.keys()
+        if missing_keys:
+            raise RuntimeError(f"Relic keys regressed ({len(missing_keys)} missing); keeping previously published data")
 
     # Write relics.json
     with open(relics_path, "w", encoding="utf-8") as f:

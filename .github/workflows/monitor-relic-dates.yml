@@ -36,6 +36,34 @@ jobs:
           # Legacy read-only compatibility until the one-time plaintext migration finishes.
           PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
 
+      - name: Verify complete lifecycle coverage and canonical rewards
+        run: |
+          python3 - <<'PY'
+          import json
+          from datetime import datetime, timedelta
+
+          relics = json.load(open('data/relics.json', encoding='utf-8'))
+          full = json.load(open('data/relic-deep-date.json', encoding='utf-8'))
+          summary = json.load(open('data/relic-deep-date-summary.json', encoding='utf-8'))
+          expected = {key for key, relic in relics.items() if relic['tier'] != 'Requiem'}
+          if set(full['relics']) != expected or set(summary['items']) != expected:
+              raise SystemExit('Lifecycle relic keys do not match canonical relics')
+          if summary['generated'] != full['generated']:
+              raise SystemExit('Lifecycle full/summary generations differ')
+          for key in expected:
+              canonical = sorted((r['name'], r['rarity'], r.get('urlName', '')) for r in relics[key]['rewards'])
+              actual = sorted((r['name'], r['rarity'], r.get('urlName', '')) for r in full['relics'][key]['rewards'])
+              if canonical != actual:
+                  raise SystemExit('Lifecycle reward mismatch: ' + key)
+              for event in full['relics'][key]['events']:
+                  if event.get('ts'):
+                      utc = datetime.fromisoformat(event['ts'].replace('Z', '+00:00'))
+                      beijing = (utc + timedelta(hours=8)).date().isoformat()
+                      if event.get('gameDateTZ') != 'UTC+8' or event.get('gameDate') != beijing:
+                          raise SystemExit('Lifecycle timestamp/date mismatch: ' + key)
+          print(f'Verified {len(expected)} relics and lifecycle events')
+          PY
+
       - name: Show detected changes (diff vs previous run)
         run: |
           echo "=== relics changed since last commit ==="

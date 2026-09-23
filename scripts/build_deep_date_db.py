@@ -8,7 +8,7 @@
   1. wiki Module:Void/data          - 每个遗物的 Introduced / Vaulted 版本号、IsBaro、Tier
   2. wiki Update 索引页 (13..43+)   - 版本号 -> 游戏部署日期（YYYY-MM-DD，美国游戏日期）
   3. @wfcd/patchlogs (npm/jsDelivr) - 版本号 -> 精确 ISO 时间戳（UTC，用于换算北京时间）
-  4. 本地 data/relics.json          - urlName 键名（页面读取的键）
+  4. 本地 data/relics.json          - 遗物键名、官方奖励和 wiki 尚未收录的遗物
   5. 世界状态 API (warframestat.us) - vaultTrader 当前瓦奇娅出售的遗物（当期阿耶）
      + warframe-items Relics.json   - uniqueName -> urlName 映射
 
@@ -18,13 +18,14 @@
   data/update-versions.json          - 版本号->日期 映射缓存（供监控/调试）
 
 日期精度说明：
-  - 有 patchlogs UTC 时间戳的事件：gameDate = UTC+8 北京时间（精确，gameDateTZ="UTC+8"）
+  - 有 patchlogs UTC 时间戳的事件：gameDate = 该日志时间戳对应的北京时间日期
+    （gameDateTZ="UTC+8"）；日志发布时间不能证明游戏内容恰在该秒上线。
   - 无 UTC 时间戳的事件（wiki-only）：gameDate = 美国游戏日期（gameDateTZ="US-ET"）
     此时无法精确转换为北京时间（美东夏令时/冬令时 + DE 发布时间不确定），
     直接使用 wiki 记录的美国日期，不做不精确的转换。
 
 用法：
-  python build_deep_date_db.py           # 全量构建（版本映射有缓存时直接复用）
+  python build_deep_date_db.py           # 全量构建（复用历史缓存并刷新最近两个版本索引）
   python build_deep_date_db.py --refresh # 强制重新抓取 wiki 更新索引页
 """
 
@@ -219,7 +220,7 @@ def parse_update_index(html):
     return out, major_first
 
 
-def fetch_all_update_indexes(known_majors):
+def fetch_all_update_indexes(known_majors, discover=True):
     """抓取所有 Update 索引页，合并版本->日期映射；返回 (version_map, majors_seen)。"""
     version_map = {}
     major_dates = {}
@@ -241,10 +242,11 @@ def fetch_all_update_indexes(known_majors):
         major_dates.update(page_major)
         if len(version_map) % 50 < 10:
             print("    ... Update %d done (%d versions so far)" % (major, len(version_map)))
-        for nm in re.findall(r"Update_(\d+)", html):
-            nmajor = int(nm)
-            if 13 <= nmajor <= 99 and nmajor not in seen:
-                majors.append(nmajor)
+        if discover:
+            for nm in re.findall(r"Update_(\d+)", html):
+                nmajor = int(nm)
+                if 13 <= nmajor <= 99 and nmajor not in seen:
+                    majors.append(nmajor)
         time.sleep(REQUEST_DELAY)
     for major, date in major_dates.items():
         if major not in version_map:
@@ -303,12 +305,11 @@ def resolve_named_version(vstr, raw_posts):
 
 
 def version_candidates(ver):
-    """生成版本候选：'36.1' -> ['36.1','36.1.0']；'43.0' -> ['43.0','43']。"""
+    """只匹配同一版本；大版本最早日期不能代替缺失的小版本日期。"""
     parts = ver.split(".")
     cands = [ver]
     if len(parts) == 2:
         cands.append(ver + ".0")
-        cands.append(parts[0])
     return cands
 
 
@@ -330,7 +331,7 @@ def version_dates(ver, version_map, patchlogs_map):
             ts = pl["ts"]
     if ts:
         bj_date = beijing_date(ts)
-        return bj_date or ts[:10], ts, source, "UTC+8"
+        return bj_date or ts[:10], ts, "patchlogs", "UTC+8"
     if us_date:
         return us_date, None, source, "US-ET"
     return None, None, "unresolved", None
@@ -491,9 +492,16 @@ def main():
         version_map, majors = fetch_all_update_indexes(UPDATE_INDEX_MAJORS)
         save_version_cache(version_map, majors)
     elif cached_map:
-        print("  using cached version map (%d versions); --refresh to re-fetch" % len(cached_map))
         version_map = cached_map
-        majors = cached_majors
+        numeric_versions = [int(m.group(1)) for info in wiki_relics.values()
+                            for value in (info.get("introduced"), info.get("vaulted"))
+                            if value for m in [re.match(r"^(\d+)\.", value)] if m]
+        latest_major = max(numeric_versions or [max(UPDATE_INDEX_MAJORS)])
+        recent_map, recent_majors = fetch_all_update_indexes(
+            [latest_major - 1, latest_major], discover=False)
+        version_map.update(recent_map)
+        majors = sorted(set(cached_majors) | set(recent_majors))
+        print("  refreshed recent version indexes; %d cached versions" % len(cached_map))
     else:
         version_map, majors = fetch_all_update_indexes(UPDATE_INDEX_MAJORS)
         save_version_cache(version_map, majors)
@@ -609,24 +617,19 @@ def main():
         else:
             status = "active"
 
-        # 用本地 relics.json 补充 urlName（wiki module 无 urlName，页面中文名依赖它）
+        # 奖励与稀有度以官方掉落表构建的 relics.json 为准；wiki 仅提供生命周期。
         local_relic_info = local_relics.get(key, {})
-        local_reward_map = {}
-        for lr in local_relic_info.get("rewards", []):
-            lname = lr.get("name", "")
-            if lname and lname not in local_reward_map:
-                local_reward_map[lname] = lr.get("urlName", "")
         enriched_rewards = []
-        for wr in info.get("rewards", []):
-            wname = wr.get("name", "")
-            url_name = local_reward_map.get(wname, "")
+        for reward in local_relic_info.get("rewards", []):
+            wname = reward.get("name", "")
+            url_name = reward.get("urlName", "")
             zh = None
             if not url_name and wname in SPECIAL_REWARD_MAP:
-                # warframe-items 缺失或与 wiki 命名不一致时兜底（Forma 等特殊掉落物）
-                url_name, zh = SPECIAL_REWARD_MAP[wname]
+                # 不可交易的特殊奖励没有 market slug。
+                _, zh = SPECIAL_REWARD_MAP[wname]
             enriched_rewards.append({
                 "name": wname,
-                "rarity": wr.get("rarity", ""),
+                "rarity": reward.get("rarity", ""),
                 "urlName": url_name,
                 "zh": zh,
             })
@@ -643,6 +646,19 @@ def main():
     if unmatched:
         print("  WARN: %d wiki relics unmatched in local relics.json (first 20): %s"
               % (len(unmatched), unmatched[:20]))
+
+    # Wiki 未收录的新遗物仍要有完整奖励；没有来源的日期保持未知。
+    for key, local in local_relics.items():
+        if local.get("tier") == "Requiem" or key in relics_db:
+            continue
+        relics_db[key] = {
+            "name": local["name"], "tier": local["tier"], "isBaro": False,
+            "status": "vaulted" if local.get("vaulted") else "active",
+            "events": [],
+            "rewards": [{"name": reward["name"], "rarity": reward["rarity"],
+                         "urlName": reward.get("urlName", ""), "zh": None}
+                        for reward in local.get("rewards", [])],
+        }
 
     # Add Varzia fields to each relic
     for key, r in relics_db.items():
@@ -694,8 +710,8 @@ def main():
     print("  Wrote %s (%d items, %.1f KB)"
           % (summary_path, len(summary_items), os.path.getsize(summary_path) / 1024))
 
-    cache = {"generated": full["generated"],
-             "versions": {v: version_map[v] for v in version_map}}
+    cache = {"generated": full["generated"], "majors": sorted(majors),
+             "versions": version_map}
     cache_path = os.path.join(DATA_DIR, "update-versions.json")
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=1)
