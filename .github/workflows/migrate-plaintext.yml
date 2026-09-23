@@ -22,6 +22,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
+          ref: main
       - run: pip install cryptography -q
       - name: Convert existing artifacts without changing paths
         env:
@@ -54,6 +55,7 @@ jobs:
           KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
         run: |
           set -euo pipefail
+          test -n "${KV_WRITE_TOKEN}" || { echo 'Missing KV_WRITE_TOKEN'; exit 1; }
           publish() {
             local file="$1"
             local key="$2"
@@ -64,10 +66,20 @@ jobs:
           json.loads(value)
           pathlib.Path(target).write_text(json.dumps({'key': key, 'value': value}, ensure_ascii=False), encoding='utf-8')
           PY
-            curl --fail-with-body --retry 3 --retry-all-errors --max-time 300 \
+            curl --silent --show-error --fail-with-body --retry 8 --retry-all-errors \
+              --retry-delay 20 --retry-max-time 300 --connect-timeout 20 --max-time 60 \
               -X POST "https://relic.wfspeed.run/api/update-kv" \
               -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
               -H "Content-Type: application/json" --data-binary @/tmp/kv-payload.json
+            python3 - "$key" "data/$file" <<'PY'
+          import hashlib, sys, urllib.request
+          key, source = sys.argv[1:]
+          expected = open(source, 'rb').read()
+          with urllib.request.urlopen('https://relic.wfspeed.run/api/kv?key=' + key, timeout=60) as response:
+              actual = response.read()
+          if hashlib.sha256(actual).digest() != hashlib.sha256(expected).digest():
+              raise SystemExit('readback hash mismatch for ' + key)
+          PY
           }
           for file in relics.json reward-items.json item-categories.json item-names-zh.json relic-deep-date.json; do
             publish "$file" "${file//[.-]/_}"
