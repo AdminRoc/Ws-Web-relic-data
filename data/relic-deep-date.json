@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T17:47:25Z",
+ "generated": "2026-09-23T18:31:59Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -2652,6 +2652,62 @@
      "name": "Caliban Prime Systems Blueprint",
      "rarity": "Rare",
      "urlName": "caliban_prime_systems_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "axi_c12_relic": {
+   "name": "Axi C12",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Alternox Prime Receiver",
+     "rarity": "Common",
+     "urlName": "alternox_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Vadarya Prime Stock",
+     "rarity": "Common",
+     "urlName": "vadarya_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Daikyu Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "daikyu_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Corufell Prime Handle",
+     "rarity": "Uncommon",
+     "urlName": "corufell_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Kestrel Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "kestrel_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Citrine Prime Neuroptics Blueprint",
+     "rarity": "Rare",
+     "urlName": "citrine_prime_neuroptics_blueprint",
      "zh": null
     }
    ],
@@ -10054,6 +10110,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "axi_s21_relic": {
+   "name": "Axi S21",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Cedo Prime Stock",
+     "rarity": "Common",
+     "urlName": "cedo_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Caliban Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "caliban_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Dual Zoren Prime Handle",
+     "rarity": "Common",
+     "urlName": "dual_zoren_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Gyre Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "gyre_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Steflos Prime Barrel",
+     "rarity": "Rare",
+     "urlName": "steflos_prime_barrel",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "axi_t1_relic": {
    "name": "Axi T1",
    "tier": "Axi",
@@ -12971,6 +13083,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "lith_a13_relic": {
+   "name": "Lith A13",
+   "tier": "Lith",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Fang Prime Blade",
+     "rarity": "Common",
+     "urlName": "fang_prime_blade",
+     "zh": null
+    },
+    {
+     "name": "Steflos Prime Receiver",
+     "rarity": "Common",
+     "urlName": "steflos_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime Lower Limb",
+     "rarity": "Common",
+     "urlName": "paris_prime_lower_limb",
+     "zh": null
+    },
+    {
+     "name": "Dual Zoren Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "dual_zoren_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Gyre Prime Chassis Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "gyre_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Alternox Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "alternox_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "lith_b1_relic": {
    "name": "Lith B1",
    "tier": "Lith",
@@ -14552,6 +14720,62 @@
      "name": "Perigale Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "perigale_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Cedo Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "cedo_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "lith_c15_relic": {
+   "name": "Lith C15",
+   "tier": "Lith",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Daikyu Prime String",
+     "rarity": "Common",
+     "urlName": "daikyu_prime_string",
+     "zh": null
+    },
+    {
+     "name": "Corufell Prime Stock",
+     "rarity": "Common",
+     "urlName": "corufell_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Receiver",
+     "rarity": "Common",
+     "urlName": "burston_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Yareli Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "yareli_prime_blueprint",
      "zh": null
     },
     {
@@ -22486,6 +22710,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "lith_s19_relic": {
+   "name": "Lith S19",
+   "tier": "Lith",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Bronco Prime Receiver",
+     "rarity": "Common",
+     "urlName": "bronco_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Braton Prime Barrel",
+     "rarity": "Common",
+     "urlName": "braton_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Citrine Prime Systems Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "citrine_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Orthos Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "orthos_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Sarofang Prime Blade",
+     "rarity": "Rare",
+     "urlName": "sarofang_prime_blade",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "lith_t1_relic": {
    "name": "Lith T1",
    "tier": "Lith",
@@ -26760,6 +27040,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "meso_c11_relic": {
+   "name": "Meso C11",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Kompressa Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "kompressa_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Lavos Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "lavos_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "paris_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Daikyu Prime Upper Limb",
+     "rarity": "Uncommon",
+     "urlName": "daikyu_prime_upper_limb",
+     "zh": null
+    },
+    {
+     "name": "Citrine Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "citrine_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "meso_d1_relic": {
    "name": "Meso D1",
    "tier": "Meso",
@@ -27258,6 +27594,62 @@
      "name": "Daikyu Prime Grip",
      "rarity": "Rare",
      "urlName": "daikyu_prime_grip",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "meso_d9_relic": {
+   "name": "Meso D9",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Paris Prime Upper Limb",
+     "rarity": "Common",
+     "urlName": "paris_prime_upper_limb",
+     "zh": null
+    },
+    {
+     "name": "Afentis Prime Handle",
+     "rarity": "Common",
+     "urlName": "afentis_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "burston_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Cedo Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "cedo_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Steflos Prime Stock",
+     "rarity": "Uncommon",
+     "urlName": "steflos_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Dual Zoren Prime Blade",
+     "rarity": "Rare",
+     "urlName": "dual_zoren_prime_blade",
      "zh": null
     }
    ],
@@ -35829,6 +36221,126 @@
    "varzia": false,
    "varziaSet": null
   },
+  "meso_v16_relic": {
+   "name": "Meso V16",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [
+    {
+     "type": "released",
+     "version": "29.9",
+     "gameDate": "2020-08-25",
+     "gameDateTZ": "US-ET",
+     "ts": null,
+     "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "31.0",
+     "gameDate": "2021-12-15",
+     "gameDateTZ": "US-ET",
+     "ts": null,
+     "source": "wiki-index"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Baza Prime Receiver",
+     "rarity": "Common",
+     "urlName": "baza_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Stock",
+     "rarity": "Common",
+     "urlName": "burston_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Okina Prime Handle",
+     "rarity": "Uncommon",
+     "urlName": "okina_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Ivara Prime Systems Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "ivara_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Velox Prime Barrel",
+     "rarity": "Rare",
+     "urlName": "velox_prime_barrel",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "meso_v17_relic": {
+   "name": "Meso V17",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Corufell Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "corufell_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Akbronco Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "akbronco_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Lavos Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "lavos_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime Grip",
+     "rarity": "Uncommon",
+     "urlName": "paris_prime_grip",
+     "zh": null
+    },
+    {
+     "name": "Voruna Prime Systems Blueprint",
+     "rarity": "Rare",
+     "urlName": "voruna_prime_systems_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "meso_w1_relic": {
    "name": "Meso W1",
    "tier": "Meso",
@@ -38865,6 +39377,118 @@
      "name": "Cedo Prime Blueprint",
      "rarity": "Rare",
      "urlName": "cedo_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "neo_c10_relic": {
+   "name": "Neo C10",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Braton Prime Stock",
+     "rarity": "Common",
+     "urlName": "braton_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Caliban Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "caliban_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Afentis Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "afentis_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Styanax Prime Systems Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "styanax_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Corufell Prime Receiver",
+     "rarity": "Rare",
+     "urlName": "corufell_prime_receiver",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "neo_c11_relic": {
+   "name": "Neo C11",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Daikyu Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "daikyu_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Citrine Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "citrine_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Lex Prime Receiver",
+     "rarity": "Common",
+     "urlName": "lex_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Vadarya Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "vadarya_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Cedo Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "cedo_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Caliban Prime Systems Blueprint",
+     "rarity": "Rare",
+     "urlName": "caliban_prime_systems_blueprint",
      "zh": null
     }
    ],
@@ -47938,6 +48562,62 @@
      "name": "Styanax Prime Systems Blueprint",
      "rarity": "Uncommon",
      "urlName": "styanax_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Yareli Prime Systems Blueprint",
+     "rarity": "Rare",
+     "urlName": "yareli_prime_systems_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "neo_y2_relic": {
+   "name": "Neo Y2",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Lex Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "lex_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Stock",
+     "rarity": "Common",
+     "urlName": "burston_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Venato Prime Handle",
+     "rarity": "Common",
+     "urlName": "venato_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "forma_blueprint",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Steflos Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "steflos_prime_blueprint",
      "zh": null
     },
     {
