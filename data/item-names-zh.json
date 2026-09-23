@@ -283,6 +283,18 @@
     "zh": "脉纹 Prime 握柄",
     "en": "Venato Prime Handle"
   },
+  "protea_prime_neuroptics_blueprint": {
+    "zh": "Protea Prime 头部神经光元 蓝图",
+    "en": "Protea Prime Neuroptics Blueprint"
+  },
+  "burston_prime_barrel": {
+    "zh": "伯斯顿 Prime 枪管",
+    "en": "Burston Prime Barrel"
+  },
+  "burston_prime_stock": {
+    "zh": "伯斯顿 Prime 枪托",
+    "en": "Burston Prime Stock"
+  },
   "hydroid_prime_neuroptics_blueprint": {
     "zh": "Hydroid Prime 头部神经光元 蓝图",
     "en": "Hydroid Prime Neuroptics Blueprint"
@@ -815,10 +827,6 @@
     "zh": "螺钉双枪 Prime 蓝图",
     "en": "Akbolto Prime Blueprint"
   },
-  "burston_prime_barrel": {
-    "zh": "伯斯顿 Prime 枪管",
-    "en": "Burston Prime Barrel"
-  },
   "kronen_prime_handle": {
     "zh": "皇家拐刃 Prime 握柄",
     "en": "Kronen Prime Handle"
@@ -826,10 +834,6 @@
   "ninkondi_prime_blueprint": {
     "zh": "降灵追猎者 Prime 蓝图",
     "en": "Ninkondi Prime Blueprint"
-  },
-  "burston_prime_stock": {
-    "zh": "伯斯顿 Prime 枪托",
-    "en": "Burston Prime Stock"
   },
   "zephyr_prime_blueprint": {
     "zh": "Zephyr Prime 蓝图",
@@ -1426,10 +1430,6 @@
   "knell_prime_receiver": {
     "zh": "丧钟 Prime 枪机",
     "en": "Knell Prime Receiver"
-  },
-  "protea_prime_neuroptics_blueprint": {
-    "zh": "Protea Prime 头部神经光元 蓝图",
-    "en": "Protea Prime Neuroptics Blueprint"
   },
   "shade_prime_carapace": {
     "zh": "阴影 Prime 外壳",
