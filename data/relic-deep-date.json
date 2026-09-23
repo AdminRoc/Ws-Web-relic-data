@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T19:20:24Z",
+ "generated": "2026-09-23T20:07:43Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -42266,6 +42266,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "neo_k10_relic": {
+   "name": "Neo K10",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Daikyu Prime Lower Limb",
+     "rarity": "Uncommon",
+     "urlName": "daikyu_prime_lower_limb",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "bronco_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Venato Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "venato_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Kompressa Prime Barrel",
+     "rarity": "Rare",
+     "urlName": "kompressa_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Gyre Systems Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "neo_l1_relic": {
    "name": "Neo L1",
    "tier": "Neo",
@@ -48336,6 +48392,62 @@
    "varzia": false,
    "varziaSet": null
   },
+  "neo_v13_relic": {
+   "name": "Neo V13",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Lavos Prime Neuroptics Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "lavos_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Styanax Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "styanax_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "2X Forma Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime String",
+     "rarity": "Common",
+     "urlName": "paris_prime_string",
+     "zh": null
+    },
+    {
+     "name": "Sarofang Prime Handle",
+     "rarity": "Common",
+     "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Vadarya Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "vadarya_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "neo_w1_relic": {
    "name": "Neo W1",
    "tier": "Neo",
@@ -49984,53 +50096,6 @@
    "varzia": false,
    "varziaSet": null
   },
-  "neo_k10_relic": {
-   "name": "Neo K10",
-   "tier": "Neo",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Daikyu Prime Lower Limb",
-     "rarity": "Uncommon",
-     "urlName": "daikyu_prime_lower_limb",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "bronco_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Venato Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "venato_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Kompressa Prime Barrel",
-     "rarity": "Rare",
-     "urlName": "kompressa_prime_barrel",
-     "zh": null
-    },
-    {
-     "name": "Gyre Systems Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
   "neo_n25_relic": {
    "name": "Neo N25",
    "tier": "Neo",
@@ -50260,53 +50325,6 @@
      "name": "Perigale Prime Blueprint",
      "rarity": "Common",
      "urlName": "perigale_prime_blueprint",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "neo_v13_relic": {
-   "name": "Neo V13",
-   "tier": "Neo",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Lavos Prime Neuroptics Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "lavos_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Styanax Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "styanax_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "2X Forma Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Paris Prime String",
-     "rarity": "Common",
-     "urlName": "paris_prime_string",
-     "zh": null
-    },
-    {
-     "name": "Sarofang Prime Handle",
-     "rarity": "Common",
-     "urlName": "sarofang_prime_handle",
-     "zh": null
-    },
-    {
-     "name": "Vadarya Prime Blueprint",
-     "rarity": "Rare",
-     "urlName": "vadarya_prime_blueprint",
      "zh": null
     }
    ],
