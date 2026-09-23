@@ -615,6 +615,26 @@
     "highestRarity": "Rare"
   },
   {
+    "name": "Citrine Prime Blueprint",
+    "urlName": "citrine_prime_blueprint",
+    "highestRarity": "Rare"
+  },
+  {
+    "name": "Citrine Prime Chassis Blueprint",
+    "urlName": "citrine_prime_chassis_blueprint",
+    "highestRarity": "Common"
+  },
+  {
+    "name": "Citrine Prime Neuroptics Blueprint",
+    "urlName": "citrine_prime_neuroptics_blueprint",
+    "highestRarity": "Rare"
+  },
+  {
+    "name": "Citrine Prime Systems Blueprint",
+    "urlName": "citrine_prime_systems_blueprint",
+    "highestRarity": "Uncommon"
+  },
+  {
     "name": "Cobra & Crane Prime Blade",
     "urlName": "cobra_and_crane_prime_blade",
     "highestRarity": "Uncommon"
@@ -653,6 +673,26 @@
     "name": "Corinth Prime Stock",
     "urlName": "corinth_prime_stock",
     "highestRarity": "Rare"
+  },
+  {
+    "name": "Corufell Prime Blueprint",
+    "urlName": "corufell_prime_blueprint",
+    "highestRarity": "Common"
+  },
+  {
+    "name": "Corufell Prime Handle",
+    "urlName": "corufell_prime_handle",
+    "highestRarity": "Uncommon"
+  },
+  {
+    "name": "Corufell Prime Receiver",
+    "urlName": "corufell_prime_receiver",
+    "highestRarity": "Rare"
+  },
+  {
+    "name": "Corufell Prime Stock",
+    "urlName": "corufell_prime_stock",
+    "highestRarity": "Common"
   },
   {
     "name": "Corvas Prime Barrel",
@@ -2222,7 +2262,7 @@
   {
     "name": "Sevagoth Prime Blueprint",
     "urlName": "sevagoth_prime_blueprint",
-    "highestRarity": "Uncommon"
+    "highestRarity": "Rare"
   },
   {
     "name": "Sevagoth Prime Chassis Blueprint",
@@ -2328,6 +2368,26 @@
     "name": "Spira Prime Pouch",
     "urlName": "spira_prime_pouch",
     "highestRarity": "Rare"
+  },
+  {
+    "name": "Steflos Prime Barrel",
+    "urlName": "steflos_prime_barrel",
+    "highestRarity": "Rare"
+  },
+  {
+    "name": "Steflos Prime Blueprint",
+    "urlName": "steflos_prime_blueprint",
+    "highestRarity": "Uncommon"
+  },
+  {
+    "name": "Steflos Prime Receiver",
+    "urlName": "steflos_prime_receiver",
+    "highestRarity": "Common"
+  },
+  {
+    "name": "Steflos Prime Stock",
+    "urlName": "steflos_prime_stock",
+    "highestRarity": "Uncommon"
   },
   {
     "name": "Stradavar Prime Barrel",
