@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T05:45:05Z",
+ "generated": "2026-09-23T17:47:25Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -9994,7 +9994,7 @@
    "name": "Axi S20",
    "tier": "Axi",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -10003,6 +10003,14 @@
      "gameDateTZ": "UTC+8",
      "ts": "2026-04-08T15:01:22Z",
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -10819,7 +10827,7 @@
    "name": "Axi T13",
    "tier": "Axi",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -10828,6 +10836,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -12895,7 +12911,7 @@
    "name": "Lith A12",
    "tier": "Lith",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -12904,6 +12920,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -17611,7 +17635,7 @@
    "name": "Lith K12",
    "tier": "Lith",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -17620,6 +17644,14 @@
      "gameDateTZ": "UTC+8",
      "ts": "2025-08-26T15:04:47Z",
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -20927,7 +20959,7 @@
    "name": "Lith Q3",
    "tier": "Lith",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -20936,6 +20968,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -23282,7 +23322,7 @@
    "name": "Lith T14",
    "tier": "Lith",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -23291,6 +23331,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -29717,7 +29765,7 @@
    "name": "Meso K8",
    "tier": "Meso",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -29726,6 +29774,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -30029,7 +30085,7 @@
    "name": "Meso L5",
    "tier": "Meso",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -30038,6 +30094,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -35705,7 +35769,7 @@
    "name": "Meso V15",
    "tier": "Meso",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -35714,6 +35778,14 @@
      "gameDateTZ": "UTC+8",
      "ts": "2026-04-08T15:01:22Z",
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -36081,7 +36153,7 @@
    "name": "Meso X1",
    "tier": "Meso",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -36090,6 +36162,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -38667,7 +38747,7 @@
    "name": "Neo C8",
    "tier": "Neo",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -38676,6 +38756,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -38723,7 +38811,7 @@
    "name": "Neo C9",
    "tier": "Neo",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -38732,6 +38820,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -46775,7 +46871,7 @@
    "name": "Neo T11",
    "tier": "Neo",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -46784,6 +46880,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -47530,7 +47634,7 @@
    "name": "Neo V12",
    "tier": "Neo",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -47539,6 +47643,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
@@ -47778,7 +47890,7 @@
    "name": "Neo Y1",
    "tier": "Neo",
    "isBaro": false,
-   "status": "active",
+   "status": "vaulted",
    "events": [
     {
      "type": "released",
@@ -47787,6 +47899,14 @@
      "gameDateTZ": "US-ET",
      "ts": null,
      "source": "wiki-index"
+    },
+    {
+     "type": "vaulted",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
+     "ts": null,
+     "source": "unresolved"
     }
    ],
    "rewards": [
