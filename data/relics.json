@@ -1751,6 +1751,79 @@
       }
     ]
   },
+  "axi_b10_relic": {
+    "name": "Axi B10",
+    "tier": "Axi",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Burston Prime Blueprint",
+        "urlName": "burston_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Ballistica Prime Blueprint",
+        "urlName": "ballistica_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "axi_b2_relic": {
     "name": "Axi B2",
     "tier": "Axi",
@@ -2544,6 +2617,79 @@
       {
         "name": "Perigale Prime Stock",
         "urlName": "perigale_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
+  "axi_c12_relic": {
+    "name": "Axi C12",
+    "tier": "Axi",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Vadarya Prime Stock",
+        "urlName": "vadarya_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Citrine Prime Neuroptics Blueprint",
+        "urlName": "citrine_prime_neuroptics_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Kestrel Prime Blueprint",
+        "urlName": "kestrel_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Corufell Prime Handle",
+        "urlName": "corufell_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Daikyu Prime Blueprint",
+        "urlName": "daikyu_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Alternox Prime Receiver",
+        "urlName": "alternox_prime_receiver",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -7956,6 +8102,79 @@
       }
     ]
   },
+  "axi_n14_relic": {
+    "name": "Axi N14",
+    "tier": "Axi",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Hydroid Prime Chassis Blueprint",
+        "urlName": "hydroid_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Bronco Prime Blueprint",
+        "urlName": "bronco_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Ballistica Prime Upper Limb",
+        "urlName": "ballistica_prime_upper_limb",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nami Skyla Prime Blade",
+        "urlName": "nami_skyla_prime_blade",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
   "axi_n2_relic": {
     "name": "Axi N2",
     "tier": "Axi",
@@ -10945,6 +11164,79 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      }
+    ]
+  },
+  "axi_s21_relic": {
+    "name": "Axi S21",
+    "tier": "Axi",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Cedo Prime Stock",
+        "urlName": "cedo_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "2X Forma Blueprint",
+        "urlName": "",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Dual Zoren Prime Handle",
+        "urlName": "dual_zoren_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Caliban Prime Chassis Blueprint",
+        "urlName": "caliban_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Steflos Prime Barrel",
+        "urlName": "steflos_prime_barrel",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Gyre Prime Blueprint",
+        "urlName": "gyre_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       }
     ]
@@ -14380,6 +14672,79 @@
       }
     ]
   },
+  "lith_a13_relic": {
+    "name": "Lith A13",
+    "tier": "Lith",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Paris Prime Lower Limb",
+        "urlName": "paris_prime_lower_limb",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Alternox Prime Blueprint",
+        "urlName": "alternox_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Fang Prime Blade",
+        "urlName": "fang_prime_blade",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Gyre Prime Chassis Blueprint",
+        "urlName": "gyre_prime_chassis_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Dual Zoren Prime Blueprint",
+        "urlName": "dual_zoren_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Steflos Prime Receiver",
+        "urlName": "steflos_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "lith_a2_relic": {
     "name": "Lith A2",
     "tier": "Lith",
@@ -16268,6 +16633,79 @@
       {
         "name": "Kestrel Prime Blade",
         "urlName": "kestrel_prime_blade",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
+  "lith_c15_relic": {
+    "name": "Lith C15",
+    "tier": "Lith",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Burston Prime Receiver",
+        "urlName": "burston_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Daikyu Prime String",
+        "urlName": "daikyu_prime_string",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "2X Forma Blueprint",
+        "urlName": "",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Cedo Prime Blueprint",
+        "urlName": "cedo_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Yareli Prime Blueprint",
+        "urlName": "yareli_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Corufell Prime Stock",
+        "urlName": "corufell_prime_stock",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -20950,6 +21388,79 @@
       }
     ]
   },
+  "lith_l8_relic": {
+    "name": "Lith L8",
+    "tier": "Lith",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Akbronco Prime Link",
+        "urlName": "akbronco_prime_link",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Orthos Prime Handle",
+        "urlName": "orthos_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Kestrel Prime Blade",
+        "urlName": "kestrel_prime_blade",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Lavos Prime Systems Blueprint",
+        "urlName": "lavos_prime_systems_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Alternox Prime Barrel",
+        "urlName": "alternox_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Perigale Prime Blueprint",
+        "urlName": "perigale_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "lith_m1_relic": {
     "name": "Lith M1",
     "tier": "Lith",
@@ -25330,6 +25841,79 @@
       }
     ]
   },
+  "lith_s19_relic": {
+    "name": "Lith S19",
+    "tier": "Lith",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Orthos Prime Blueprint",
+        "urlName": "orthos_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Braton Prime Barrel",
+        "urlName": "braton_prime_barrel",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Bronco Prime Receiver",
+        "urlName": "bronco_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Sarofang Prime Blade",
+        "urlName": "sarofang_prime_blade",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Citrine Prime Systems Blueprint",
+        "urlName": "citrine_prime_systems_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
   "lith_s2_relic": {
     "name": "Lith S2",
     "tier": "Lith",
@@ -25399,6 +25983,79 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      }
+    ]
+  },
+  "lith_s20_relic": {
+    "name": "Lith S20",
+    "tier": "Lith",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Burston Prime Receiver",
+        "urlName": "burston_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Bronco Prime Barrel",
+        "urlName": "bronco_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Hydroid Prime Blueprint",
+        "urlName": "hydroid_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Blueprint",
+        "urlName": "sevagoth_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Ballistica Prime Receiver",
+        "urlName": "ballistica_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -30221,6 +30878,79 @@
       }
     ]
   },
+  "meso_c11_relic": {
+    "name": "Meso C11",
+    "tier": "Meso",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Paris Prime Blueprint",
+        "urlName": "paris_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "2X Forma Blueprint",
+        "urlName": "",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Lavos Prime Chassis Blueprint",
+        "urlName": "lavos_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Kompressa Prime Blueprint",
+        "urlName": "kompressa_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Citrine Prime Blueprint",
+        "urlName": "citrine_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Daikyu Prime Upper Limb",
+        "urlName": "daikyu_prime_upper_limb",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
   "meso_c2_relic": {
     "name": "Meso C2",
     "tier": "Meso",
@@ -31389,6 +32119,79 @@
       }
     ]
   },
+  "meso_d9_relic": {
+    "name": "Meso D9",
+    "tier": "Meso",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Burston Prime Blueprint",
+        "urlName": "burston_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Paris Prime Upper Limb",
+        "urlName": "paris_prime_upper_limb",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Dual Zoren Prime Blade",
+        "urlName": "dual_zoren_prime_blade",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Cedo Prime Receiver",
+        "urlName": "cedo_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Afentis Prime Handle",
+        "urlName": "afentis_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Steflos Prime Stock",
+        "urlName": "steflos_prime_stock",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
   "meso_e1_relic": {
     "name": "Meso E1",
     "tier": "Meso",
@@ -31896,6 +32699,79 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      }
+    ]
+  },
+  "meso_e8_relic": {
+    "name": "Meso E8",
+    "tier": "Meso",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Bronco Prime Receiver",
+        "urlName": "bronco_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Hydroid Prime Neuroptics Blueprint",
+        "urlName": "hydroid_prime_neuroptics_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Neuroptics Blueprint",
+        "urlName": "sevagoth_prime_neuroptics_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Ballistica Prime Lower Limb",
+        "urlName": "ballistica_prime_lower_limb",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Epitaph Prime Receiver",
+        "urlName": "epitaph_prime_receiver",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       }
     ]
@@ -34378,6 +35254,79 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      }
+    ]
+  },
+  "meso_k9_relic": {
+    "name": "Meso K9",
+    "tier": "Meso",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Fang Prime Blueprint",
+        "urlName": "fang_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Yareli Prime Chassis Blueprint",
+        "urlName": "yareli_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Perigale Prime Receiver",
+        "urlName": "perigale_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Caliban Prime Blueprint",
+        "urlName": "caliban_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Kestrel Prime Grip",
+        "urlName": "kestrel_prime_grip",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Athodai Prime Blueprint",
+        "urlName": "athodai_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -40733,6 +41682,79 @@
       }
     ]
   },
+  "meso_v17_relic": {
+    "name": "Meso V17",
+    "tier": "Meso",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Paris Prime Grip",
+        "urlName": "paris_prime_grip",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Akbronco Prime Blueprint",
+        "urlName": "akbronco_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Lavos Prime Blueprint",
+        "urlName": "lavos_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Voruna Prime Systems Blueprint",
+        "urlName": "voruna_prime_systems_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Corufell Prime Blueprint",
+        "urlName": "corufell_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "meso_v2_relic": {
     "name": "Meso V2",
     "tier": "Meso",
@@ -44237,6 +45259,152 @@
       }
     ]
   },
+  "neo_c10_relic": {
+    "name": "Neo C10",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Braton Prime Stock",
+        "urlName": "braton_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Caliban Prime Chassis Blueprint",
+        "urlName": "caliban_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Corufell Prime Receiver",
+        "urlName": "corufell_prime_receiver",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Styanax Prime Systems Blueprint",
+        "urlName": "styanax_prime_systems_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Afentis Prime Barrel",
+        "urlName": "afentis_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
+  "neo_c11_relic": {
+    "name": "Neo C11",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Lex Prime Receiver",
+        "urlName": "lex_prime_receiver",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Cedo Prime Barrel",
+        "urlName": "cedo_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Caliban Prime Systems Blueprint",
+        "urlName": "caliban_prime_systems_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Daikyu Prime Blueprint",
+        "urlName": "daikyu_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Vadarya Prime Receiver",
+        "urlName": "vadarya_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Citrine Prime Chassis Blueprint",
+        "urlName": "citrine_prime_chassis_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "neo_c2_relic": {
     "name": "Neo C2",
     "tier": "Neo",
@@ -47084,6 +48252,79 @@
       }
     ]
   },
+  "neo_h5_relic": {
+    "name": "Neo H5",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Burston Prime Stock",
+        "urlName": "burston_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Hydroid Prime Systems Blueprint",
+        "urlName": "hydroid_prime_systems_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Systems",
+        "urlName": "nautilus_prime_systems",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Chassis Blueprint",
+        "urlName": "sevagoth_prime_chassis_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      }
+    ]
+  },
   "neo_i1_relic": {
     "name": "Neo I1",
     "tier": "Neo",
@@ -47372,6 +48613,79 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      }
+    ]
+  },
+  "neo_k10_relic": {
+    "name": "Neo K10",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Daikyu Prime Lower Limb",
+        "urlName": "daikyu_prime_lower_limb",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Bronco Prime Blueprint",
+        "urlName": "bronco_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Venato Prime Blueprint",
+        "urlName": "venato_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Kompressa Prime Barrel",
+        "urlName": "kompressa_prime_barrel",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Gyre Systems Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -49927,6 +51241,79 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      }
+    ]
+  },
+  "neo_n25_relic": {
+    "name": "Neo N25",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Forma Blueprint",
+        "urlName": "",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Blueprint",
+        "urlName": "epitaph_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Burston Prime Barrel",
+        "urlName": "burston_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Ballistica Prime String",
+        "urlName": "ballistica_prime_string",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Nami Skyla Prime Blueprint",
+        "urlName": "nami_skyla_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Cerebrum",
+        "urlName": "nautilus_prime_cerebrum",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       }
     ]
@@ -54457,6 +55844,79 @@
       }
     ]
   },
+  "neo_v13_relic": {
+    "name": "Neo V13",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Lavos Prime Neuroptics Blueprint",
+        "urlName": "lavos_prime_neuroptics_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Styanax Prime Blueprint",
+        "urlName": "styanax_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "2X Forma Blueprint",
+        "urlName": "",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Paris Prime String",
+        "urlName": "paris_prime_string",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Sarofang Prime Handle",
+        "urlName": "sarofang_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Vadarya Prime Blueprint",
+        "urlName": "vadarya_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      }
+    ]
+  },
   "neo_v2_relic": {
     "name": "Neo V2",
     "tier": "Neo",
@@ -55323,6 +56783,79 @@
       {
         "name": "Styanax Prime Systems Blueprint",
         "urlName": "styanax_prime_systems_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      }
+    ]
+  },
+  "neo_y2_relic": {
+    "name": "Neo Y2",
+    "tier": "Neo",
+    "vaulted": true,
+    "rewards": [
+      {
+        "name": "Lex Prime Blueprint",
+        "urlName": "lex_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "2X Forma Blueprint",
+        "urlName": "",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Venato Prime Handle",
+        "urlName": "venato_prime_handle",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Burston Prime Stock",
+        "urlName": "burston_prime_stock",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Yareli Prime Systems Blueprint",
+        "urlName": "yareli_prime_systems_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
+        }
+      },
+      {
+        "name": "Steflos Prime Blueprint",
+        "urlName": "steflos_prime_blueprint",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -56699,1539 +58232,6 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "axi_b10_relic": {
-    "name": "Axi B10",
-    "tier": "Axi",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Burston Prime Blueprint",
-        "urlName": "burston_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Ballistica Prime Blueprint",
-        "urlName": "ballistica_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "axi_n14_relic": {
-    "name": "Axi N14",
-    "tier": "Axi",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Hydroid Prime Chassis Blueprint",
-        "urlName": "hydroid_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Bronco Prime Blueprint",
-        "urlName": "bronco_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Ballistica Prime Upper Limb",
-        "urlName": "ballistica_prime_upper_limb",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Blade",
-        "urlName": "nami_skyla_prime_blade",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "lith_s19_relic": {
-    "name": "Lith S19",
-    "tier": "Lith",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Orthos Prime Blueprint",
-        "urlName": "orthos_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Braton Prime Barrel",
-        "urlName": "braton_prime_barrel",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Bronco Prime Receiver",
-        "urlName": "bronco_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Sarofang Prime Blade",
-        "urlName": "sarofang_prime_blade",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Citrine Prime Systems Blueprint",
-        "urlName": "citrine_prime_systems_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "lith_s20_relic": {
-    "name": "Lith S20",
-    "tier": "Lith",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Burston Prime Receiver",
-        "urlName": "burston_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Bronco Prime Barrel",
-        "urlName": "bronco_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Hydroid Prime Blueprint",
-        "urlName": "hydroid_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Blueprint",
-        "urlName": "sevagoth_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Ballistica Prime Receiver",
-        "urlName": "ballistica_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "meso_e8_relic": {
-    "name": "Meso E8",
-    "tier": "Meso",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Bronco Prime Receiver",
-        "urlName": "bronco_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Hydroid Prime Neuroptics Blueprint",
-        "urlName": "hydroid_prime_neuroptics_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Neuroptics Blueprint",
-        "urlName": "sevagoth_prime_neuroptics_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Ballistica Prime Lower Limb",
-        "urlName": "ballistica_prime_lower_limb",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Epitaph Prime Receiver",
-        "urlName": "epitaph_prime_receiver",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      }
-    ]
-  },
-  "meso_v17_relic": {
-    "name": "Meso V17",
-    "tier": "Meso",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Paris Prime Grip",
-        "urlName": "paris_prime_grip",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Akbronco Prime Blueprint",
-        "urlName": "akbronco_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Lavos Prime Blueprint",
-        "urlName": "lavos_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Voruna Prime Systems Blueprint",
-        "urlName": "voruna_prime_systems_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Corufell Prime Blueprint",
-        "urlName": "corufell_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "neo_c10_relic": {
-    "name": "Neo C10",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Braton Prime Stock",
-        "urlName": "braton_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Caliban Prime Chassis Blueprint",
-        "urlName": "caliban_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Corufell Prime Receiver",
-        "urlName": "corufell_prime_receiver",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Styanax Prime Systems Blueprint",
-        "urlName": "styanax_prime_systems_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Afentis Prime Barrel",
-        "urlName": "afentis_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "neo_h5_relic": {
-    "name": "Neo H5",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Burston Prime Stock",
-        "urlName": "burston_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Hydroid Prime Systems Blueprint",
-        "urlName": "hydroid_prime_systems_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Systems",
-        "urlName": "nautilus_prime_systems",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Chassis Blueprint",
-        "urlName": "sevagoth_prime_chassis_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "neo_k10_relic": {
-    "name": "Neo K10",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Daikyu Prime Lower Limb",
-        "urlName": "daikyu_prime_lower_limb",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Bronco Prime Blueprint",
-        "urlName": "bronco_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Venato Prime Blueprint",
-        "urlName": "venato_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Kompressa Prime Barrel",
-        "urlName": "kompressa_prime_barrel",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Gyre Systems Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "neo_n25_relic": {
-    "name": "Neo N25",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Forma Blueprint",
-        "urlName": "",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Epitaph Prime Blueprint",
-        "urlName": "epitaph_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Burston Prime Barrel",
-        "urlName": "burston_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Ballistica Prime String",
-        "urlName": "ballistica_prime_string",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Blueprint",
-        "urlName": "nami_skyla_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Cerebrum",
-        "urlName": "nautilus_prime_cerebrum",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      }
-    ]
-  },
-  "meso_k9_relic": {
-    "name": "Meso K9",
-    "tier": "Meso",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Fang Prime Blueprint",
-        "urlName": "fang_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Yareli Prime Chassis Blueprint",
-        "urlName": "yareli_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Perigale Prime Receiver",
-        "urlName": "perigale_prime_receiver",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Caliban Prime Blueprint",
-        "urlName": "caliban_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Kestrel Prime Grip",
-        "urlName": "kestrel_prime_grip",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Athodai Prime Blueprint",
-        "urlName": "athodai_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "lith_c15_relic": {
-    "name": "Lith C15",
-    "tier": "Lith",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Burston Prime Receiver",
-        "urlName": "burston_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Daikyu Prime String",
-        "urlName": "daikyu_prime_string",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "2X Forma Blueprint",
-        "urlName": "",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Cedo Prime Blueprint",
-        "urlName": "cedo_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Yareli Prime Blueprint",
-        "urlName": "yareli_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Corufell Prime Stock",
-        "urlName": "corufell_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "meso_c11_relic": {
-    "name": "Meso C11",
-    "tier": "Meso",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Paris Prime Blueprint",
-        "urlName": "paris_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "2X Forma Blueprint",
-        "urlName": "",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Lavos Prime Chassis Blueprint",
-        "urlName": "lavos_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Kompressa Prime Blueprint",
-        "urlName": "kompressa_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Citrine Prime Blueprint",
-        "urlName": "citrine_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Daikyu Prime Upper Limb",
-        "urlName": "daikyu_prime_upper_limb",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "lith_l8_relic": {
-    "name": "Lith L8",
-    "tier": "Lith",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Akbronco Prime Link",
-        "urlName": "akbronco_prime_link",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Orthos Prime Handle",
-        "urlName": "orthos_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Kestrel Prime Blade",
-        "urlName": "kestrel_prime_blade",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Lavos Prime Systems Blueprint",
-        "urlName": "lavos_prime_systems_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Alternox Prime Barrel",
-        "urlName": "alternox_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Perigale Prime Blueprint",
-        "urlName": "perigale_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "lith_a13_relic": {
-    "name": "Lith A13",
-    "tier": "Lith",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Paris Prime Lower Limb",
-        "urlName": "paris_prime_lower_limb",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Alternox Prime Blueprint",
-        "urlName": "alternox_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Fang Prime Blade",
-        "urlName": "fang_prime_blade",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Gyre Prime Chassis Blueprint",
-        "urlName": "gyre_prime_chassis_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Dual Zoren Prime Blueprint",
-        "urlName": "dual_zoren_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Steflos Prime Receiver",
-        "urlName": "steflos_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "neo_y2_relic": {
-    "name": "Neo Y2",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Lex Prime Blueprint",
-        "urlName": "lex_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "2X Forma Blueprint",
-        "urlName": "",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Venato Prime Handle",
-        "urlName": "venato_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Burston Prime Stock",
-        "urlName": "burston_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Yareli Prime Systems Blueprint",
-        "urlName": "yareli_prime_systems_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Steflos Prime Blueprint",
-        "urlName": "steflos_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "neo_c11_relic": {
-    "name": "Neo C11",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Lex Prime Receiver",
-        "urlName": "lex_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Cedo Prime Barrel",
-        "urlName": "cedo_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Caliban Prime Systems Blueprint",
-        "urlName": "caliban_prime_systems_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Daikyu Prime Blueprint",
-        "urlName": "daikyu_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Vadarya Prime Receiver",
-        "urlName": "vadarya_prime_receiver",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Citrine Prime Chassis Blueprint",
-        "urlName": "citrine_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "neo_v13_relic": {
-    "name": "Neo V13",
-    "tier": "Neo",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Lavos Prime Neuroptics Blueprint",
-        "urlName": "lavos_prime_neuroptics_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Styanax Prime Blueprint",
-        "urlName": "styanax_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "2X Forma Blueprint",
-        "urlName": "",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Paris Prime String",
-        "urlName": "paris_prime_string",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Sarofang Prime Handle",
-        "urlName": "sarofang_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Vadarya Prime Blueprint",
-        "urlName": "vadarya_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      }
-    ]
-  },
-  "axi_s21_relic": {
-    "name": "Axi S21",
-    "tier": "Axi",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Cedo Prime Stock",
-        "urlName": "cedo_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "2X Forma Blueprint",
-        "urlName": "",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Dual Zoren Prime Handle",
-        "urlName": "dual_zoren_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Caliban Prime Chassis Blueprint",
-        "urlName": "caliban_prime_chassis_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Steflos Prime Barrel",
-        "urlName": "steflos_prime_barrel",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Gyre Prime Blueprint",
-        "urlName": "gyre_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      }
-    ]
-  },
-  "axi_c12_relic": {
-    "name": "Axi C12",
-    "tier": "Axi",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Vadarya Prime Stock",
-        "urlName": "vadarya_prime_stock",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Citrine Prime Neuroptics Blueprint",
-        "urlName": "citrine_prime_neuroptics_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Kestrel Prime Blueprint",
-        "urlName": "kestrel_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Corufell Prime Handle",
-        "urlName": "corufell_prime_handle",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Daikyu Prime Blueprint",
-        "urlName": "daikyu_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Alternox Prime Receiver",
-        "urlName": "alternox_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      }
-    ]
-  },
-  "meso_d9_relic": {
-    "name": "Meso D9",
-    "tier": "Meso",
-    "vaulted": false,
-    "rewards": [
-      {
-        "name": "Burston Prime Blueprint",
-        "urlName": "burston_prime_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Paris Prime Upper Limb",
-        "urlName": "paris_prime_upper_limb",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Dual Zoren Prime Blade",
-        "urlName": "dual_zoren_prime_blade",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
-        "name": "Cedo Prime Receiver",
-        "urlName": "cedo_prime_receiver",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Afentis Prime Handle",
-        "urlName": "afentis_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Steflos Prime Stock",
-        "urlName": "steflos_prime_stock",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
         }
       }
     ]

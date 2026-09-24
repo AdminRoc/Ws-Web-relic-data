@@ -411,6 +411,22 @@
     "zh": "狼牙 Prime 刀刃",
     "en": "Fang Prime Blade"
   },
+  "ballistica_prime_blueprint": {
+    "zh": "布里斯提卡 Prime 蓝图",
+    "en": "Ballistica Prime Blueprint"
+  },
+  "epitaph_prime_barrel": {
+    "zh": "葬铭 Prime 枪管",
+    "en": "Epitaph Prime Barrel"
+  },
+  "sevagoth_prime_systems_blueprint": {
+    "zh": "Sevagoth Prime 系统 蓝图",
+    "en": "Sevagoth Prime Systems Blueprint"
+  },
+  "nautilus_prime_blueprint": {
+    "zh": "鹦鹉螺 Prime 蓝图",
+    "en": "Nautilus Prime Blueprint"
+  },
   "sybaris_prime_blueprint": {
     "zh": "席芭莉丝 Prime 蓝图",
     "en": "Sybaris Prime Blueprint"
@@ -522,6 +538,26 @@
   "perigale_prime_stock": {
     "zh": "月面狂风 Prime 枪托",
     "en": "Perigale Prime Stock"
+  },
+  "citrine_prime_neuroptics_blueprint": {
+    "zh": "Citrine Prime 头部神经光元 蓝图",
+    "en": "Citrine Prime Neuroptics Blueprint"
+  },
+  "kestrel_prime_blueprint": {
+    "zh": "红隼 Prime 蓝图",
+    "en": "Kestrel Prime Blueprint"
+  },
+  "corufell_prime_handle": {
+    "zh": "闪劫 Prime 握柄",
+    "en": "Corufell Prime Handle"
+  },
+  "daikyu_prime_blueprint": {
+    "zh": "大久和弓 Prime 蓝图",
+    "en": "Daikyu Prime Blueprint"
+  },
+  "alternox_prime_receiver": {
+    "zh": "电幻步枪 Prime 枪机",
+    "en": "Alternox Prime Receiver"
   },
   "silva_and_aegis_prime_blade": {
     "zh": "席瓦 & 神盾 Prime 刀刃",
@@ -1203,6 +1239,14 @@
     "zh": "Protea Prime 蓝图",
     "en": "Protea Prime Blueprint"
   },
+  "nami_skyla_prime_blade": {
+    "zh": "海波斯库拉对剑 Prime 刀刃",
+    "en": "Nami Skyla Prime Blade"
+  },
+  "nautilus_prime_carapace": {
+    "zh": "鹦鹉螺 Prime 外壳",
+    "en": "Nautilus Prime Carapace"
+  },
   "carrier_prime_carapace": {
     "zh": "搬运者 Prime 外壳",
     "en": "Carrier Prime Carapace"
@@ -1234,10 +1278,6 @@
   "galatine_prime_blade": {
     "zh": "迦伦提恩 Prime 刀刃",
     "en": "Galatine Prime Blade"
-  },
-  "nami_skyla_prime_blade": {
-    "zh": "海波斯库拉对剑 Prime 刀刃",
-    "en": "Nami Skyla Prime Blade"
   },
   "nekros_prime_neuroptics_blueprint": {
     "zh": "Nekros Prime 头部神经光元 蓝图",
@@ -1334,10 +1374,6 @@
   "baruuk_prime_systems_blueprint": {
     "zh": "Baruuk Prime 系统 蓝图",
     "en": "Baruuk Prime Systems Blueprint"
-  },
-  "epitaph_prime_barrel": {
-    "zh": "葬铭 Prime 枪管",
-    "en": "Epitaph Prime Barrel"
   },
   "protea_prime_systems_blueprint": {
     "zh": "Protea Prime 系统 蓝图",
@@ -1474,6 +1510,14 @@
   "sarofang_prime_blade": {
     "zh": "沙罗之牙 Prime 刀刃",
     "en": "Sarofang Prime Blade"
+  },
+  "steflos_prime_barrel": {
+    "zh": "石晶之花 Prime 枪管",
+    "en": "Steflos Prime Barrel"
+  },
+  "gyre_prime_blueprint": {
+    "zh": "Gyre Prime 蓝图",
+    "en": "Gyre Prime Blueprint"
   },
   "nyx_prime_systems_blueprint": {
     "zh": "Nyx Prime 系统 蓝图",
@@ -1619,17 +1663,9 @@
     "zh": "Xaku Prime 机体 蓝图",
     "en": "Xaku Prime Chassis Blueprint"
   },
-  "nautilus_prime_carapace": {
-    "zh": "鹦鹉螺 Prime 外壳",
-    "en": "Nautilus Prime Carapace"
-  },
   "venato_prime_blade": {
     "zh": "脉纹 Prime 刀刃",
     "en": "Venato Prime Blade"
-  },
-  "alternox_prime_receiver": {
-    "zh": "电幻步枪 Prime 枪机",
-    "en": "Alternox Prime Receiver"
   },
   "voruna_prime_blueprint": {
     "zh": "Voruna Prime 蓝图",
@@ -1735,6 +1771,14 @@
     "zh": "Grendel Prime 机体 蓝图",
     "en": "Grendel Prime Chassis Blueprint"
   },
+  "dual_zoren_prime_blueprint": {
+    "zh": "佐伦双斧 Prime 蓝图",
+    "en": "Dual Zoren Prime Blueprint"
+  },
+  "steflos_prime_receiver": {
+    "zh": "石晶之花 Prime 枪机",
+    "en": "Steflos Prime Receiver"
+  },
   "akjagara_prime_barrel": {
     "zh": "觉醒双枪 Prime 枪管",
     "en": "Akjagara Prime Barrel"
@@ -1746,10 +1790,6 @@
   "astilla_prime_barrel": {
     "zh": "碎裂者 Prime 枪管",
     "en": "Astilla Prime Barrel"
-  },
-  "sevagoth_prime_systems_blueprint": {
-    "zh": "Sevagoth Prime 系统 蓝图",
-    "en": "Sevagoth Prime Systems Blueprint"
   },
   "boar_prime_stock": {
     "zh": "野猪 Prime 枪托",
@@ -1770,10 +1810,6 @@
   "phantasma_prime_receiver": {
     "zh": "幻离子 Prime 枪机",
     "en": "Phantasma Prime Receiver"
-  },
-  "ballistica_prime_blueprint": {
-    "zh": "布里斯提卡 Prime 蓝图",
-    "en": "Ballistica Prime Blueprint"
   },
   "tigris_prime_stock": {
     "zh": "猛虎 Prime 枪托",
@@ -1811,10 +1847,6 @@
     "zh": "Nova Prime 头部神经光元 蓝图",
     "en": "Nova Prime Neuroptics Blueprint"
   },
-  "dual_zoren_prime_blueprint": {
-    "zh": "佐伦双斧 Prime 蓝图",
-    "en": "Dual Zoren Prime Blueprint"
-  },
   "caliban_prime_neuroptics_blueprint": {
     "zh": "Caliban Prime 头部神经光元 蓝图",
     "en": "Caliban Prime Neuroptics Blueprint"
@@ -1834,6 +1866,14 @@
   "kestrel_prime_blade": {
     "zh": "红隼 Prime 刀刃",
     "en": "Kestrel Prime Blade"
+  },
+  "yareli_prime_blueprint": {
+    "zh": "Yareli Prime 蓝图",
+    "en": "Yareli Prime Blueprint"
+  },
+  "corufell_prime_stock": {
+    "zh": "闪劫 Prime 枪托",
+    "en": "Corufell Prime Stock"
   },
   "nami_skyla_prime_handle": {
     "zh": "海波斯库拉对剑 Prime 握柄",
@@ -1906,10 +1946,6 @@
   "boltor_prime_barrel": {
     "zh": "螺钉步枪 Prime 枪管",
     "en": "Boltor Prime Barrel"
-  },
-  "daikyu_prime_blueprint": {
-    "zh": "大久和弓 Prime 蓝图",
-    "en": "Daikyu Prime Blueprint"
   },
   "epitaph_prime_receiver": {
     "zh": "葬铭 Prime 枪机",
@@ -2011,6 +2047,14 @@
     "zh": "Lavos Prime 系统 蓝图",
     "en": "Lavos Prime Systems Blueprint"
   },
+  "alternox_prime_barrel": {
+    "zh": "电幻步枪 Prime 枪管",
+    "en": "Alternox Prime Barrel"
+  },
+  "perigale_prime_blueprint": {
+    "zh": "月面狂风 Prime 蓝图",
+    "en": "Perigale Prime Blueprint"
+  },
   "mag_prime_blueprint": {
     "zh": "Mag Prime 蓝图",
     "en": "Mag Prime Blueprint"
@@ -2055,14 +2099,6 @@
     "zh": "灭杀者 Prime 枪托",
     "en": "Trumna Prime Stock"
   },
-  "nautilus_prime_blueprint": {
-    "zh": "鹦鹉螺 Prime 蓝图",
-    "en": "Nautilus Prime Blueprint"
-  },
-  "alternox_prime_barrel": {
-    "zh": "电幻步枪 Prime 枪管",
-    "en": "Alternox Prime Barrel"
-  },
   "quassus_prime_blueprint": {
     "zh": "威震武扇 Prime 蓝图",
     "en": "Quassus Prime Blueprint"
@@ -2091,10 +2127,6 @@
     "zh": "威震武扇 Prime 刀刃",
     "en": "Quassus Prime Blade"
   },
-  "gyre_prime_blueprint": {
-    "zh": "Gyre Prime 蓝图",
-    "en": "Gyre Prime Blueprint"
-  },
   "afentis_prime_handle": {
     "zh": "圣英 Prime 握柄",
     "en": "Afentis Prime Handle"
@@ -2118,6 +2150,10 @@
   "styanax_prime_neuroptics_blueprint": {
     "zh": "Styanax Prime 头部神经光元 蓝图",
     "en": "Styanax Prime Neuroptics Blueprint"
+  },
+  "citrine_prime_systems_blueprint": {
+    "zh": "Citrine Prime 系统 蓝图",
+    "en": "Citrine Prime Systems Blueprint"
   },
   "silva_and_aegis_prime_guard": {
     "zh": "席瓦 & 神盾 Prime 护手",
@@ -2179,10 +2215,6 @@
     "zh": "阿利乌双枪 Prime 蓝图",
     "en": "Akarius Prime Blueprint"
   },
-  "perigale_prime_blueprint": {
-    "zh": "月面狂风 Prime 蓝图",
-    "en": "Perigale Prime Blueprint"
-  },
   "afentis_prime_blade": {
     "zh": "圣英 Prime 刀刃",
     "en": "Afentis Prime Blade"
@@ -2215,13 +2247,21 @@
     "zh": "分裂斩斧 Prime 握柄",
     "en": "Scindo Prime Handle"
   },
+  "citrine_prime_blueprint": {
+    "zh": "Citrine Prime 蓝图",
+    "en": "Citrine Prime Blueprint"
+  },
+  "daikyu_prime_upper_limb": {
+    "zh": "大久和弓 Prime 上弓臂",
+    "en": "Daikyu Prime Upper Limb"
+  },
   "corvas_prime_barrel": {
     "zh": "黑鸦 Prime 枪管",
     "en": "Corvas Prime Barrel"
   },
-  "yareli_prime_blueprint": {
-    "zh": "Yareli Prime 蓝图",
-    "en": "Yareli Prime Blueprint"
+  "steflos_prime_stock": {
+    "zh": "石晶之花 Prime 枪托",
+    "en": "Steflos Prime Stock"
   },
   "wyrm_prime_systems": {
     "zh": "蛟龙 Prime 系统",
@@ -2230,10 +2270,6 @@
   "equinox_prime_systems_blueprint": {
     "zh": "Equinox Prime 系统 蓝图",
     "en": "Equinox Prime Systems Blueprint"
-  },
-  "daikyu_prime_upper_limb": {
-    "zh": "大久和弓 Prime 上弓臂",
-    "en": "Daikyu Prime Upper Limb"
   },
   "sarofang_prime_blueprint": {
     "zh": "沙罗之牙 Prime 蓝图",
@@ -2279,10 +2315,6 @@
     "zh": "Loki Prime 头部神经光元 蓝图",
     "en": "Loki Prime Neuroptics Blueprint"
   },
-  "kestrel_prime_blueprint": {
-    "zh": "红隼 Prime 蓝图",
-    "en": "Kestrel Prime Blueprint"
-  },
   "panthera_prime_receiver": {
     "zh": "猎豹 Prime 枪机",
     "en": "Panthera Prime Receiver"
@@ -2303,6 +2335,10 @@
     "zh": "瓦德雅 Prime 蓝图",
     "en": "Vadarya Prime Blueprint"
   },
+  "corufell_prime_blueprint": {
+    "zh": "闪劫 Prime 蓝图",
+    "en": "Corufell Prime Blueprint"
+  },
   "styanax_prime_chassis_blueprint": {
     "zh": "Styanax Prime 机体 蓝图",
     "en": "Styanax Prime Chassis Blueprint"
@@ -2311,17 +2347,29 @@
     "zh": "阿索代 Prime 枪管",
     "en": "Athodai Prime Barrel"
   },
+  "corufell_prime_receiver": {
+    "zh": "闪劫 Prime 枪机",
+    "en": "Corufell Prime Receiver"
+  },
+  "styanax_prime_systems_blueprint": {
+    "zh": "Styanax Prime 系统 蓝图",
+    "en": "Styanax Prime Systems Blueprint"
+  },
   "afentis_prime_barrel": {
     "zh": "圣英 Prime 枪管",
     "en": "Afentis Prime Barrel"
+  },
+  "citrine_prime_chassis_blueprint": {
+    "zh": "Citrine Prime 机体 蓝图",
+    "en": "Citrine Prime Chassis Blueprint"
   },
   "bo_prime_handle": {
     "zh": "玻之武杖 Prime 握柄",
     "en": "Bo Prime Handle"
   },
-  "styanax_prime_systems_blueprint": {
-    "zh": "Styanax Prime 系统 蓝图",
-    "en": "Styanax Prime Systems Blueprint"
+  "steflos_prime_blueprint": {
+    "zh": "石晶之花 Prime 蓝图",
+    "en": "Steflos Prime Blueprint"
   },
   "zhuge_prime_barrel": {
     "zh": "诸葛连弩 Prime 枪管",
@@ -2362,53 +2410,5 @@
   "ayatan_amber_star": {
     "zh": "阿耶檀识琥珀星",
     "en": "Ayatan Amber Star"
-  },
-  "citrine_prime_systems_blueprint": {
-    "zh": "Citrine Prime 系统 蓝图",
-    "en": "Citrine Prime Systems Blueprint"
-  },
-  "corufell_prime_blueprint": {
-    "zh": "闪劫 Prime 蓝图",
-    "en": "Corufell Prime Blueprint"
-  },
-  "corufell_prime_receiver": {
-    "zh": "闪劫 Prime 枪机",
-    "en": "Corufell Prime Receiver"
-  },
-  "corufell_prime_stock": {
-    "zh": "闪劫 Prime 枪托",
-    "en": "Corufell Prime Stock"
-  },
-  "citrine_prime_blueprint": {
-    "zh": "Citrine Prime 蓝图",
-    "en": "Citrine Prime Blueprint"
-  },
-  "steflos_prime_receiver": {
-    "zh": "石晶之花 Prime 枪机",
-    "en": "Steflos Prime Receiver"
-  },
-  "steflos_prime_blueprint": {
-    "zh": "石晶之花 Prime 蓝图",
-    "en": "Steflos Prime Blueprint"
-  },
-  "citrine_prime_chassis_blueprint": {
-    "zh": "Citrine Prime 机体 蓝图",
-    "en": "Citrine Prime Chassis Blueprint"
-  },
-  "steflos_prime_barrel": {
-    "zh": "石晶之花 Prime 枪管",
-    "en": "Steflos Prime Barrel"
-  },
-  "citrine_prime_neuroptics_blueprint": {
-    "zh": "Citrine Prime 头部神经光元 蓝图",
-    "en": "Citrine Prime Neuroptics Blueprint"
-  },
-  "corufell_prime_handle": {
-    "zh": "闪劫 Prime 握柄",
-    "en": "Corufell Prime Handle"
-  },
-  "steflos_prime_stock": {
-    "zh": "石晶之花 Prime 枪托",
-    "en": "Steflos Prime Stock"
   }
 }
