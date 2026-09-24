@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T03:09:09Z",
+ "generated": "2026-09-24T04:10:20Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -49823,6 +49823,100 @@
    "varzia": false,
    "varziaSet": null
   },
+  "axi_b10_relic": {
+   "name": "Axi B10",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "burston_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "ballistica_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Epitaph Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "epitaph_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Sevagoth Prime Systems Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "sevagoth_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "nautilus_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "axi_n14_relic": {
+   "name": "Axi N14",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Hydroid Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "hydroid_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "bronco_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime Upper Limb",
+     "rarity": "Uncommon",
+     "urlName": "ballistica_prime_upper_limb",
+     "zh": null
+    },
+    {
+     "name": "Nami Skyla Prime Blade",
+     "rarity": "Rare",
+     "urlName": "nami_skyla_prime_blade",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Carapace",
+     "rarity": "Uncommon",
+     "urlName": "nautilus_prime_carapace",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "lith_b12_relic": {
    "name": "Lith B12",
    "tier": "Lith",
@@ -49870,6 +49964,100 @@
    "varzia": false,
    "varziaSet": null
   },
+  "lith_s20_relic": {
+   "name": "Lith S20",
+   "tier": "Lith",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Receiver",
+     "rarity": "Common",
+     "urlName": "burston_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Hydroid Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "hydroid_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Sevagoth Prime Blueprint",
+     "rarity": "Rare",
+     "urlName": "sevagoth_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime Receiver",
+     "rarity": "Common",
+     "urlName": "ballistica_prime_receiver",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "meso_e8_relic": {
+   "name": "Meso E8",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Receiver",
+     "rarity": "Common",
+     "urlName": "bronco_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Hydroid Prime Neuroptics Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "hydroid_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Sevagoth Prime Neuroptics Blueprint",
+     "rarity": "Common",
+     "urlName": "sevagoth_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime Lower Limb",
+     "rarity": "Uncommon",
+     "urlName": "ballistica_prime_lower_limb",
+     "zh": null
+    },
+    {
+     "name": "Epitaph Prime Receiver",
+     "rarity": "Rare",
+     "urlName": "epitaph_prime_receiver",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
   "meso_i3_relic": {
    "name": "Meso I3",
    "tier": "Meso",
@@ -49911,6 +50099,147 @@
      "name": "Ivara Prime Chassis Blueprint",
      "rarity": "Rare",
      "urlName": "ivara_prime_chassis_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "meso_k9_relic": {
+   "name": "Meso K9",
+   "tier": "Meso",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Fang Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "fang_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Yareli Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "yareli_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Perigale Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "perigale_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Caliban Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "caliban_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Kestrel Prime Grip",
+     "rarity": "Rare",
+     "urlName": "kestrel_prime_grip",
+     "zh": null
+    },
+    {
+     "name": "Athodai Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "athodai_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "neo_h5_relic": {
+   "name": "Neo H5",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Stock",
+     "rarity": "Common",
+     "urlName": "burston_prime_stock",
+     "zh": null
+    },
+    {
+     "name": "Hydroid Prime Systems Blueprint",
+     "rarity": "Rare",
+     "urlName": "hydroid_prime_systems_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Systems",
+     "rarity": "Uncommon",
+     "urlName": "nautilus_prime_systems",
+     "zh": null
+    },
+    {
+     "name": "Sevagoth Prime Chassis Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "sevagoth_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nami Skyla Prime Handle",
+     "rarity": "Common",
+     "urlName": "nami_skyla_prime_handle",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "neo_n25_relic": {
+   "name": "Neo N25",
+   "tier": "Neo",
+   "isBaro": false,
+   "status": "vaulted",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Epitaph Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "epitaph_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "burston_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime String",
+     "rarity": "Common",
+     "urlName": "ballistica_prime_string",
+     "zh": null
+    },
+    {
+     "name": "Nami Skyla Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "nami_skyla_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Cerebrum",
+     "rarity": "Rare",
+     "urlName": "nautilus_prime_cerebrum",
      "zh": null
     }
    ],
@@ -50005,335 +50334,6 @@
      "name": "Aksomati Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "aksomati_prime_barrel",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "axi_b10_relic": {
-   "name": "Axi B10",
-   "tier": "Axi",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Burston Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "burston_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime Blueprint",
-     "rarity": "Rare",
-     "urlName": "ballistica_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Epitaph Prime Barrel",
-     "rarity": "Uncommon",
-     "urlName": "epitaph_prime_barrel",
-     "zh": null
-    },
-    {
-     "name": "Sevagoth Prime Systems Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "sevagoth_prime_systems_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "nautilus_prime_blueprint",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "axi_n14_relic": {
-   "name": "Axi N14",
-   "tier": "Axi",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Hydroid Prime Chassis Blueprint",
-     "rarity": "Common",
-     "urlName": "hydroid_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "bronco_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime Upper Limb",
-     "rarity": "Uncommon",
-     "urlName": "ballistica_prime_upper_limb",
-     "zh": null
-    },
-    {
-     "name": "Nami Skyla Prime Blade",
-     "rarity": "Rare",
-     "urlName": "nami_skyla_prime_blade",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Carapace",
-     "rarity": "Uncommon",
-     "urlName": "nautilus_prime_carapace",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "lith_s20_relic": {
-   "name": "Lith S20",
-   "tier": "Lith",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Burston Prime Receiver",
-     "rarity": "Common",
-     "urlName": "burston_prime_receiver",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Barrel",
-     "rarity": "Uncommon",
-     "urlName": "bronco_prime_barrel",
-     "zh": null
-    },
-    {
-     "name": "Hydroid Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "hydroid_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Sevagoth Prime Blueprint",
-     "rarity": "Rare",
-     "urlName": "sevagoth_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime Receiver",
-     "rarity": "Common",
-     "urlName": "ballistica_prime_receiver",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "meso_e8_relic": {
-   "name": "Meso E8",
-   "tier": "Meso",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Receiver",
-     "rarity": "Common",
-     "urlName": "bronco_prime_receiver",
-     "zh": null
-    },
-    {
-     "name": "Hydroid Prime Neuroptics Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "hydroid_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Sevagoth Prime Neuroptics Blueprint",
-     "rarity": "Common",
-     "urlName": "sevagoth_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime Lower Limb",
-     "rarity": "Uncommon",
-     "urlName": "ballistica_prime_lower_limb",
-     "zh": null
-    },
-    {
-     "name": "Epitaph Prime Receiver",
-     "rarity": "Rare",
-     "urlName": "epitaph_prime_receiver",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "neo_h5_relic": {
-   "name": "Neo H5",
-   "tier": "Neo",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Burston Prime Stock",
-     "rarity": "Common",
-     "urlName": "burston_prime_stock",
-     "zh": null
-    },
-    {
-     "name": "Hydroid Prime Systems Blueprint",
-     "rarity": "Rare",
-     "urlName": "hydroid_prime_systems_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Systems",
-     "rarity": "Uncommon",
-     "urlName": "nautilus_prime_systems",
-     "zh": null
-    },
-    {
-     "name": "Sevagoth Prime Chassis Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "sevagoth_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nami Skyla Prime Handle",
-     "rarity": "Common",
-     "urlName": "nami_skyla_prime_handle",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "neo_n25_relic": {
-   "name": "Neo N25",
-   "tier": "Neo",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Epitaph Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "epitaph_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Burston Prime Barrel",
-     "rarity": "Uncommon",
-     "urlName": "burston_prime_barrel",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime String",
-     "rarity": "Common",
-     "urlName": "ballistica_prime_string",
-     "zh": null
-    },
-    {
-     "name": "Nami Skyla Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "nami_skyla_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Cerebrum",
-     "rarity": "Rare",
-     "urlName": "nautilus_prime_cerebrum",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
-  },
-  "meso_k9_relic": {
-   "name": "Meso K9",
-   "tier": "Meso",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Fang Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "fang_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Yareli Prime Chassis Blueprint",
-     "rarity": "Common",
-     "urlName": "yareli_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Perigale Prime Receiver",
-     "rarity": "Uncommon",
-     "urlName": "perigale_prime_receiver",
-     "zh": null
-    },
-    {
-     "name": "Caliban Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "caliban_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Kestrel Prime Grip",
-     "rarity": "Rare",
-     "urlName": "kestrel_prime_grip",
-     "zh": null
-    },
-    {
-     "name": "Athodai Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "athodai_prime_blueprint",
      "zh": null
     }
    ],
