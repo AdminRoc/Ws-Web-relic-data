@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T23:08:36Z",
+ "generated": "2026-09-25T00:08:47Z",
  "majors": [
   43,
   44
@@ -6391,6 +6391,16 @@
   "35": {
    "date": "2023-12-13",
    "name": "Update 35",
+   "note": "major-version approx (earliest section date)"
+  },
+  "44.0.1": {
+   "date": "2026-09-24",
+   "name": "Hotfix 44.0.1",
+   "title": "September 24, 2026 Forum Post - Iceblade of Narin: Hotfix 44.0.1 &#xa; Hi Tenno! It’s been just over 24 hours since Iceb"
+  },
+  "44": {
+   "date": "2026-09-24",
+   "name": "Update 44",
    "note": "major-version approx (earliest section date)"
   }
  }
