@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T19:11:29Z",
+ "generated": "2026-09-28T20:12:08Z",
  "majors": [
   43,
   44
@@ -6403,6 +6403,11 @@
    "name": "Update 44",
    "title": "September 23, 2026 Forum Post - Update 44: Iceblade of Narin &#xa; Image Description: The Iceblade of Narin art features",
    "note": "major section"
+  },
+  "44.0.2": {
+   "date": "2026-09-28",
+   "name": "Hotfix 44.0.2",
+   "title": "September 28, 2026 Forum Post - Iceblade of Narin: Hotfix 44.0.2 &#xa; Additions Citrine Prime’s Adornments can now be u"
   }
  }
 }
