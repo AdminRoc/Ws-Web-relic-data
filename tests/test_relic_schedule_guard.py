@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from scripts.relic_schedule_guard import should_skip_fallback
+from scripts.relic_schedule_guard import _parse_run_started_at, should_skip_fallback
 
 
 NOW = datetime(2026, 9, 29, 21, 5, tzinfo=timezone.utc)
@@ -22,6 +22,20 @@ class RelicScheduleGuardTests(unittest.TestCase):
 
     def test_current_hour_dispatch_suppresses_fallback(self):
         self.assertTrue(should_skip_fallback([run("2026-09-29T21:01:01Z")], NOW))
+
+    def test_late_fallback_dispatch_still_suppresses_same_hour(self):
+        late_hour = datetime(2026, 9, 29, 22, 55, tzinfo=timezone.utc)
+        self.assertTrue(
+            should_skip_fallback([run("2026-09-29T22:00:49Z")], late_hour)
+        )
+
+    def test_current_run_timestamp_parser_uses_github_run_started_at(self):
+        started = _parse_run_started_at({"run_started_at": "2026-09-29T22:55:33Z"})
+        self.assertEqual(started, datetime(2026, 9, 29, 22, 55, 33, tzinfo=timezone.utc))
+
+    def test_current_run_timestamp_parser_falls_back_to_created_at(self):
+        started = _parse_run_started_at({"created_at": "2026-09-29T22:55:33Z"})
+        self.assertEqual(started, datetime(2026, 9, 29, 22, 55, 33, tzinfo=timezone.utc))
 
     def test_current_hour_failed_dispatch_still_suppresses_duplicate_sample(self):
         failed = run("2026-09-29T21:02:00Z", status="completed")

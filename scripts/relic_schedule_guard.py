@@ -76,6 +76,34 @@ def _list_dispatch_runs(repository: str, token: str) -> list[dict]:
     return runs
 
 
+def _get_run_started_at(repository: str, token: str, run_id: str) -> datetime:
+    url = (
+        "https://api.github.com/repos/"
+        f"{quote(repository, safe='/')}/actions/runs/{quote(run_id, safe='')}"
+    )
+    request = Request(
+        url,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "Ws-Web-relic-data-schedule-guard",
+        },
+    )
+    with urlopen(request, timeout=20) as response:
+        payload = json.load(response)
+    return _parse_run_started_at(payload)
+
+
+def _parse_run_started_at(payload: object) -> datetime:
+    if not isinstance(payload, dict):
+        raise ValueError("GitHub Actions API returned an invalid current run")
+    timestamp = payload.get("run_started_at") or payload.get("created_at")
+    if not isinstance(timestamp, str):
+        raise ValueError("GitHub Actions API omitted the current run start time")
+    return _parse_utc(timestamp)
+
+
 def main() -> int:
     if os.environ.get("GITHUB_EVENT_NAME") != "schedule":
         _write_output(True)
@@ -84,13 +112,48 @@ def main() -> int:
     try:
         repository = os.environ["GITHUB_REPOSITORY"]
         token = os.environ["GH_TOKEN"]
+        run_id = os.environ["GITHUB_RUN_ID"]
         runs = _list_dispatch_runs(repository, token)
-        skip = should_skip_fallback(runs, datetime.now(timezone.utc))
+        run_started_at = _get_run_started_at(repository, token, run_id)
+        runner_clock = datetime.now(timezone.utc)
+        hour_start = run_started_at.replace(minute=0, second=0, microsecond=0)
+        same_hour_dispatches = [
+            run
+            for run in runs
+            if run.get("event") == "workflow_dispatch"
+            and _parse_utc(run["created_at"]) >= hour_start
+        ]
+        active_dispatches = [
+            run
+            for run in runs
+            if run.get("event") == "workflow_dispatch"
+            and run.get("status") == "in_progress"
+        ]
+        newest_dispatch = max(
+            (run for run in runs if run.get("event") == "workflow_dispatch"),
+            key=lambda run: _parse_utc(run["created_at"]),
+            default=None,
+        )
+        newest_dispatch_at = (
+            _parse_utc(newest_dispatch["created_at"]).isoformat()
+            if newest_dispatch
+            else "none"
+        )
+        skip = should_skip_fallback(runs, run_started_at)
+        print(
+            "Schedule guard evidence: "
+            f"github_run_started_at={run_started_at.isoformat()} "
+            f"runner_clock_utc={runner_clock.isoformat()} "
+            f"dispatch_runs_seen={sum(run.get('event') == 'workflow_dispatch' for run in runs)} "
+            f"same_hour_dispatches={len(same_hour_dispatches)} "
+            f"active_dispatches={len(active_dispatches)} "
+            f"newest_dispatch_at={newest_dispatch_at}"
+        )
         _write_output(not skip)
         if skip:
             print(
                 "Skipping scheduled fallback: a dispatch already exists "
-                "in this UTC hour or is still in progress."
+                "in the GitHub run-start UTC hour or is still in progress."
             )
         else:
             print("No same-hour or active dispatch found; scheduled fallback will run.")
