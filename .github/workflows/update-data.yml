@@ -175,3 +175,19 @@ jobs:
           done
           publish prices-summary.json prices_summary_json
           publish relic-deep-date-summary.json relic_deep_date_summary_json
+
+      - name: Refresh jsDelivr fallbacks for changed data
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          set +e
+          changed_files="$(git diff-tree --no-commit-id --name-only -r HEAD -- data/)"
+          for file in $changed_files; do
+            code="$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+              --connect-timeout 15 --max-time 45 \
+              "https://purge.jsdelivr.net/gh/AdminRoc/Ws-Web-relic-data@main/${file}")"
+            if [ "$code" = "200" ]; then
+              echo "Purged jsDelivr cache for $file"
+            else
+              echo "::warning::jsDelivr purge returned HTTP ${code:-000} for $file"
+            fi
+          done
