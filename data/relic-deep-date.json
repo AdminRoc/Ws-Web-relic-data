@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T00:07:19Z",
+ "generated": "2026-09-29T01:06:47Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -1235,7 +1235,7 @@
     {
      "name": "Kompressa Prime Receiver",
      "rarity": "Uncommon",
-     "urlName": "kompressa_prime_reciever",
+     "urlName": "kompressa_prime_receiver",
      "zh": null
     },
     {
@@ -1341,7 +1341,7 @@
     {
      "name": "Kompressa Prime Receiver",
      "rarity": "Uncommon",
-     "urlName": "kompressa_prime_reciever",
+     "urlName": "kompressa_prime_receiver",
      "zh": null
     },
     {
@@ -7464,7 +7464,7 @@
     {
      "name": "Kompressa Prime Receiver",
      "rarity": "Uncommon",
-     "urlName": "kompressa_prime_reciever",
+     "urlName": "kompressa_prime_receiver",
      "zh": null
     },
     {
@@ -11976,7 +11976,7 @@
     {
      "name": "Kompressa Prime Receiver",
      "rarity": "Uncommon",
-     "urlName": "kompressa_prime_reciever",
+     "urlName": "kompressa_prime_receiver",
      "zh": null
     },
     {
