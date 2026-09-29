@@ -16,41 +16,33 @@ permissions:
 jobs:
   trigger-guard:
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
     outputs:
       should_run: ${{ steps.guard.outputs.should_run }}
     steps:
-      - name: Avoid duplicate hourly fallback after a recent dispatch
-        id: guard
-        uses: actions/github-script@v7
+      - name: Checkout schedule guard
+        uses: actions/checkout@v4
         with:
-          script: |
-            if (context.eventName !== 'schedule') {
-              core.setOutput('should_run', 'true');
-              return;
-            }
+          ref: main
+          persist-credentials: false
 
-            try {
-              const { data } = await github.rest.actions.listWorkflowRuns({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                workflow_id: 'update-data.yml',
-                event: 'workflow_dispatch',
-                per_page: 100
-              });
-              const cutoff = Date.now() - 65 * 60 * 1000;
-              const recentRun = data.workflow_runs.find(run =>
-                run.status !== 'completed' || Date.parse(run.created_at) >= cutoff
-              );
-              if (recentRun) {
-                core.info(`Skipping fallback: a workflow_dispatch run (${recentRun.id}) is recent or still active.`);
-                core.setOutput('should_run', 'false');
-              } else {
-                core.setOutput('should_run', 'true');
-              }
-            } catch (error) {
-              core.setOutput('should_run', 'false');
-              core.setFailed(`Could not verify recent dispatches; scheduled fallback skipped to avoid duplicate price samples: ${error.message}`);
-            }
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test scheduled fallback guard
+        run: python -m unittest discover -s tests -p 'test_relic_schedule_guard.py' -v
+
+      - name: Avoid duplicate fallback within the same UTC hour
+        id: guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/relic_schedule_guard.py
 
   update-data:
     needs: trigger-guard
