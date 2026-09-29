@@ -38,6 +38,8 @@ import time
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+from relic_release import resolve_local_relic_key
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 DATA_DIR = os.path.join(REPO_ROOT, "data")
@@ -554,17 +556,13 @@ def main():
     for name, info in wiki_relics.items():
         if info["tier"] == "Requiem":
             continue  # 安魂遗物无入库概念，排除
-        key = relic_key(name, info["tier"])
-        if key not in local_relics:
-            # 兜底：本地 relics.json 可能存在 name 一致但 key 不一致的条目
-            # （warframe-items 上游 marketInfo.urlName 与 name 偶发不匹配，如 Axi Y2 -> axi_o7_relic）
-            matched_local = next((lk for lk, lv in local_relics.items()
-                                  if lv.get("name") == name), None)
-            if matched_local:
-                key = matched_local
-            else:
-                unmatched.append(name)
-                continue
+        try:
+            key = resolve_local_relic_key(name, info["tier"], local_relics, relic_key)
+        except RuntimeError as error:
+            raise RuntimeError(f"Unsafe relic identity resolution for {name}: {error}") from error
+        if key is None:
+            unmatched.append(name)
+            continue
 
         def _resolve(vstr):
             if not vstr:

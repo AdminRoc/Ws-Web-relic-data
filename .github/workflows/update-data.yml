@@ -2,8 +2,6 @@ name: Update Relic & Price Data
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "5 * * * *"
 
 concurrency:
   group: relic-data-publish
@@ -28,8 +26,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Run relic identity and release safety tests
+        run: python -m unittest discover -s tests -v
+
       - name: Build Relic Database (A)
         run: python scripts/build_relic_db.py
+
+      - name: Apply only the approved lifecycle key correction and validate release
+        run: python scripts/relic_release.py --migrate-approved-key-renames
 
       - name: Build Price Database (B)
         id: price
@@ -42,6 +46,9 @@ jobs:
       - name: Note retained prices after WM order outage
         if: steps.price.outcome == 'failure'
         run: echo '::warning::Price refresh failed; publishing relic definitions with previous price artifacts.'
+
+      - name: Validate relic and lifecycle cross-artifact consistency
+        run: python scripts/relic_release.py
 
       - name: 校验明文产物
         run: |

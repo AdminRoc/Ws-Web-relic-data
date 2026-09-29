@@ -16,6 +16,8 @@ import re
 import sys
 import urllib.request
 
+from relic_release import validate_relic_key_continuity
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 DATA_DIR = os.path.join(REPO_ROOT, "data")
@@ -236,9 +238,10 @@ def build():
     if os.path.exists(relics_path):
         with open(relics_path, "r", encoding="utf-8") as f:
             previous_relics = json.load(f)
-        missing_keys = previous_relics.keys() - relics.keys()
-        if missing_keys:
-            raise RuntimeError(f"Relic keys regressed ({len(missing_keys)} missing); keeping previously published data")
+        approved_renames = validate_relic_key_continuity(previous_relics, relics)
+        if approved_renames:
+            print("  Approved identity correction after exact reward validation: "
+                  + ", ".join(f"{old} -> {new}" for old, new in approved_renames.items()))
 
     # Write relics.json
     with open(relics_path, "w", encoding="utf-8") as f:
