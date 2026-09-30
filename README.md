@@ -15,7 +15,9 @@ Warframe 遗物（核桃）相关数据的自动收集仓库，供 Ws-Web-relic 
 
 ## 更新方式
 
-遗物与价格生产工作流同时保留每小时 GitHub `schedule` 托底和 `workflow_dispatch` 入口。由于存在外部小时 dispatch 的运行记录，但触发器归属及相位尚未由配置证实，GitHub 托底会检查当前 UTC 小时内该工作流是否已有任意分支的 dispatch；生产 job 固定读取 `main`，因此其他分支上的 dispatch 也算一次生产尝试。上一小时的成功运行不会压掉本小时托底，仍在运行的 dispatch 则会阻止并发。若 GitHub API 无法核验，托底安全失败并通知，以免重复价格采样。生产成功后通过 `workflow_run` 触发生命周期监控；深日期工作流另外保留每日 UTC 01:00/13:00 的计划任务。
+遗物与价格生产工作流同时保留每小时 GitHub `schedule` 托底和 `workflow_dispatch` 入口。由于存在外部小时 dispatch 的运行记录，但触发器归属及相位尚未由配置证实，GitHub 托底会检查当前 UTC 小时内该工作流是否已有任意分支的 dispatch；生产 job 固定读取 `main`，因此其他分支上的 dispatch 也算一次生产尝试。上一小时的成功运行不会压掉本小时托底，仍在运行的 dispatch 则会阻止并发。若 GitHub API 无法核验，托底安全失败并通知，以免重复价格采样。
+
+深日期监控由成功的生产 run 触发，但必须再核验父 workflow 的 `update-data` job 本身为 `success`；当小时托底因 dispatch 已运行而跳过生产时，不重复重建深日期或写入 `RELIC_KV`。读取父 job 状态的 GitHub API 失败时，监控 fail-closed 并留下失败状态；独立每日 UTC 01:00/13:00 任务仍保留。
 
 ## 说明
 
