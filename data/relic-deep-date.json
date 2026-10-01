@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T20:06:45Z",
+ "generated": "2026-10-01T21:06:24Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -36800,16 +36800,16 @@
    "status": "vaulted",
    "events": [
     {
-     "type": "vaulted",
-     "version": "31.0",
-     "gameDate": "2021-12-15",
-     "gameDateTZ": "US-ET",
+     "type": "released",
+     "version": "44.0",
+     "gameDate": null,
+     "gameDateTZ": null,
      "ts": null,
-     "source": "wiki-index"
+     "source": "unresolved"
     },
     {
-     "type": "released",
-     "version": "29.9",
+     "type": "vaulted",
+     "version": "44.0",
      "gameDate": null,
      "gameDateTZ": null,
      "ts": null,
