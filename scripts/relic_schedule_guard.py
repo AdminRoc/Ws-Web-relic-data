@@ -53,12 +53,19 @@ def _write_output(value: bool) -> None:
         output.write(f"should_run={'true' if value else 'false'}\n")
 
 
-def _list_dispatch_runs(repository: str, token: str) -> list[dict]:
-    query = urlencode({"event": "workflow_dispatch", "per_page": "100"})
-    url = (
+def _workflow_runs_url(repository: str) -> str:
+    # Fetch the newest mixed-event page, then filter dispatches locally. The
+    # server-side event filter can return an older 100-run window and omit a
+    # recent hourly dispatch when this workflow has many historical runs.
+    query = urlencode({"per_page": "100"})
+    return (
         "https://api.github.com/repos/"
         f"{quote(repository, safe='/')}/actions/workflows/update-data.yml/runs?{query}"
     )
+
+
+def _list_dispatch_runs(repository: str, token: str) -> list[dict]:
+    url = _workflow_runs_url(repository)
     request = Request(
         url,
         headers={

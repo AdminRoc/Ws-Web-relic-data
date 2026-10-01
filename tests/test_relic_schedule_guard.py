@@ -1,7 +1,12 @@
 import unittest
 from datetime import datetime, timezone
+from urllib.parse import parse_qs, urlparse
 
-from scripts.relic_schedule_guard import _parse_run_started_at, should_skip_fallback
+from scripts.relic_schedule_guard import (
+    _parse_run_started_at,
+    _workflow_runs_url,
+    should_skip_fallback,
+)
 
 
 NOW = datetime(2026, 9, 29, 21, 5, tzinfo=timezone.utc)
@@ -17,6 +22,16 @@ def run(created_at, *, status="completed", event="workflow_dispatch", branch="ma
 
 
 class RelicScheduleGuardTests(unittest.TestCase):
+    def test_workflow_runs_query_fetches_latest_mixed_events_for_local_filter(self):
+        url = _workflow_runs_url("AdminRoc/Ws-Web-relic-data")
+        parsed = urlparse(url)
+
+        self.assertEqual(
+            parsed.path,
+            "/repos/AdminRoc/Ws-Web-relic-data/actions/workflows/update-data.yml/runs",
+        )
+        self.assertEqual(parse_qs(parsed.query), {"per_page": ["100"]})
+
     def test_previous_hour_success_does_not_suppress_fallback(self):
         self.assertFalse(should_skip_fallback([run("2026-09-29T20:00:46Z")], NOW))
 
