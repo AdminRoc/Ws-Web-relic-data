@@ -2049,9 +2049,15 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Burston Prime Blueprint",
+     "name": "Burston Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "burston_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Burston Prime Stock",
      "rarity": "Common",
-     "urlName": "burston_prime_blueprint",
+     "urlName": "burston_prime_stock",
      "zh": null
     },
     {
@@ -2061,21 +2067,15 @@
      "zh": null
     },
     {
-     "name": "Epitaph Prime Barrel",
+     "name": "Nami Skyla Prime Handle",
      "rarity": "Uncommon",
-     "urlName": "epitaph_prime_barrel",
+     "urlName": "nami_skyla_prime_handle",
      "zh": null
     },
     {
-     "name": "Sevagoth Prime Systems Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "sevagoth_prime_systems_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Blueprint",
+     "name": "Nautilus Prime Carapace",
      "rarity": "Common",
-     "urlName": "nautilus_prime_blueprint",
+     "urlName": "nautilus_prime_carapace",
      "zh": null
     }
    ],
@@ -7608,21 +7608,21 @@
      "zh": null
     },
     {
-     "name": "Ballistica Prime Upper Limb",
+     "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
-     "urlName": "ballistica_prime_upper_limb",
+     "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Cerebrum",
+     "rarity": "Rare",
+     "urlName": "nautilus_prime_cerebrum",
      "zh": null
     },
     {
      "name": "Nami Skyla Prime Blade",
-     "rarity": "Rare",
-     "urlName": "nami_skyla_prime_blade",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Carapace",
      "rarity": "Uncommon",
-     "urlName": "nautilus_prime_carapace",
+     "urlName": "nami_skyla_prime_blade",
      "zh": null
     }
    ],
@@ -23121,33 +23121,33 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Burston Prime Receiver",
+     "name": "Bronco Prime Receiver",
      "rarity": "Common",
-     "urlName": "burston_prime_receiver",
+     "urlName": "bronco_prime_receiver",
      "zh": null
     },
     {
-     "name": "Bronco Prime Barrel",
-     "rarity": "Uncommon",
-     "urlName": "bronco_prime_barrel",
+     "name": "Ballistica Prime Lower Limb",
+     "rarity": "Common",
+     "urlName": "ballistica_prime_lower_limb",
      "zh": null
     },
     {
-     "name": "Hydroid Prime Blueprint",
+     "name": "Epitaph Prime Barrel",
      "rarity": "Uncommon",
-     "urlName": "hydroid_prime_blueprint",
+     "urlName": "epitaph_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Sevagoth Prime Chassis Blueprint",
+     "rarity": "Rare",
+     "urlName": "sevagoth_prime_chassis_blueprint",
      "zh": null
     },
     {
      "name": "Sevagoth Prime Blueprint",
-     "rarity": "Rare",
+     "rarity": "Uncommon",
      "urlName": "sevagoth_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Ballistica Prime Receiver",
-     "rarity": "Common",
-     "urlName": "ballistica_prime_receiver",
      "zh": null
     }
    ],
@@ -28523,27 +28523,27 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Bronco Prime Receiver",
-     "rarity": "Common",
-     "urlName": "bronco_prime_receiver",
-     "zh": null
-    },
-    {
-     "name": "Hydroid Prime Neuroptics Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "hydroid_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
      "name": "Sevagoth Prime Neuroptics Blueprint",
      "rarity": "Common",
      "urlName": "sevagoth_prime_neuroptics_blueprint",
      "zh": null
     },
     {
-     "name": "Ballistica Prime Lower Limb",
+     "name": "Hydroid Prime Blueprint",
      "rarity": "Uncommon",
-     "urlName": "ballistica_prime_lower_limb",
+     "urlName": "hydroid_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nami Skyla Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "nami_skyla_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Nautilus Prime Systems",
+     "rarity": "Uncommon",
+     "urlName": "nautilus_prime_systems",
      "zh": null
     },
     {
@@ -42089,9 +42089,21 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Burston Prime Stock",
+     "name": "Burston Prime Receiver",
      "rarity": "Common",
-     "urlName": "burston_prime_stock",
+     "urlName": "burston_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Epitaph Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "epitaph_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime String",
+     "rarity": "Uncommon",
+     "urlName": "ballistica_prime_string",
      "zh": null
     },
     {
@@ -42101,21 +42113,9 @@
      "zh": null
     },
     {
-     "name": "Nautilus Prime Systems",
+     "name": "Ballistica Prime Upper Limb",
      "rarity": "Uncommon",
-     "urlName": "nautilus_prime_systems",
-     "zh": null
-    },
-    {
-     "name": "Sevagoth Prime Chassis Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "sevagoth_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nami Skyla Prime Handle",
-     "rarity": "Common",
-     "urlName": "nami_skyla_prime_handle",
+     "urlName": "ballistica_prime_upper_limb",
      "zh": null
     }
    ],
@@ -45155,33 +45155,33 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Epitaph Prime Blueprint",
+     "name": "Burston Prime Blueprint",
      "rarity": "Common",
-     "urlName": "epitaph_prime_blueprint",
+     "urlName": "burston_prime_blueprint",
      "zh": null
     },
     {
-     "name": "Burston Prime Barrel",
+     "name": "Hydroid Prime Neuroptics Blueprint",
      "rarity": "Uncommon",
-     "urlName": "burston_prime_barrel",
+     "urlName": "hydroid_prime_neuroptics_blueprint",
      "zh": null
     },
     {
-     "name": "Ballistica Prime String",
+     "name": "Sevagoth Prime Systems Blueprint",
      "rarity": "Common",
-     "urlName": "ballistica_prime_string",
+     "urlName": "sevagoth_prime_systems_blueprint",
      "zh": null
     },
     {
-     "name": "Nami Skyla Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "nami_skyla_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Nautilus Prime Cerebrum",
+     "name": "Nautilus Prime Blueprint",
      "rarity": "Rare",
-     "urlName": "nautilus_prime_cerebrum",
+     "urlName": "nautilus_prime_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Ballistica Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "ballistica_prime_receiver",
      "zh": null
     }
    ],

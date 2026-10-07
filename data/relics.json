@@ -1768,8 +1768,19 @@
         }
       },
       {
-        "name": "Burston Prime Blueprint",
-        "urlName": "burston_prime_blueprint",
+        "name": "Burston Prime Barrel",
+        "urlName": "burston_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Burston Prime Stock",
+        "urlName": "burston_prime_stock",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -1790,8 +1801,8 @@
         }
       },
       {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -1801,19 +1812,8 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -8141,8 +8141,8 @@
         }
       },
       {
-        "name": "Ballistica Prime Upper Limb",
-        "urlName": "ballistica_prime_upper_limb",
+        "name": "Bronco Prime Barrel",
+        "urlName": "bronco_prime_barrel",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -8152,8 +8152,8 @@
         }
       },
       {
-        "name": "Nami Skyla Prime Blade",
-        "urlName": "nami_skyla_prime_blade",
+        "name": "Nautilus Prime Cerebrum",
+        "urlName": "nautilus_prime_cerebrum",
         "rarity": "Rare",
         "chances": {
           "Radiant": 10.0,
@@ -8163,8 +8163,8 @@
         }
       },
       {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
+        "name": "Nami Skyla Prime Blade",
+        "urlName": "nami_skyla_prime_blade",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -9831,17 +9831,6 @@
         }
       },
       {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Protea Prime Chassis Blueprint",
         "urlName": "protea_prime_chassis_blueprint",
         "rarity": "Rare",
@@ -9850,6 +9839,17 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       }
     ]
@@ -13021,8 +13021,8 @@
         }
       },
       {
-        "name": "Protea Prime Blueprint",
-        "urlName": "protea_prime_blueprint",
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -13032,8 +13032,8 @@
         }
       },
       {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
+        "name": "Protea Prime Blueprint",
+        "urlName": "protea_prime_blueprint",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -15127,8 +15127,8 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -15160,17 +15160,6 @@
         }
       },
       {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
         "name": "Akarius Prime Receiver",
         "urlName": "akarius_prime_receiver",
         "rarity": "Rare",
@@ -15179,6 +15168,17 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -16430,17 +16430,6 @@
     "vaulted": true,
     "rewards": [
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
         "name": "Okina Prime Blade",
         "urlName": "okina_prime_blade",
         "rarity": "Common",
@@ -16493,6 +16482,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -16587,17 +16587,6 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
         "name": "Lavos Prime Blueprint",
         "urlName": "lavos_prime_blueprint",
         "rarity": "Uncommon",
@@ -16606,6 +16595,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       },
       {
@@ -16733,6 +16733,17 @@
         }
       },
       {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
         "name": "Cernos Prime Lower Limb",
         "urlName": "cernos_prime_lower_limb",
         "rarity": "Rare",
@@ -16768,17 +16779,6 @@
       {
         "name": "Akbolto Prime Barrel",
         "urlName": "akbolto_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -17766,17 +17766,6 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
         "name": "Velox Prime Blueprint",
         "urlName": "velox_prime_blueprint",
         "rarity": "Uncommon",
@@ -17785,6 +17774,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       },
       {
@@ -17912,8 +17912,8 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
+        "name": "Daikyu Prime Blueprint",
+        "urlName": "daikyu_prime_blueprint",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -17923,8 +17923,8 @@
         }
       },
       {
-        "name": "Daikyu Prime Blueprint",
-        "urlName": "daikyu_prime_blueprint",
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -19226,6 +19226,17 @@
         }
       },
       {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
         "name": "Bronco Prime Blueprint",
         "urlName": "bronco_prime_blueprint",
         "rarity": "Common",
@@ -19256,17 +19267,6 @@
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
         }
       }
     ]
@@ -21332,8 +21332,8 @@
         }
       },
       {
-        "name": "Okina Prime Blade",
-        "urlName": "okina_prime_blade",
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -21343,8 +21343,8 @@
         }
       },
       {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
+        "name": "Okina Prime Blade",
+        "urlName": "okina_prime_blade",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -21562,17 +21562,6 @@
         }
       },
       {
-        "name": "Sevagoth Prime Systems Blueprint",
-        "urlName": "sevagoth_prime_systems_blueprint",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
         "name": "Masseter Prime Blade",
         "urlName": "masseter_prime_blade",
         "rarity": "Rare",
@@ -21603,6 +21592,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
         }
       }
     ]
@@ -22814,17 +22814,6 @@
         }
       },
       {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
         "name": "Acceltra Prime Receiver",
         "urlName": "acceltra_prime_receiver",
         "rarity": "Uncommon",
@@ -22844,6 +22833,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       }
     ]
@@ -22876,17 +22876,6 @@
         }
       },
       {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
         "name": "Bronco Prime Blueprint",
         "urlName": "bronco_prime_blueprint",
         "rarity": "Common",
@@ -22906,6 +22895,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       },
       {
@@ -24617,17 +24617,6 @@
         }
       },
       {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Daikyu Prime Blueprint",
         "urlName": "daikyu_prime_blueprint",
         "rarity": "Common",
@@ -24636,6 +24625,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {
@@ -26004,8 +26004,8 @@
         }
       },
       {
-        "name": "Burston Prime Receiver",
-        "urlName": "burston_prime_receiver",
+        "name": "Bronco Prime Receiver",
+        "urlName": "bronco_prime_receiver",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -26015,8 +26015,19 @@
         }
       },
       {
-        "name": "Bronco Prime Barrel",
-        "urlName": "bronco_prime_barrel",
+        "name": "Ballistica Prime Lower Limb",
+        "urlName": "ballistica_prime_lower_limb",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -26026,19 +26037,8 @@
         }
       },
       {
-        "name": "Hydroid Prime Blueprint",
-        "urlName": "hydroid_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Blueprint",
-        "urlName": "sevagoth_prime_blueprint",
+        "name": "Sevagoth Prime Chassis Blueprint",
+        "urlName": "sevagoth_prime_chassis_blueprint",
         "rarity": "Rare",
         "chances": {
           "Radiant": 10.0,
@@ -26048,14 +26048,14 @@
         }
       },
       {
-        "name": "Ballistica Prime Receiver",
-        "urlName": "ballistica_prime_receiver",
-        "rarity": "Common",
+        "name": "Sevagoth Prime Blueprint",
+        "urlName": "sevagoth_prime_blueprint",
+        "rarity": "Uncommon",
         "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       }
     ]
@@ -28643,17 +28643,6 @@
         }
       },
       {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Masseter Prime Blueprint",
         "urlName": "masseter_prime_blueprint",
         "rarity": "Uncommon",
@@ -28673,6 +28662,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {
@@ -28789,17 +28789,6 @@
         }
       },
       {
-        "name": "Zylok Prime Receiver",
-        "urlName": "zylok_prime_receiver",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Nautilus Prime Carapace",
         "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
@@ -28808,6 +28797,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Zylok Prime Receiver",
+        "urlName": "zylok_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {
@@ -31709,6 +31709,17 @@
         }
       },
       {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
         "name": "Destreza Prime Blade",
         "urlName": "destreza_prime_blade",
         "rarity": "Rare",
@@ -31733,17 +31744,6 @@
       {
         "name": "Kronen Prime Handle",
         "urlName": "kronen_prime_handle",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -32720,28 +32720,6 @@
         }
       },
       {
-        "name": "Bronco Prime Receiver",
-        "urlName": "bronco_prime_receiver",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Hydroid Prime Neuroptics Blueprint",
-        "urlName": "hydroid_prime_neuroptics_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Sevagoth Prime Neuroptics Blueprint",
         "urlName": "sevagoth_prime_neuroptics_blueprint",
         "rarity": "Common",
@@ -32753,8 +32731,30 @@
         }
       },
       {
-        "name": "Ballistica Prime Lower Limb",
-        "urlName": "ballistica_prime_lower_limb",
+        "name": "Hydroid Prime Blueprint",
+        "urlName": "hydroid_prime_blueprint",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nami Skyla Prime Blueprint",
+        "urlName": "nami_skyla_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Nautilus Prime Systems",
+        "urlName": "nautilus_prime_systems",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -36662,17 +36662,6 @@
         }
       },
       {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
         "name": "Velox Prime Blueprint",
         "urlName": "velox_prime_blueprint",
         "rarity": "Uncommon",
@@ -36714,6 +36703,17 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
+        }
+      },
+      {
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       }
     ]
@@ -40323,6 +40323,17 @@
         }
       },
       {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
         "name": "Cernos Prime Upper Limb",
         "urlName": "cernos_prime_upper_limb",
         "rarity": "Common",
@@ -40353,17 +40364,6 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
         }
       }
     ]
@@ -47758,6 +47758,17 @@
         }
       },
       {
+        "name": "Nautilus Prime Carapace",
+        "urlName": "nautilus_prime_carapace",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
         "name": "Afuris Prime Blueprint",
         "urlName": "afuris_prime_blueprint",
         "rarity": "Common",
@@ -47777,17 +47788,6 @@
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Carapace",
-        "urlName": "nautilus_prime_carapace",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
         }
       },
       {
@@ -48134,6 +48134,17 @@
         }
       },
       {
+        "name": "Nami Skyla Prime Handle",
+        "urlName": "nami_skyla_prime_handle",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
+        }
+      },
+      {
         "name": "Hydroid Prime Systems Blueprint",
         "urlName": "hydroid_prime_systems_blueprint",
         "rarity": "Rare",
@@ -48153,17 +48164,6 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
         }
       },
       {
@@ -48269,14 +48269,36 @@
         }
       },
       {
-        "name": "Burston Prime Stock",
-        "urlName": "burston_prime_stock",
+        "name": "Burston Prime Receiver",
+        "urlName": "burston_prime_receiver",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Blueprint",
+        "urlName": "epitaph_prime_blueprint",
+        "rarity": "Common",
+        "chances": {
+          "Intact": 25.33,
+          "Exceptional": 23.33,
+          "Flawless": 20.0,
+          "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Ballistica Prime String",
+        "urlName": "ballistica_prime_string",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {
@@ -48291,36 +48313,14 @@
         }
       },
       {
-        "name": "Nautilus Prime Systems",
-        "urlName": "nautilus_prime_systems",
+        "name": "Ballistica Prime Upper Limb",
+        "urlName": "ballistica_prime_upper_limb",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
           "Flawless": 17.0,
           "Exceptional": 13.0,
           "Intact": 11.0
-        }
-      },
-      {
-        "name": "Sevagoth Prime Chassis Blueprint",
-        "urlName": "sevagoth_prime_chassis_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nami Skyla Prime Handle",
-        "urlName": "nami_skyla_prime_handle",
-        "rarity": "Common",
-        "chances": {
-          "Intact": 25.33,
-          "Exceptional": 23.33,
-          "Flawless": 20.0,
-          "Radiant": 16.67
         }
       }
     ]
@@ -51211,17 +51211,6 @@
         }
       },
       {
-        "name": "Nautilus Prime Blueprint",
-        "urlName": "nautilus_prime_blueprint",
-        "rarity": "Rare",
-        "chances": {
-          "Radiant": 10.0,
-          "Flawless": 6.0,
-          "Exceptional": 4.0,
-          "Intact": 2.0
-        }
-      },
-      {
         "name": "Kestrel Prime Blueprint",
         "urlName": "kestrel_prime_blueprint",
         "rarity": "Uncommon",
@@ -51241,6 +51230,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
+        "rarity": "Rare",
+        "chances": {
+          "Radiant": 10.0,
+          "Flawless": 6.0,
+          "Exceptional": 4.0,
+          "Intact": 2.0
         }
       }
     ]
@@ -51262,8 +51262,8 @@
         }
       },
       {
-        "name": "Epitaph Prime Blueprint",
-        "urlName": "epitaph_prime_blueprint",
+        "name": "Burston Prime Blueprint",
+        "urlName": "burston_prime_blueprint",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -51273,8 +51273,8 @@
         }
       },
       {
-        "name": "Burston Prime Barrel",
-        "urlName": "burston_prime_barrel",
+        "name": "Hydroid Prime Neuroptics Blueprint",
+        "urlName": "hydroid_prime_neuroptics_blueprint",
         "rarity": "Uncommon",
         "chances": {
           "Radiant": 20.0,
@@ -51284,8 +51284,8 @@
         }
       },
       {
-        "name": "Ballistica Prime String",
-        "urlName": "ballistica_prime_string",
+        "name": "Sevagoth Prime Systems Blueprint",
+        "urlName": "sevagoth_prime_systems_blueprint",
         "rarity": "Common",
         "chances": {
           "Intact": 25.33,
@@ -51295,25 +51295,25 @@
         }
       },
       {
-        "name": "Nami Skyla Prime Blueprint",
-        "urlName": "nami_skyla_prime_blueprint",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
-        "name": "Nautilus Prime Cerebrum",
-        "urlName": "nautilus_prime_cerebrum",
+        "name": "Nautilus Prime Blueprint",
+        "urlName": "nautilus_prime_blueprint",
         "rarity": "Rare",
         "chances": {
           "Radiant": 10.0,
           "Flawless": 6.0,
           "Exceptional": 4.0,
           "Intact": 2.0
+        }
+      },
+      {
+        "name": "Ballistica Prime Receiver",
+        "urlName": "ballistica_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       }
     ]
@@ -52222,17 +52222,6 @@
         }
       },
       {
-        "name": "Cedo Prime Receiver",
-        "urlName": "cedo_prime_receiver",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Nautilus Prime Carapace",
         "urlName": "nautilus_prime_carapace",
         "rarity": "Common",
@@ -52241,6 +52230,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Cedo Prime Receiver",
+        "urlName": "cedo_prime_receiver",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {
@@ -52868,17 +52868,6 @@
         }
       },
       {
-        "name": "Epitaph Prime Barrel",
-        "urlName": "epitaph_prime_barrel",
-        "rarity": "Uncommon",
-        "chances": {
-          "Radiant": 20.0,
-          "Flawless": 17.0,
-          "Exceptional": 13.0,
-          "Intact": 11.0
-        }
-      },
-      {
         "name": "Alternox Prime Receiver",
         "urlName": "alternox_prime_receiver",
         "rarity": "Common",
@@ -52909,6 +52898,17 @@
           "Exceptional": 23.33,
           "Flawless": 20.0,
           "Radiant": 16.67
+        }
+      },
+      {
+        "name": "Epitaph Prime Barrel",
+        "urlName": "epitaph_prime_barrel",
+        "rarity": "Uncommon",
+        "chances": {
+          "Radiant": 20.0,
+          "Flawless": 17.0,
+          "Exceptional": 13.0,
+          "Intact": 11.0
         }
       },
       {

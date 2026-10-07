@@ -415,17 +415,13 @@
     "zh": "布里斯提卡 Prime 蓝图",
     "en": "Ballistica Prime Blueprint"
   },
-  "epitaph_prime_barrel": {
-    "zh": "葬铭 Prime 枪管",
-    "en": "Epitaph Prime Barrel"
+  "nami_skyla_prime_handle": {
+    "zh": "海波斯库拉对剑 Prime 握柄",
+    "en": "Nami Skyla Prime Handle"
   },
-  "sevagoth_prime_systems_blueprint": {
-    "zh": "Sevagoth Prime 系统 蓝图",
-    "en": "Sevagoth Prime Systems Blueprint"
-  },
-  "nautilus_prime_blueprint": {
-    "zh": "鹦鹉螺 Prime 蓝图",
-    "en": "Nautilus Prime Blueprint"
+  "nautilus_prime_carapace": {
+    "zh": "鹦鹉螺 Prime 外壳",
+    "en": "Nautilus Prime Carapace"
   },
   "sybaris_prime_blueprint": {
     "zh": "席芭莉丝 Prime 蓝图",
@@ -1243,10 +1239,6 @@
     "zh": "海波斯库拉对剑 Prime 刀刃",
     "en": "Nami Skyla Prime Blade"
   },
-  "nautilus_prime_carapace": {
-    "zh": "鹦鹉螺 Prime 外壳",
-    "en": "Nautilus Prime Carapace"
-  },
   "carrier_prime_carapace": {
     "zh": "搬运者 Prime 外壳",
     "en": "Carrier Prime Carapace"
@@ -1374,6 +1366,10 @@
   "baruuk_prime_systems_blueprint": {
     "zh": "Baruuk Prime 系统 蓝图",
     "en": "Baruuk Prime Systems Blueprint"
+  },
+  "epitaph_prime_barrel": {
+    "zh": "葬铭 Prime 枪管",
+    "en": "Epitaph Prime Barrel"
   },
   "protea_prime_systems_blueprint": {
     "zh": "Protea Prime 系统 蓝图",
@@ -1791,6 +1787,10 @@
     "zh": "碎裂者 Prime 枪管",
     "en": "Astilla Prime Barrel"
   },
+  "sevagoth_prime_systems_blueprint": {
+    "zh": "Sevagoth Prime 系统 蓝图",
+    "en": "Sevagoth Prime Systems Blueprint"
+  },
   "boar_prime_stock": {
     "zh": "野猪 Prime 枪托",
     "en": "Boar Prime Stock"
@@ -1874,10 +1874,6 @@
   "corufell_prime_stock": {
     "zh": "闪劫 Prime 枪托",
     "en": "Corufell Prime Stock"
-  },
-  "nami_skyla_prime_handle": {
-    "zh": "海波斯库拉对剑 Prime 握柄",
-    "en": "Nami Skyla Prime Handle"
   },
   "chroma_prime_neuroptics_blueprint": {
     "zh": "Chroma Prime 头部神经光元 蓝图",
@@ -2098,6 +2094,10 @@
   "trumna_prime_stock": {
     "zh": "灭杀者 Prime 枪托",
     "en": "Trumna Prime Stock"
+  },
+  "nautilus_prime_blueprint": {
+    "zh": "鹦鹉螺 Prime 蓝图",
+    "en": "Nautilus Prime Blueprint"
   },
   "quassus_prime_blueprint": {
     "zh": "威震武扇 Prime 蓝图",
