@@ -8,6 +8,7 @@ interchangeable.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import math
 import os
@@ -16,6 +17,13 @@ from typing import Any, Callable
 
 
 REFINEMENTS = {"Intact", "Exceptional", "Flawless", "Radiant"}
+OFFICIAL_CHANCE_RARITY = {
+    "Intact": {25.33: "Common", 11.0: "Uncommon", 2.0: "Rare"},
+    "Exceptional": {23.33: "Common", 13.0: "Uncommon", 4.0: "Rare"},
+    "Flawless": {20.0: "Common", 17.0: "Uncommon", 6.0: "Rare"},
+    "Radiant": {16.67: "Common", 20.0: "Uncommon", 10.0: "Rare"},
+}
+EXPECTED_RARITIES = {"Common": 3, "Uncommon": 2, "Rare": 1}
 APPROVED_KEY_RENAMES = {
     "axi_o7_relic": {
         "target": "axi_y2_relic",
@@ -153,6 +161,119 @@ def _lifecycle_reward_signature(record: dict, label: str) -> tuple:
     return tuple(sorted(signature))
 
 
+def _validate_official_rewards(record: dict, label: str) -> tuple:
+    """Validate the exact six-row reward shape before syncing lifecycle snapshots."""
+    rewards = record.get("rewards")
+    if not isinstance(rewards, list) or len(rewards) != 6:
+        raise RuntimeError(f"{label} must contain exactly six official rewards")
+
+    signature = []
+    identities = set()
+    rarity_counts = {rarity: 0 for rarity in EXPECTED_RARITIES}
+    totals = {refinement: 0.0 for refinement in REFINEMENTS}
+    for reward in rewards:
+        if not isinstance(reward, dict):
+            raise RuntimeError(f"{label} contains a malformed official reward")
+        name = reward.get("name")
+        slug = reward.get("urlName")
+        rarity = reward.get("rarity")
+        chances = reward.get("chances")
+        if not isinstance(name, str) or not name.strip() \
+           or not isinstance(slug, str) \
+           or rarity not in EXPECTED_RARITIES:
+            raise RuntimeError(f"{label} contains an incomplete official reward identity")
+        identity = (name, rarity, slug)
+        if identity in identities:
+            raise RuntimeError(f"{label} contains a duplicate official reward identity")
+        identities.add(identity)
+        rarity_counts[rarity] += 1
+
+        if not isinstance(chances, dict) or set(chances) != REFINEMENTS:
+            raise RuntimeError(f"{label} has incomplete official refinement chances")
+        for refinement in REFINEMENTS:
+            chance = chances[refinement]
+            if isinstance(chance, bool) or not isinstance(chance, (int, float)) \
+               or not math.isfinite(chance):
+                raise RuntimeError(f"{label} has an invalid official chance for {name} {refinement}")
+            normalized = round(float(chance), 2)
+            if OFFICIAL_CHANCE_RARITY[refinement].get(normalized) != rarity:
+                raise RuntimeError(
+                    f"{label} official relic chance/rarity mismatch: {name} {refinement} {normalized}"
+                )
+            totals[refinement] += float(chance)
+        signature.append(identity)
+
+    if rarity_counts != EXPECTED_RARITIES:
+        raise RuntimeError(f"{label} must contain three Common, two Uncommon, and one Rare reward")
+    for refinement, total in totals.items():
+        if abs(total - 100.0) > 0.05:
+            raise RuntimeError(f"{label} official {refinement} chances total {total}, expected 100")
+    return tuple(sorted(signature))
+
+
+def refresh_official_reward_snapshots(relics: dict, full: dict) -> list[str]:
+    """Refresh only stale full-history reward snapshots from validated official rows."""
+    relics = _require_object(relics, "relics")
+    full = _require_object(full, "deep-date")
+    full_rows = _require_object(full.get("relics"), "deep-date.relics")
+    expected = {key for key, value in relics.items() if value.get("tier") != "Requiem"}
+    if set(full_rows) != expected:
+        missing = sorted(expected - set(full_rows))
+        extra = sorted(set(full_rows) - expected)
+        raise RuntimeError(
+            "Cannot refresh official rewards with incomplete lifecycle keys; "
+            f"missing={missing}, extra={extra}"
+        )
+
+    updated = []
+    for key in sorted(expected):
+        canonical = _require_object(relics[key], f"relics.{key}")
+        row = _require_object(full_rows[key], f"deep-date.relics.{key}")
+        if row.get("name") != canonical.get("name") or row.get("tier") != canonical.get("tier"):
+            raise RuntimeError(f"Lifecycle identity mismatch during official reward refresh: {key}")
+
+        official_signature = _validate_official_rewards(canonical, key)
+        previous_rewards = row.get("rewards")
+        previous_signature = _lifecycle_reward_signature(row, key)
+        if len(previous_rewards) != 6:
+            raise RuntimeError(f"{key} lifecycle snapshot must contain exactly six rewards")
+        previous_by_identity = {}
+        previous_rarity_counts = {rarity: 0 for rarity in EXPECTED_RARITIES}
+        for reward in previous_rewards:
+            if not isinstance(reward, dict):
+                raise RuntimeError(f"{key} has a malformed lifecycle reward")
+            if reward["rarity"] not in EXPECTED_RARITIES or not reward["name"].strip():
+                raise RuntimeError(f"{key} has an invalid lifecycle reward identity")
+            zh = reward.get("zh")
+            if zh is not None and not isinstance(zh, str):
+                raise RuntimeError(f"{key} has an invalid lifecycle reward translation")
+            identity = (reward["name"], reward["rarity"], reward.get("urlName", ""))
+            if identity in previous_by_identity:
+                raise RuntimeError(f"{key} contains a duplicate lifecycle reward identity")
+            previous_by_identity[identity] = zh
+            previous_rarity_counts[reward["rarity"]] += 1
+        if previous_rarity_counts != EXPECTED_RARITIES:
+            raise RuntimeError(f"{key} lifecycle snapshot has an invalid 3/2/1 rarity distribution")
+
+        if previous_signature == official_signature:
+            continue
+
+        row["rewards"] = [
+            {
+                "name": reward["name"],
+                "rarity": reward["rarity"],
+                "urlName": reward["urlName"],
+                "zh": previous_by_identity.get(
+                    (reward["name"], reward["rarity"], reward["urlName"])
+                ),
+            }
+            for reward in canonical["rewards"]
+        ]
+        updated.append(key)
+
+    return updated
+
+
 def _rekey_mapping(container: dict, old_key: str, new_key: str, label: str, rule: dict) -> bool:
     old_present = old_key in container
     new_present = new_key in container
@@ -183,8 +304,13 @@ def _rekey_varzia_list(document: dict, old_key: str, new_key: str, label: str) -
     return True
 
 
-def migrate_approved_lifecycle_keys(relics: dict, full: dict, summary: dict) -> bool:
-    """Re-key only the approved lifecycle row, preserving all row contents."""
+def migrate_approved_lifecycle_keys(
+    relics: dict,
+    full: dict,
+    summary: dict,
+    refresh_official_rewards: bool = False,
+) -> bool:
+    """Apply the approved key correction and optional official reward snapshot refresh."""
     changed = False
     full_rows = _require_object(full.get("relics"), "deep-date.relics")
     summary_rows = _require_object(summary.get("items"), "deep-date-summary.items")
@@ -202,12 +328,23 @@ def migrate_approved_lifecycle_keys(relics: dict, full: dict, summary: dict) -> 
         changed |= _rekey_varzia_list(full, old_key, new_key, "deep-date")
         changed |= _rekey_varzia_list(summary, old_key, new_key, "deep-date-summary")
 
-        if _lifecycle_reward_signature(full_rows[new_key], new_key) != tuple(
-            sorted((reward["name"], reward["rarity"], reward.get("urlName", ""))
-                   for reward in canonical["rewards"])
-        ):
-            raise RuntimeError(f"Lifecycle reward identity mismatch after re-keying {new_key}")
+        if not refresh_official_rewards:
+            lifecycle_signature = _lifecycle_reward_signature(full_rows[new_key], new_key)
+            canonical_signature = tuple(
+                sorted((reward["name"], reward["rarity"], reward.get("urlName", ""))
+                       for reward in canonical["rewards"])
+            )
+            if lifecycle_signature != canonical_signature:
+                raise RuntimeError(f"Lifecycle reward identity mismatch after re-keying {new_key}")
 
+    if refresh_official_rewards:
+        updated = refresh_official_reward_snapshots(relics, full)
+        if updated:
+            changed = True
+            print(
+                "Refreshed official reward snapshots while preserving lifecycle history: "
+                + ", ".join(updated)
+            )
     validate_lifecycle_release(relics, full, summary)
     return changed
 
@@ -297,19 +434,38 @@ def _atomic_write_json(path: Path, value: dict, indent: int | None) -> None:
     os.replace(temporary, path)
 
 
-def validate_data_dir(data_dir: Path, migrate: bool = False) -> int:
+def validate_data_dir(
+    data_dir: Path,
+    migrate: bool = False,
+    refresh_official_rewards: bool = False,
+) -> int:
     relics_path = data_dir / "relics.json"
     full_path = data_dir / "relic-deep-date.json"
     summary_path = data_dir / "relic-deep-date-summary.json"
     relics = json.loads(relics_path.read_text(encoding="utf-8"))
     full = json.loads(full_path.read_text(encoding="utf-8"))
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
-    changed = migrate_approved_lifecycle_keys(relics, full, summary) if migrate else False
+    original_full = copy.deepcopy(full)
+    original_summary = copy.deepcopy(summary)
+    if migrate:
+        migrate_approved_lifecycle_keys(
+            relics,
+            full,
+            summary,
+            refresh_official_rewards=refresh_official_rewards,
+        )
+    elif refresh_official_rewards:
+        updated = refresh_official_reward_snapshots(relics, full)
+        if updated:
+            print(
+                "Refreshed official reward snapshots while preserving lifecycle history: "
+                + ", ".join(updated)
+            )
     count = validate_lifecycle_release(relics, full, summary)
-    if changed:
+    if full != original_full:
         _atomic_write_json(full_path, full, indent=1)
+    if summary != original_summary:
         _atomic_write_json(summary_path, summary, indent=None)
-        print("Applied the single approved Axi Y2 lifecycle key correction; history contents were preserved.")
     print(f"Validated {count} non-Requiem relic identities and lifecycle records.")
     return count
 
@@ -319,11 +475,20 @@ def main() -> None:
     parser.add_argument(
         "--migrate-approved-key-renames",
         action="store_true",
-        help="apply only the exact approved relic lifecycle key correction, then validate",
+        help="apply the exact approved relic lifecycle key correction, then validate",
+    )
+    parser.add_argument(
+        "--refresh-official-reward-snapshots",
+        action="store_true",
+        help="refresh only reward snapshots from validated official relic tables, preserving lifecycle history",
     )
     args = parser.parse_args()
     data_dir = Path(__file__).resolve().parent.parent / "data"
-    validate_data_dir(data_dir, migrate=args.migrate_approved_key_renames)
+    validate_data_dir(
+        data_dir,
+        migrate=args.migrate_approved_key_renames,
+        refresh_official_rewards=args.refresh_official_reward_snapshots,
+    )
 
 
 if __name__ == "__main__":

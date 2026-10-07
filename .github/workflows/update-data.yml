@@ -69,7 +69,10 @@ jobs:
         run: python scripts/build_relic_db.py
 
       - name: Apply only the approved lifecycle key correction and validate release
-        run: python scripts/relic_release.py --migrate-approved-key-renames
+        run: >-
+          python scripts/relic_release.py
+          --migrate-approved-key-renames
+          --refresh-official-reward-snapshots
 
       - name: Build Price Database (B)
         id: price

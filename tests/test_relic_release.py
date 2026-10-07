@@ -169,6 +169,97 @@ class RelicReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "reward identity mismatch"):
             migrate_approved_lifecycle_keys({"axi_y2_relic": relic}, full, summary)
 
+    def test_official_reward_refresh_changes_only_snapshot_and_preserves_history(self):
+        previous = make_axi_y2_relic()
+        candidate = copy.deepcopy(previous)
+        candidate["rewards"][0].update(
+            name="Updated Prime Blueprint",
+            urlName="updated_prime_blueprint",
+        )
+        full_record, summary_record = make_lifecycle_record(previous)
+        next(
+            reward for reward in full_record["rewards"]
+            if reward["urlName"] == "orthos_prime_handle"
+        )["zh"] = "保留的中文名"
+        full = {"generated": "test-generation", "relics": {"axi_y2_relic": full_record}, "varziaRelics": []}
+        summary = {"generated": "test-generation", "items": {"axi_y2_relic": summary_record}, "varziaRelics": []}
+        original_events = copy.deepcopy(full_record["events"])
+        original_non_reward_fields = {
+            key: copy.deepcopy(value)
+            for key, value in full_record.items()
+            if key != "rewards"
+        }
+        original_summary = copy.deepcopy(summary)
+
+        changed = migrate_approved_lifecycle_keys(
+            {"axi_y2_relic": candidate}, full, summary,
+            refresh_official_rewards=True,
+        )
+
+        self.assertTrue(changed)
+        refreshed = full["relics"]["axi_y2_relic"]
+        self.assertEqual(refreshed["events"], original_events)
+        self.assertEqual(
+            {key: value for key, value in refreshed.items() if key != "rewards"},
+            original_non_reward_fields,
+        )
+        self.assertEqual(summary, original_summary)
+        self.assertEqual(
+            next(
+                reward for reward in refreshed["rewards"]
+                if reward["urlName"] == "updated_prime_blueprint"
+            )["name"],
+            "Updated Prime Blueprint",
+        )
+        self.assertNotIn("fang_prime_blueprint", {r["urlName"] for r in refreshed["rewards"]})
+        self.assertEqual(
+            next(r for r in refreshed["rewards"] if r["urlName"] == "orthos_prime_handle")["zh"],
+            "保留的中文名",
+        )
+        self.assertFalse(
+            migrate_approved_lifecycle_keys(
+                {"axi_y2_relic": candidate}, full, summary,
+                refresh_official_rewards=True,
+            )
+        )
+
+    def test_official_reward_refresh_rejects_invalid_rarity_chance_without_mutation(self):
+        relic = make_axi_y2_relic()
+        relic["rewards"][0]["chances"]["Radiant"] = 17
+        full_record, summary_record = make_lifecycle_record(make_axi_y2_relic())
+        full = {"generated": "g", "relics": {"axi_y2_relic": full_record}, "varziaRelics": []}
+        summary = {"generated": "g", "items": {"axi_y2_relic": summary_record}, "varziaRelics": []}
+        original_full = copy.deepcopy(full)
+
+        with self.assertRaisesRegex(RuntimeError, "official relic chance/rarity mismatch"):
+            migrate_approved_lifecycle_keys(
+                {"axi_y2_relic": relic}, full, summary,
+                refresh_official_rewards=True,
+            )
+        self.assertEqual(full, original_full)
+
+    def test_official_table_can_list_same_reward_name_in_distinct_rarity_slots(self):
+        previous = make_axi_y2_relic()
+        candidate = copy.deepcopy(previous)
+        candidate["rewards"][0].update(name="2X Forma Blueprint", urlName="")
+        candidate["rewards"][2].update(name="2X Forma Blueprint", urlName="")
+        full_record, summary_record = make_lifecycle_record(previous)
+        full = {"generated": "g", "relics": {"axi_y2_relic": full_record}, "varziaRelics": []}
+        summary = {"generated": "g", "items": {"axi_y2_relic": summary_record}, "varziaRelics": []}
+
+        changed = migrate_approved_lifecycle_keys(
+            {"axi_y2_relic": candidate}, full, summary,
+            refresh_official_rewards=True,
+        )
+
+        self.assertTrue(changed)
+        forma_rows = [
+            reward for reward in full["relics"]["axi_y2_relic"]["rewards"]
+            if reward["name"] == "2X Forma Blueprint"
+        ]
+        self.assertEqual({r["rarity"] for r in forma_rows}, {"Common", "Uncommon"})
+        self.assertEqual(len(forma_rows), 2)
+
     def test_deep_date_resolver_uses_exact_canonical_identity_only(self):
         relic = make_axi_y2_relic()
         self.assertEqual(
