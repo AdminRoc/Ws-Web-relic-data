@@ -1,65 +1,65 @@
 {
-  "generated": "2026-10-13T23:05:33Z",
+  "generated": "2026-10-14T00:06:01Z",
   "items": {
     "acceltra_prime_barrel": {
       "name": "Acceltra Prime Barrel",
-      "recent_avg": 16.0,
+      "recent_avg": 17.5,
       "three_day_avg": 16.58
     },
     "acceltra_prime_blueprint": {
       "name": "Acceltra Prime Blueprint",
-      "recent_avg": 3.5,
+      "recent_avg": 3.0,
       "three_day_avg": 3.4
     },
     "acceltra_prime_receiver": {
       "name": "Acceltra Prime Receiver",
       "recent_avg": 5.0,
-      "three_day_avg": 5.32
+      "three_day_avg": 5.29
     },
     "acceltra_prime_stock": {
       "name": "Acceltra Prime Stock",
-      "recent_avg": 21.5,
-      "three_day_avg": 19.84
+      "recent_avg": 23.5,
+      "three_day_avg": 19.91
     },
     "afentis_prime_barrel": {
       "name": "Afentis Prime Barrel",
-      "recent_avg": 5.0,
-      "three_day_avg": 4.35
+      "recent_avg": 4.5,
+      "three_day_avg": 4.34
     },
     "afentis_prime_blade": {
       "name": "Afentis Prime Blade",
-      "recent_avg": 10.0,
+      "recent_avg": 9.0,
       "three_day_avg": 9.47
     },
     "afentis_prime_blueprint": {
       "name": "Afentis Prime Blueprint",
-      "recent_avg": 14.5,
-      "three_day_avg": 14.29
+      "recent_avg": 15.0,
+      "three_day_avg": 14.3
     },
     "afentis_prime_handle": {
       "name": "Afentis Prime Handle",
       "recent_avg": 5.0,
-      "three_day_avg": 5.5
+      "three_day_avg": 5.45
     },
     "afuris_prime_barrel": {
       "name": "Afuris Prime Barrel",
-      "recent_avg": 4.5,
-      "three_day_avg": 5.76
+      "recent_avg": 5.0,
+      "three_day_avg": 5.75
     },
     "afuris_prime_blueprint": {
       "name": "Afuris Prime Blueprint",
       "recent_avg": 4.0,
-      "three_day_avg": 4.1
+      "three_day_avg": 4.09
     },
     "afuris_prime_link": {
       "name": "Afuris Prime Link",
       "recent_avg": 5.0,
-      "three_day_avg": 4.6
+      "three_day_avg": 4.61
     },
     "afuris_prime_receiver": {
       "name": "Afuris Prime Receiver",
-      "recent_avg": 40.0,
-      "three_day_avg": 36.02
+      "recent_avg": 39.0,
+      "three_day_avg": 36.11
     },
     "akarius_prime_barrel": {
       "name": "Akarius Prime Barrel",
@@ -68,8 +68,8 @@
     },
     "akarius_prime_blueprint": {
       "name": "Akarius Prime Blueprint",
-      "recent_avg": 13.5,
-      "three_day_avg": 14.83
+      "recent_avg": 14.0,
+      "three_day_avg": 14.8
     },
     "akarius_prime_link": {
       "name": "Akarius Prime Link",
@@ -78,33 +78,33 @@
     },
     "akarius_prime_receiver": {
       "name": "Akarius Prime Receiver",
-      "recent_avg": 38.5,
-      "three_day_avg": 30.25
+      "recent_avg": 40.0,
+      "three_day_avg": 30.4
     },
     "akbolto_prime_barrel": {
       "name": "Akbolto Prime Barrel",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.5
+      "recent_avg": 8.5,
+      "three_day_avg": 7.51
     },
     "akbolto_prime_blueprint": {
       "name": "Akbolto Prime Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 3.73
+      "recent_avg": 5.0,
+      "three_day_avg": 3.74
     },
     "akbolto_prime_link": {
       "name": "Akbolto Prime Link",
-      "recent_avg": 5.0,
-      "three_day_avg": 4.39
+      "recent_avg": 4.5,
+      "three_day_avg": 4.4
     },
     "akbolto_prime_receiver": {
       "name": "Akbolto Prime Receiver",
-      "recent_avg": 26.5,
-      "three_day_avg": 27.29
+      "recent_avg": 32.5,
+      "three_day_avg": 27.42
     },
     "akbronco_prime_blueprint": {
       "name": "Akbronco Prime Blueprint",
       "recent_avg": 2.0,
-      "three_day_avg": 2.08
+      "three_day_avg": 2.07
     },
     "akbronco_prime_link": {
       "name": "Akbronco Prime Link",
@@ -113,48 +113,48 @@
     },
     "akjagara_prime_barrel": {
       "name": "Akjagara Prime Barrel",
-      "recent_avg": 42.5,
-      "three_day_avg": 32.82
+      "recent_avg": 45.0,
+      "three_day_avg": 32.91
     },
     "akjagara_prime_blueprint": {
       "name": "Akjagara Prime Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 3.9
+      "recent_avg": 5.0,
+      "three_day_avg": 3.93
     },
     "akjagara_prime_link": {
       "name": "Akjagara Prime Link",
-      "recent_avg": 7.5,
-      "three_day_avg": 7.93
+      "recent_avg": 7.0,
+      "three_day_avg": 7.92
     },
     "akjagara_prime_receiver": {
       "name": "Akjagara Prime Receiver",
       "recent_avg": 10.0,
-      "three_day_avg": 14.19
+      "three_day_avg": 14.15
     },
     "aklex_prime_blueprint": {
       "name": "Aklex Prime Blueprint",
-      "recent_avg": 6.5,
+      "recent_avg": 7.0,
       "three_day_avg": 6.97
     },
     "aklex_prime_link": {
       "name": "Aklex Prime Link",
-      "recent_avg": 32.5,
-      "three_day_avg": 28.86
+      "recent_avg": 31.5,
+      "three_day_avg": 28.91
     },
     "akmagnus_prime_blueprint": {
       "name": "Akmagnus Prime Blueprint",
-      "recent_avg": 14.0,
-      "three_day_avg": 12.03
+      "recent_avg": 10.5,
+      "three_day_avg": 12.05
     },
     "akmagnus_prime_link": {
       "name": "Akmagnus Prime Link",
-      "recent_avg": 23.0,
+      "recent_avg": 10.0,
       "three_day_avg": 13.86
     },
     "aksomati_prime_barrel": {
       "name": "Aksomati Prime Barrel",
       "recent_avg": 9.5,
-      "three_day_avg": 11.26
+      "three_day_avg": 11.23
     },
     "aksomati_prime_blueprint": {
       "name": "Aksomati Prime Blueprint",
@@ -163,12 +163,12 @@
     },
     "aksomati_prime_link": {
       "name": "Aksomati Prime Link",
-      "recent_avg": 19.5,
-      "three_day_avg": 23.46
+      "recent_avg": 24.0,
+      "three_day_avg": 23.44
     },
     "aksomati_prime_receiver": {
       "name": "Aksomati Prime Receiver",
-      "recent_avg": 9.0,
+      "recent_avg": 10.0,
       "three_day_avg": 9.77
     },
     "akstiletto_prime_barrel": {
@@ -178,38 +178,38 @@
     },
     "akstiletto_prime_blueprint": {
       "name": "Akstiletto Prime Blueprint",
-      "recent_avg": 30.0,
+      "recent_avg": 19.0,
       "three_day_avg": 17.88
     },
     "akstiletto_prime_link": {
       "name": "Akstiletto Prime Link",
       "recent_avg": 9.5,
-      "three_day_avg": 13.62
+      "three_day_avg": 13.65
     },
     "akstiletto_prime_receiver": {
       "name": "Akstiletto Prime Receiver",
-      "recent_avg": 24.5,
-      "three_day_avg": 26.63
+      "recent_avg": 23.5,
+      "three_day_avg": 26.6
     },
     "akvasto_prime_blueprint": {
       "name": "Akvasto Prime Blueprint",
-      "recent_avg": 37.0,
-      "three_day_avg": 38.95
+      "recent_avg": 49.5,
+      "three_day_avg": 38.6
     },
     "akvasto_prime_link": {
       "name": "Akvasto Prime Link",
-      "recent_avg": 14.5,
-      "three_day_avg": 13.51
+      "recent_avg": 17.5,
+      "three_day_avg": 13.6
     },
     "alternox_prime_barrel": {
       "name": "Alternox Prime Barrel",
       "recent_avg": 4.0,
-      "three_day_avg": 3.41
+      "three_day_avg": 3.42
     },
     "alternox_prime_blueprint": {
       "name": "Alternox Prime Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 7.45
+      "recent_avg": 8.5,
+      "three_day_avg": 7.47
     },
     "alternox_prime_receiver": {
       "name": "Alternox Prime Receiver",
@@ -223,118 +223,118 @@
     },
     "ankyros_prime_blade": {
       "name": "Ankyros Prime Blade",
-      "recent_avg": 8.5,
-      "three_day_avg": 10.01
+      "recent_avg": 10.0,
+      "three_day_avg": 9.94
     },
     "ankyros_prime_blueprint": {
       "name": "Ankyros Prime Blueprint",
-      "recent_avg": 13.0,
-      "three_day_avg": 9.24
+      "recent_avg": 35.0,
+      "three_day_avg": 9.61
     },
     "ankyros_prime_gauntlet": {
       "name": "Ankyros Prime Gauntlet",
-      "recent_avg": 14.0,
-      "three_day_avg": 15.11
+      "recent_avg": 14.5,
+      "three_day_avg": 15.14
     },
     "ash_prime_blueprint": {
       "name": "Ash Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.89
+      "recent_avg": 11.0,
+      "three_day_avg": 12.85
     },
     "ash_prime_chassis_blueprint": {
       "name": "Ash Prime Chassis Blueprint",
-      "recent_avg": 12.5,
+      "recent_avg": 11.0,
       "three_day_avg": 13.01
     },
     "ash_prime_neuroptics_blueprint": {
       "name": "Ash Prime Neuroptics Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 10.32
+      "three_day_avg": 10.27
     },
     "ash_prime_systems_blueprint": {
       "name": "Ash Prime Systems Blueprint",
       "recent_avg": 18.5,
-      "three_day_avg": 18.3
+      "three_day_avg": 18.31
     },
     "astilla_prime_barrel": {
       "name": "Astilla Prime Barrel",
-      "recent_avg": 64.0,
-      "three_day_avg": 27.18
+      "recent_avg": 54.0,
+      "three_day_avg": 27.59
     },
     "astilla_prime_blueprint": {
       "name": "Astilla Prime Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 5.53
+      "recent_avg": 4.5,
+      "three_day_avg": 5.49
     },
     "astilla_prime_receiver": {
       "name": "Astilla Prime Receiver",
-      "recent_avg": 6.5,
+      "recent_avg": 7.5,
       "three_day_avg": 7.27
     },
     "astilla_prime_stock": {
       "name": "Astilla Prime Stock",
-      "recent_avg": 5.5,
-      "three_day_avg": 6.11
+      "recent_avg": 7.0,
+      "three_day_avg": 6.12
     },
     "athodai_prime_barrel": {
       "name": "Athodai Prime Barrel",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.18
+      "recent_avg": 8.5,
+      "three_day_avg": 9.17
     },
     "athodai_prime_blueprint": {
       "name": "Athodai Prime Blueprint",
       "recent_avg": 4.0,
-      "three_day_avg": 4.0
+      "three_day_avg": 3.99
     },
     "athodai_prime_receiver": {
       "name": "Athodai Prime Receiver",
-      "recent_avg": 6.5,
-      "three_day_avg": 7.36
+      "recent_avg": 8.0,
+      "three_day_avg": 7.39
     },
     "atlas_prime_blueprint": {
       "name": "Atlas Prime Blueprint",
-      "recent_avg": 5.0,
+      "recent_avg": 3.5,
       "three_day_avg": 4.51
     },
     "atlas_prime_chassis_blueprint": {
       "name": "Atlas Prime Chassis Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 7.58
+      "recent_avg": 7.0,
+      "three_day_avg": 7.55
     },
     "atlas_prime_neuroptics_blueprint": {
       "name": "Atlas Prime Neuroptics Blueprint",
-      "recent_avg": 65.0,
-      "three_day_avg": 53.97
+      "recent_avg": 57.5,
+      "three_day_avg": 53.99
     },
     "atlas_prime_systems_blueprint": {
       "name": "Atlas Prime Systems Blueprint",
-      "recent_avg": 5.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.16
     },
     "ayatan_amber_star": {
       "name": "Ayatan Amber Star",
       "recent_avg": 2.0,
-      "three_day_avg": 2.52
+      "three_day_avg": 2.49
     },
     "ballistica_prime_blueprint": {
       "name": "Ballistica Prime Blueprint",
-      "recent_avg": 42.5,
-      "three_day_avg": 38.52
+      "recent_avg": 39.5,
+      "three_day_avg": 38.66
     },
     "ballistica_prime_lower_limb": {
       "name": "Ballistica Prime Lower Limb",
-      "recent_avg": 11.0,
-      "three_day_avg": 10.51
+      "recent_avg": 12.5,
+      "three_day_avg": 10.54
     },
     "ballistica_prime_receiver": {
       "name": "Ballistica Prime Receiver",
-      "recent_avg": 8.0,
-      "three_day_avg": 7.64
+      "recent_avg": 7.5,
+      "three_day_avg": 7.65
     },
     "ballistica_prime_string": {
       "name": "Ballistica Prime String",
-      "recent_avg": 24.0,
-      "three_day_avg": 21.79
+      "recent_avg": 23.0,
+      "three_day_avg": 21.83
     },
     "ballistica_prime_upper_limb": {
       "name": "Ballistica Prime Upper Limb",
@@ -348,128 +348,128 @@
     },
     "banshee_prime_chassis_blueprint": {
       "name": "Banshee Prime Chassis Blueprint",
-      "recent_avg": 36.5,
+      "recent_avg": 30.0,
       "three_day_avg": 31.77
     },
     "banshee_prime_neuroptics_blueprint": {
       "name": "Banshee Prime Neuroptics Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 5.0,
       "three_day_avg": 4.79
     },
     "banshee_prime_systems_blueprint": {
       "name": "Banshee Prime Systems Blueprint",
-      "recent_avg": 20.5,
-      "three_day_avg": 20.14
+      "recent_avg": 20.0,
+      "three_day_avg": 20.16
     },
     "baruuk_prime_blueprint": {
       "name": "Baruuk Prime Blueprint",
-      "recent_avg": 15.0,
-      "three_day_avg": 15.41
+      "recent_avg": 16.0,
+      "three_day_avg": 15.42
     },
     "baruuk_prime_chassis_blueprint": {
       "name": "Baruuk Prime Chassis Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.73
+      "three_day_avg": 4.74
     },
     "baruuk_prime_neuroptics_blueprint": {
       "name": "Baruuk Prime Neuroptics Blueprint",
-      "recent_avg": 19.5,
-      "three_day_avg": 15.7
+      "recent_avg": 29.5,
+      "three_day_avg": 15.9
     },
     "baruuk_prime_systems_blueprint": {
       "name": "Baruuk Prime Systems Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 9.03
+      "recent_avg": 8.5,
+      "three_day_avg": 9.02
     },
     "baza_prime_barrel": {
       "name": "Baza Prime Barrel",
-      "recent_avg": 6.0,
-      "three_day_avg": 7.42
+      "recent_avg": 7.0,
+      "three_day_avg": 7.41
     },
     "baza_prime_blueprint": {
       "name": "Baza Prime Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 6.65
+      "recent_avg": 6.0,
+      "three_day_avg": 6.64
     },
     "baza_prime_receiver": {
       "name": "Baza Prime Receiver",
-      "recent_avg": 7.5,
-      "three_day_avg": 9.48
+      "recent_avg": 8.0,
+      "three_day_avg": 9.45
     },
     "baza_prime_stock": {
       "name": "Baza Prime Stock",
-      "recent_avg": 28.5,
-      "three_day_avg": 24.58
+      "recent_avg": 35.0,
+      "three_day_avg": 24.69
     },
     "bo_prime_blueprint": {
       "name": "Bo Prime Blueprint",
-      "recent_avg": 22.0,
-      "three_day_avg": 16.68
+      "recent_avg": 20.0,
+      "three_day_avg": 16.73
     },
     "bo_prime_handle": {
       "name": "Bo Prime Handle",
-      "recent_avg": 30.0,
-      "three_day_avg": 18.68
+      "recent_avg": 20.0,
+      "three_day_avg": 18.69
     },
     "bo_prime_ornament": {
       "name": "Bo Prime Ornament",
-      "recent_avg": 26.0,
-      "three_day_avg": 24.49
+      "recent_avg": 26.5,
+      "three_day_avg": 24.51
     },
     "boar_prime_barrel": {
       "name": "Boar Prime Barrel",
-      "recent_avg": 19.0,
+      "recent_avg": 20.0,
       "three_day_avg": 17.78
     },
     "boar_prime_blueprint": {
       "name": "Boar Prime Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 9.45
+      "recent_avg": 10.0,
+      "three_day_avg": 9.47
     },
     "boar_prime_receiver": {
       "name": "Boar Prime Receiver",
-      "recent_avg": 17.0,
-      "three_day_avg": 16.3
+      "recent_avg": 19.0,
+      "three_day_avg": 16.36
     },
     "boar_prime_stock": {
       "name": "Boar Prime Stock",
-      "recent_avg": 49.5,
+      "recent_avg": 48.0,
       "three_day_avg": 46.95
     },
     "boltor_prime_barrel": {
       "name": "Boltor Prime Barrel",
-      "recent_avg": 11.0,
-      "three_day_avg": 12.13
+      "recent_avg": 10.5,
+      "three_day_avg": 12.14
     },
     "boltor_prime_blueprint": {
       "name": "Boltor Prime Blueprint",
-      "recent_avg": 18.5,
-      "three_day_avg": 19.62
+      "recent_avg": 19.5,
+      "three_day_avg": 19.58
     },
     "boltor_prime_receiver": {
       "name": "Boltor Prime Receiver",
       "recent_avg": 10.0,
-      "three_day_avg": 8.23
+      "three_day_avg": 8.25
     },
     "boltor_prime_stock": {
       "name": "Boltor Prime Stock",
-      "recent_avg": 12.0,
-      "three_day_avg": 10.9
+      "recent_avg": 15.0,
+      "three_day_avg": 10.97
     },
     "braton_prime_barrel": {
       "name": "Braton Prime Barrel",
-      "recent_avg": 5.0,
+      "recent_avg": 3.0,
       "three_day_avg": 2.86
     },
     "braton_prime_blueprint": {
       "name": "Braton Prime Blueprint",
       "recent_avg": 2.0,
-      "three_day_avg": 2.01
+      "three_day_avg": 2.0
     },
     "braton_prime_receiver": {
       "name": "Braton Prime Receiver",
-      "recent_avg": 4.0,
-      "three_day_avg": 4.27
+      "recent_avg": 5.0,
+      "three_day_avg": 4.28
     },
     "braton_prime_stock": {
       "name": "Braton Prime Stock",
@@ -484,31 +484,31 @@
     "bronco_prime_blueprint": {
       "name": "Bronco Prime Blueprint",
       "recent_avg": 3.0,
-      "three_day_avg": 5.42
+      "three_day_avg": 5.38
     },
     "bronco_prime_receiver": {
       "name": "Bronco Prime Receiver",
       "recent_avg": 3.0,
-      "three_day_avg": 2.9
+      "three_day_avg": 2.91
     },
     "burston_prime_barrel": {
       "name": "Burston Prime Barrel",
-      "recent_avg": 4.5,
-      "three_day_avg": 5.38
+      "recent_avg": 4.0,
+      "three_day_avg": 5.36
     },
     "burston_prime_blueprint": {
       "name": "Burston Prime Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 4.0,
       "three_day_avg": 5.49
     },
     "burston_prime_receiver": {
       "name": "Burston Prime Receiver",
-      "recent_avg": 10.0,
-      "three_day_avg": 5.09
+      "recent_avg": 5.0,
+      "three_day_avg": 5.1
     },
     "burston_prime_stock": {
       "name": "Burston Prime Stock",
-      "recent_avg": 3.5,
+      "recent_avg": 4.0,
       "three_day_avg": 3.7
     },
     "caliban_prime_blueprint": {
@@ -523,33 +523,33 @@
     },
     "caliban_prime_neuroptics_blueprint": {
       "name": "Caliban Prime Neuroptics Blueprint",
-      "recent_avg": 7.0,
+      "recent_avg": 10.0,
       "three_day_avg": 12.25
     },
     "caliban_prime_systems_blueprint": {
       "name": "Caliban Prime Systems Blueprint",
-      "recent_avg": 16.0,
-      "three_day_avg": 13.12
+      "recent_avg": 12.0,
+      "three_day_avg": 13.11
     },
     "carrier_prime_blueprint": {
       "name": "Carrier Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 11.35
+      "recent_avg": 10.5,
+      "three_day_avg": 11.32
     },
     "carrier_prime_carapace": {
       "name": "Carrier Prime Carapace",
       "recent_avg": 15.0,
-      "three_day_avg": 15.51
+      "three_day_avg": 15.5
     },
     "carrier_prime_cerebrum": {
       "name": "Carrier Prime Cerebrum",
-      "recent_avg": 55.0,
-      "three_day_avg": 50.15
+      "recent_avg": 49.5,
+      "three_day_avg": 50.23
     },
     "carrier_prime_systems": {
       "name": "Carrier Prime Systems",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.59
+      "recent_avg": 9.5,
+      "three_day_avg": 8.6
     },
     "cedo_prime_barrel": {
       "name": "Cedo Prime Barrel",
@@ -558,7 +558,7 @@
     },
     "cedo_prime_blueprint": {
       "name": "Cedo Prime Blueprint",
-      "recent_avg": 7.5,
+      "recent_avg": 8.0,
       "three_day_avg": 7.9
     },
     "cedo_prime_receiver": {
@@ -568,78 +568,78 @@
     },
     "cedo_prime_stock": {
       "name": "Cedo Prime Stock",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.9
+      "recent_avg": 5.0,
+      "three_day_avg": 4.92
     },
     "cernos_prime_blueprint": {
       "name": "Cernos Prime Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 6.18
+      "recent_avg": 12.5,
+      "three_day_avg": 6.27
     },
     "cernos_prime_grip": {
       "name": "Cernos Prime Grip",
       "recent_avg": 9.0,
-      "three_day_avg": 8.21
+      "three_day_avg": 8.23
     },
     "cernos_prime_lower_limb": {
       "name": "Cernos Prime Lower Limb",
       "recent_avg": 21.5,
-      "three_day_avg": 31.62
+      "three_day_avg": 31.64
     },
     "cernos_prime_string": {
       "name": "Cernos Prime String",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.56
+      "recent_avg": 7.0,
+      "three_day_avg": 8.52
     },
     "cernos_prime_upper_limb": {
       "name": "Cernos Prime Upper Limb",
-      "recent_avg": 10.0,
-      "three_day_avg": 9.58
+      "recent_avg": 11.0,
+      "three_day_avg": 9.6
     },
     "chroma_prime_blueprint": {
       "name": "Chroma Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 9.34
+      "recent_avg": 9.0,
+      "three_day_avg": 9.33
     },
     "chroma_prime_chassis_blueprint": {
       "name": "Chroma Prime Chassis Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 9.49
+      "recent_avg": 9.0,
+      "three_day_avg": 9.5
     },
     "chroma_prime_neuroptics_blueprint": {
       "name": "Chroma Prime Neuroptics Blueprint",
-      "recent_avg": 30.0,
-      "three_day_avg": 30.48
+      "recent_avg": 31.0,
+      "three_day_avg": 30.49
     },
     "chroma_prime_systems_blueprint": {
       "name": "Chroma Prime Systems Blueprint",
-      "recent_avg": 32.5,
+      "recent_avg": 29.0,
       "three_day_avg": 29.29
     },
     "cobra_and_crane_prime_blade": {
       "name": "Cobra & Crane Prime Blade",
-      "recent_avg": 6.5,
-      "three_day_avg": 4.97
+      "recent_avg": 5.0,
+      "three_day_avg": 4.98
     },
     "cobra_and_crane_prime_blueprint": {
       "name": "Cobra & Crane Prime Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 3.92
+      "recent_avg": 5.0,
+      "three_day_avg": 3.95
     },
     "cobra_and_crane_prime_guard": {
       "name": "Cobra & Crane Prime Guard",
-      "recent_avg": 46.5,
-      "three_day_avg": 13.86
+      "recent_avg": 21.5,
+      "three_day_avg": 14.01
     },
     "cobra_and_crane_prime_hilt": {
       "name": "Cobra & Crane Prime Hilt",
-      "recent_avg": 8.0,
-      "three_day_avg": 6.23
+      "recent_avg": 4.5,
+      "three_day_avg": 6.21
     },
     "corinth_prime_barrel": {
       "name": "Corinth Prime Barrel",
-      "recent_avg": 39.0,
-      "three_day_avg": 38.76
+      "recent_avg": 37.5,
+      "three_day_avg": 38.77
     },
     "corinth_prime_blueprint": {
       "name": "Corinth Prime Blueprint",
@@ -648,138 +648,138 @@
     },
     "corinth_prime_receiver": {
       "name": "Corinth Prime Receiver",
-      "recent_avg": 8.0,
-      "three_day_avg": 5.25
+      "recent_avg": 10.0,
+      "three_day_avg": 5.28
     },
     "corinth_prime_stock": {
       "name": "Corinth Prime Stock",
-      "recent_avg": 18.0,
-      "three_day_avg": 18.25
+      "recent_avg": 17.5,
+      "three_day_avg": 18.24
     },
     "corvas_prime_barrel": {
       "name": "Corvas Prime Barrel",
-      "recent_avg": 37.0,
-      "three_day_avg": 29.6
+      "recent_avg": 39.5,
+      "three_day_avg": 29.74
     },
     "corvas_prime_blueprint": {
       "name": "Corvas Prime Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 6.58
+      "recent_avg": 8.5,
+      "three_day_avg": 6.6
     },
     "corvas_prime_receiver": {
       "name": "Corvas Prime Receiver",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.9
+      "recent_avg": 8.5,
+      "three_day_avg": 8.88
     },
     "corvas_prime_stock": {
       "name": "Corvas Prime Stock",
-      "recent_avg": 5.0,
+      "recent_avg": 5.5,
       "three_day_avg": 5.64
     },
     "daikyu_prime_blueprint": {
       "name": "Daikyu Prime Blueprint",
       "recent_avg": 1.0,
-      "three_day_avg": 2.01
+      "three_day_avg": 1.99
     },
     "daikyu_prime_grip": {
       "name": "Daikyu Prime Grip",
-      "recent_avg": 8.0,
+      "recent_avg": 9.0,
       "three_day_avg": 8.72
     },
     "daikyu_prime_lower_limb": {
       "name": "Daikyu Prime Lower Limb",
       "recent_avg": 3.0,
-      "three_day_avg": 3.28
+      "three_day_avg": 3.27
     },
     "daikyu_prime_string": {
       "name": "Daikyu Prime String",
-      "recent_avg": 3.5,
-      "three_day_avg": 3.51
+      "recent_avg": 5.0,
+      "three_day_avg": 3.53
     },
     "daikyu_prime_upper_limb": {
       "name": "Daikyu Prime Upper Limb",
-      "recent_avg": 3.0,
+      "recent_avg": 2.5,
       "three_day_avg": 2.43
     },
     "dakra_prime_blade": {
       "name": "Dakra Prime Blade",
-      "recent_avg": 15.5,
-      "three_day_avg": 19.87
+      "recent_avg": 16.5,
+      "three_day_avg": 19.85
     },
     "dakra_prime_blueprint": {
       "name": "Dakra Prime Blueprint",
-      "recent_avg": 12.0,
-      "three_day_avg": 9.08
+      "recent_avg": 10.0,
+      "three_day_avg": 9.09
     },
     "dakra_prime_handle": {
       "name": "Dakra Prime Handle",
-      "recent_avg": 8.5,
-      "three_day_avg": 9.13
+      "recent_avg": 9.0,
+      "three_day_avg": 9.14
     },
     "destreza_prime_blade": {
       "name": "Destreza Prime Blade",
       "recent_avg": 65.0,
-      "three_day_avg": 66.27
+      "three_day_avg": 66.21
     },
     "destreza_prime_blueprint": {
       "name": "Destreza Prime Blueprint",
       "recent_avg": 7.0,
-      "three_day_avg": 7.92
+      "three_day_avg": 7.91
     },
     "destreza_prime_handle": {
       "name": "Destreza Prime Handle",
-      "recent_avg": 13.5,
-      "three_day_avg": 14.15
+      "recent_avg": 11.0,
+      "three_day_avg": 14.1
     },
     "dethcube_prime_blueprint": {
       "name": "Dethcube Prime Blueprint",
-      "recent_avg": 25.0,
-      "three_day_avg": 23.79
+      "recent_avg": 24.5,
+      "three_day_avg": 23.86
     },
     "dethcube_prime_carapace": {
       "name": "Dethcube Prime Carapace",
-      "recent_avg": 5.0,
-      "three_day_avg": 4.84
+      "recent_avg": 4.0,
+      "three_day_avg": 4.82
     },
     "dethcube_prime_cerebrum": {
       "name": "Dethcube Prime Cerebrum",
-      "recent_avg": 39.0,
-      "three_day_avg": 33.99
+      "recent_avg": 35.0,
+      "three_day_avg": 34.0
     },
     "dethcube_prime_systems": {
       "name": "Dethcube Prime Systems",
-      "recent_avg": 7.0,
+      "recent_avg": 6.0,
       "three_day_avg": 7.15
     },
     "dual_kamas_prime_blade": {
       "name": "Dual Kamas Prime Blade",
-      "recent_avg": 37.5,
-      "three_day_avg": 39.95
+      "recent_avg": 47.5,
+      "three_day_avg": 40.07
     },
     "dual_kamas_prime_blueprint": {
       "name": "Dual Kamas Prime Blueprint",
-      "recent_avg": 8.0,
+      "recent_avg": 7.0,
       "three_day_avg": 8.1
     },
     "dual_kamas_prime_handle": {
       "name": "Dual Kamas Prime Handle",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.73
+      "recent_avg": 8.5,
+      "three_day_avg": 7.74
     },
     "dual_keres_prime_blade": {
       "name": "Dual Keres Prime Blade",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.38
+      "recent_avg": 9.0,
+      "three_day_avg": 8.36
     },
     "dual_keres_prime_blueprint": {
       "name": "Dual Keres Prime Blueprint",
-      "recent_avg": 19.5,
-      "three_day_avg": 17.68
+      "recent_avg": 19.0,
+      "three_day_avg": 17.62
     },
     "dual_keres_prime_handle": {
       "name": "Dual Keres Prime Handle",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.22
+      "recent_avg": 8.0,
+      "three_day_avg": 9.17
     },
     "dual_zoren_prime_blade": {
       "name": "Dual Zoren Prime Blade",
@@ -789,17 +789,17 @@
     "dual_zoren_prime_blueprint": {
       "name": "Dual Zoren Prime Blueprint",
       "recent_avg": 2.0,
-      "three_day_avg": 2.18
+      "three_day_avg": 2.17
     },
     "dual_zoren_prime_handle": {
       "name": "Dual Zoren Prime Handle",
-      "recent_avg": 3.0,
-      "three_day_avg": 2.71
+      "recent_avg": 2.5,
+      "three_day_avg": 2.72
     },
     "ember_prime_blueprint": {
       "name": "Ember Prime Blueprint",
       "recent_avg": 28.5,
-      "three_day_avg": 28.49
+      "three_day_avg": 28.53
     },
     "ember_prime_chassis_blueprint": {
       "name": "Ember Prime Chassis Blueprint",
@@ -808,13 +808,13 @@
     },
     "ember_prime_neuroptics_blueprint": {
       "name": "Ember Prime Neuroptics Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 10.1
+      "recent_avg": 13.5,
+      "three_day_avg": 10.14
     },
     "ember_prime_systems_blueprint": {
       "name": "Ember Prime Systems Blueprint",
-      "recent_avg": 10.5,
-      "three_day_avg": 9.78
+      "recent_avg": 11.0,
+      "three_day_avg": 9.79
     },
     "epitaph_prime_barrel": {
       "name": "Epitaph Prime Barrel",
@@ -823,38 +823,38 @@
     },
     "epitaph_prime_blueprint": {
       "name": "Epitaph Prime Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 6.15
+      "recent_avg": 6.5,
+      "three_day_avg": 6.17
     },
     "epitaph_prime_receiver": {
       "name": "Epitaph Prime Receiver",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.68
+      "recent_avg": 12.5,
+      "three_day_avg": 12.69
     },
     "equinox_prime_blueprint": {
       "name": "Equinox Prime Blueprint",
-      "recent_avg": 14.0,
-      "three_day_avg": 14.18
+      "recent_avg": 14.5,
+      "three_day_avg": 14.21
     },
     "equinox_prime_chassis_blueprint": {
       "name": "Equinox Prime Chassis Blueprint",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.71
+      "recent_avg": 5.0,
+      "three_day_avg": 4.72
     },
     "equinox_prime_neuroptics_blueprint": {
       "name": "Equinox Prime Neuroptics Blueprint",
-      "recent_avg": 5.5,
-      "three_day_avg": 7.28
+      "recent_avg": 8.5,
+      "three_day_avg": 7.29
     },
     "equinox_prime_systems_blueprint": {
       "name": "Equinox Prime Systems Blueprint",
-      "recent_avg": 30.0,
-      "three_day_avg": 31.8
+      "recent_avg": 32.5,
+      "three_day_avg": 31.81
     },
     "euphona_prime_barrel": {
       "name": "Euphona Prime Barrel",
-      "recent_avg": 6.0,
-      "three_day_avg": 5.0
+      "recent_avg": 5.5,
+      "three_day_avg": 5.01
     },
     "euphona_prime_blueprint": {
       "name": "Euphona Prime Blueprint",
@@ -863,68 +863,68 @@
     },
     "euphona_prime_receiver": {
       "name": "Euphona Prime Receiver",
-      "recent_avg": 30.0,
-      "three_day_avg": 29.49
+      "recent_avg": 35.0,
+      "three_day_avg": 29.58
     },
     "fang_prime_blade": {
       "name": "Fang Prime Blade",
-      "recent_avg": 4.0,
-      "three_day_avg": 3.48
+      "recent_avg": 3.5,
+      "three_day_avg": 3.47
     },
     "fang_prime_blueprint": {
       "name": "Fang Prime Blueprint",
       "recent_avg": 1.5,
-      "three_day_avg": 1.67
+      "three_day_avg": 1.68
     },
     "fang_prime_handle": {
       "name": "Fang Prime Handle",
-      "recent_avg": 1.5,
+      "recent_avg": 2.0,
       "three_day_avg": 2.28
     },
     "fass": {
       "name": "Fass",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.58
+      "recent_avg": 8.5,
+      "three_day_avg": 8.59
     },
     "fragor_prime_blueprint": {
       "name": "Fragor Prime Blueprint",
-      "recent_avg": 14.5,
-      "three_day_avg": 14.61
+      "recent_avg": 15.0,
+      "three_day_avg": 14.64
     },
     "fragor_prime_handle": {
       "name": "Fragor Prime Handle",
-      "recent_avg": 13.5,
-      "three_day_avg": 14.89
+      "recent_avg": 14.5,
+      "three_day_avg": 14.9
     },
     "fragor_prime_head": {
       "name": "Fragor Prime Head",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.92
+      "recent_avg": 9.0,
+      "three_day_avg": 9.91
     },
     "frost_prime_blueprint": {
       "name": "Frost Prime Blueprint",
-      "recent_avg": 50.0,
-      "three_day_avg": 41.12
+      "recent_avg": 49.5,
+      "three_day_avg": 41.25
     },
     "frost_prime_chassis_blueprint": {
       "name": "Frost Prime Chassis Blueprint",
-      "recent_avg": 19.0,
-      "three_day_avg": 15.79
+      "recent_avg": 17.0,
+      "three_day_avg": 15.76
     },
     "frost_prime_neuroptics_blueprint": {
       "name": "Frost Prime Neuroptics Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 9.4
+      "three_day_avg": 9.42
     },
     "frost_prime_systems_blueprint": {
       "name": "Frost Prime Systems Blueprint",
-      "recent_avg": 16.5,
-      "three_day_avg": 13.62
+      "recent_avg": 14.5,
+      "three_day_avg": 13.61
     },
     "fulmin_prime_barrel": {
       "name": "Fulmin Prime Barrel",
       "recent_avg": 5.0,
-      "three_day_avg": 5.03
+      "three_day_avg": 5.01
     },
     "fulmin_prime_blueprint": {
       "name": "Fulmin Prime Blueprint",
@@ -939,67 +939,67 @@
     "fulmin_prime_stock": {
       "name": "Fulmin Prime Stock",
       "recent_avg": 5.0,
-      "three_day_avg": 5.4
+      "three_day_avg": 5.38
     },
     "galatine_prime_blade": {
       "name": "Galatine Prime Blade",
       "recent_avg": 6.0,
-      "three_day_avg": 6.91
+      "three_day_avg": 6.9
     },
     "galatine_prime_blueprint": {
       "name": "Galatine Prime Blueprint",
-      "recent_avg": 49.5,
-      "three_day_avg": 51.12
+      "recent_avg": 52.5,
+      "three_day_avg": 51.14
     },
     "galatine_prime_handle": {
       "name": "Galatine Prime Handle",
       "recent_avg": 7.5,
-      "three_day_avg": 7.1
+      "three_day_avg": 7.06
     },
     "gara_prime_blueprint": {
       "name": "Gara Prime Blueprint",
-      "recent_avg": 38.5,
-      "three_day_avg": 31.36
+      "recent_avg": 42.5,
+      "three_day_avg": 31.58
     },
     "gara_prime_chassis_blueprint": {
       "name": "Gara Prime Chassis Blueprint",
-      "recent_avg": 16.0,
-      "three_day_avg": 15.59
+      "recent_avg": 15.5,
+      "three_day_avg": 15.6
     },
     "gara_prime_neuroptics_blueprint": {
       "name": "Gara Prime Neuroptics Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 6.63
+      "recent_avg": 6.0,
+      "three_day_avg": 6.64
     },
     "gara_prime_systems_blueprint": {
       "name": "Gara Prime Systems Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 6.9
+      "recent_avg": 7.0,
+      "three_day_avg": 6.91
     },
     "garuda_prime_blueprint": {
       "name": "Garuda Prime Blueprint",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.66
+      "recent_avg": 5.5,
+      "three_day_avg": 4.67
     },
     "garuda_prime_chassis_blueprint": {
       "name": "Garuda Prime Chassis Blueprint",
       "recent_avg": 6.0,
-      "three_day_avg": 7.62
+      "three_day_avg": 7.6
     },
     "garuda_prime_neuroptics_blueprint": {
       "name": "Garuda Prime Neuroptics Blueprint",
       "recent_avg": 28.5,
-      "three_day_avg": 28.95
+      "three_day_avg": 28.92
     },
     "garuda_prime_systems_blueprint": {
       "name": "Garuda Prime Systems Blueprint",
       "recent_avg": 39.5,
-      "three_day_avg": 35.97
+      "three_day_avg": 36.03
     },
     "gauss_prime_blueprint": {
       "name": "Gauss Prime Blueprint",
-      "recent_avg": 3.0,
-      "three_day_avg": 4.51
+      "recent_avg": 4.0,
+      "three_day_avg": 4.5
     },
     "gauss_prime_chassis_blueprint": {
       "name": "Gauss Prime Chassis Blueprint",
@@ -1008,23 +1008,23 @@
     },
     "gauss_prime_neuroptics_blueprint": {
       "name": "Gauss Prime Neuroptics Blueprint",
-      "recent_avg": 8.0,
-      "three_day_avg": 9.0
+      "recent_avg": 9.5,
+      "three_day_avg": 9.01
     },
     "gauss_prime_systems_blueprint": {
       "name": "Gauss Prime Systems Blueprint",
-      "recent_avg": 22.0,
-      "three_day_avg": 27.63
+      "recent_avg": 24.5,
+      "three_day_avg": 27.58
     },
     "glaive_prime_blade": {
       "name": "Glaive Prime Blade",
       "recent_avg": 18.5,
-      "three_day_avg": 18.74
+      "three_day_avg": 18.73
     },
     "glaive_prime_blueprint": {
       "name": "Glaive Prime Blueprint",
-      "recent_avg": 20.0,
-      "three_day_avg": 18.58
+      "recent_avg": 22.5,
+      "three_day_avg": 18.62
     },
     "glaive_prime_disc": {
       "name": "Glaive Prime Disc",
@@ -1033,58 +1033,58 @@
     },
     "gram_prime_blade": {
       "name": "Gram Prime Blade",
-      "recent_avg": 5.5,
-      "three_day_avg": 6.43
+      "recent_avg": 5.0,
+      "three_day_avg": 6.4
     },
     "gram_prime_blueprint": {
       "name": "Gram Prime Blueprint",
       "recent_avg": 8.0,
-      "three_day_avg": 9.96
+      "three_day_avg": 9.9
     },
     "gram_prime_handle": {
       "name": "Gram Prime Handle",
-      "recent_avg": 24.0,
-      "three_day_avg": 23.17
+      "recent_avg": 30.0,
+      "three_day_avg": 23.33
     },
     "grendel_prime_blueprint": {
       "name": "Grendel Prime Blueprint",
       "recent_avg": 14.0,
-      "three_day_avg": 14.92
+      "three_day_avg": 14.9
     },
     "grendel_prime_chassis_blueprint": {
       "name": "Grendel Prime Chassis Blueprint",
-      "recent_avg": 6.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.38
     },
     "grendel_prime_neuroptics_blueprint": {
       "name": "Grendel Prime Neuroptics Blueprint",
-      "recent_avg": 5.5,
-      "three_day_avg": 6.53
+      "recent_avg": 7.0,
+      "three_day_avg": 6.51
     },
     "grendel_prime_systems_blueprint": {
       "name": "Grendel Prime Systems Blueprint",
       "recent_avg": 36.5,
-      "three_day_avg": 33.77
+      "three_day_avg": 33.76
     },
     "guandao_prime_blade": {
       "name": "Guandao Prime Blade",
       "recent_avg": 8.5,
-      "three_day_avg": 8.62
+      "three_day_avg": 8.61
     },
     "guandao_prime_blueprint": {
       "name": "Guandao Prime Blueprint",
       "recent_avg": 9.0,
-      "three_day_avg": 6.6
+      "three_day_avg": 6.66
     },
     "guandao_prime_handle": {
       "name": "Guandao Prime Handle",
-      "recent_avg": 26.5,
-      "three_day_avg": 25.7
+      "recent_avg": 37.0,
+      "three_day_avg": 25.74
     },
     "gunsen_prime_blade": {
       "name": "Gunsen Prime Blade",
-      "recent_avg": 15.0,
-      "three_day_avg": 16.91
+      "recent_avg": 14.0,
+      "three_day_avg": 16.79
     },
     "gunsen_prime_blueprint": {
       "name": "Gunsen Prime Blueprint",
@@ -1093,133 +1093,133 @@
     },
     "gunsen_prime_handle": {
       "name": "Gunsen Prime Handle",
-      "recent_avg": 7.5,
-      "three_day_avg": 7.45
+      "recent_avg": 8.0,
+      "three_day_avg": 7.47
     },
     "gyre_prime_blueprint": {
       "name": "Gyre Prime Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.65
+      "three_day_avg": 4.66
     },
     "gyre_prime_chassis_blueprint": {
       "name": "Gyre Prime Chassis Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 5.0,
       "three_day_avg": 4.58
     },
     "gyre_prime_neuroptics_blueprint": {
       "name": "Gyre Prime Neuroptics Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 9.68
+      "recent_avg": 9.0,
+      "three_day_avg": 9.67
     },
     "gyre_prime_systems_blueprint": {
       "name": "Gyre Prime Systems Blueprint",
-      "recent_avg": 3.0,
-      "three_day_avg": 2.87
+      "recent_avg": 3.5,
+      "three_day_avg": 2.86
     },
     "harrow_prime_blueprint": {
       "name": "Harrow Prime Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 5.26
+      "recent_avg": 9.0,
+      "three_day_avg": 5.3
     },
     "harrow_prime_chassis_blueprint": {
       "name": "Harrow Prime Chassis Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 11.19
+      "recent_avg": 8.0,
+      "three_day_avg": 11.16
     },
     "harrow_prime_neuroptics_blueprint": {
       "name": "Harrow Prime Neuroptics Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 8.71
+      "recent_avg": 9.0,
+      "three_day_avg": 8.72
     },
     "harrow_prime_systems_blueprint": {
       "name": "Harrow Prime Systems Blueprint",
-      "recent_avg": 38.5,
-      "three_day_avg": 38.39
+      "recent_avg": 90.0,
+      "three_day_avg": 39.08
     },
     "helios_prime_blueprint": {
       "name": "Helios Prime Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 7.1
+      "three_day_avg": 7.06
     },
     "helios_prime_carapace": {
       "name": "Helios Prime Carapace",
       "recent_avg": 5.0,
-      "three_day_avg": 4.78
+      "three_day_avg": 4.79
     },
     "helios_prime_cerebrum": {
       "name": "Helios Prime Cerebrum",
-      "recent_avg": 29.5,
-      "three_day_avg": 24.49
+      "recent_avg": 25.0,
+      "three_day_avg": 24.45
     },
     "helios_prime_systems": {
       "name": "Helios Prime Systems",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.89
+      "recent_avg": 8.5,
+      "three_day_avg": 9.88
     },
     "hikou_prime_blueprint": {
       "name": "Hikou Prime Blueprint",
       "recent_avg": 4.5,
-      "three_day_avg": 5.26
+      "three_day_avg": 5.24
     },
     "hikou_prime_pouch": {
       "name": "Hikou Prime Pouch",
-      "recent_avg": 10.0,
-      "three_day_avg": 11.71
+      "recent_avg": 9.0,
+      "three_day_avg": 11.66
     },
     "hikou_prime_stars": {
       "name": "Hikou Prime Stars",
-      "recent_avg": 9.0,
-      "three_day_avg": 10.11
+      "recent_avg": 10.0,
+      "three_day_avg": 10.12
     },
     "hildryn_prime_blueprint": {
       "name": "Hildryn Prime Blueprint",
-      "recent_avg": 40.0,
-      "three_day_avg": 37.18
+      "recent_avg": 39.5,
+      "three_day_avg": 37.21
     },
     "hildryn_prime_chassis_blueprint": {
       "name": "Hildryn Prime Chassis Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 10.34
+      "three_day_avg": 10.35
     },
     "hildryn_prime_neuroptics_blueprint": {
       "name": "Hildryn Prime Neuroptics Blueprint",
       "recent_avg": 7.0,
-      "three_day_avg": 7.55
+      "three_day_avg": 7.53
     },
     "hildryn_prime_systems_blueprint": {
       "name": "Hildryn Prime Systems Blueprint",
-      "recent_avg": 3.5,
-      "three_day_avg": 3.71
+      "recent_avg": 4.5,
+      "three_day_avg": 3.73
     },
     "hydroid_prime_blueprint": {
       "name": "Hydroid Prime Blueprint",
-      "recent_avg": 20.0,
-      "three_day_avg": 16.41
+      "recent_avg": 19.0,
+      "three_day_avg": 16.45
     },
     "hydroid_prime_chassis_blueprint": {
       "name": "Hydroid Prime Chassis Blueprint",
-      "recent_avg": 7.5,
-      "three_day_avg": 8.48
+      "recent_avg": 8.5,
+      "three_day_avg": 8.49
     },
     "hydroid_prime_neuroptics_blueprint": {
       "name": "Hydroid Prime Neuroptics Blueprint",
-      "recent_avg": 15.0,
-      "three_day_avg": 15.4
+      "recent_avg": 14.5,
+      "three_day_avg": 15.42
     },
     "hydroid_prime_systems_blueprint": {
       "name": "Hydroid Prime Systems Blueprint",
-      "recent_avg": 38.0,
-      "three_day_avg": 34.84
+      "recent_avg": 40.0,
+      "three_day_avg": 34.94
     },
     "hystrix_prime_barrel": {
       "name": "Hystrix Prime Barrel",
       "recent_avg": 7.0,
-      "three_day_avg": 6.89
+      "three_day_avg": 6.88
     },
     "hystrix_prime_blueprint": {
       "name": "Hystrix Prime Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 6.97
+      "recent_avg": 17.0,
+      "three_day_avg": 7.13
     },
     "hystrix_prime_receiver": {
       "name": "Hystrix Prime Receiver",
@@ -1229,162 +1229,162 @@
     "inaros_prime_blueprint": {
       "name": "Inaros Prime Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 9.38
+      "three_day_avg": 9.41
     },
     "inaros_prime_chassis_blueprint": {
       "name": "Inaros Prime Chassis Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 5.44
+      "three_day_avg": 5.41
     },
     "inaros_prime_neuroptics_blueprint": {
       "name": "Inaros Prime Neuroptics Blueprint",
-      "recent_avg": 49.5,
-      "three_day_avg": 41.95
+      "recent_avg": 47.0,
+      "three_day_avg": 42.0
     },
     "inaros_prime_systems_blueprint": {
       "name": "Inaros Prime Systems Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 7.89
+      "recent_avg": 9.5,
+      "three_day_avg": 7.92
     },
     "ivara_prime_blueprint": {
       "name": "Ivara Prime Blueprint",
-      "recent_avg": 7.0,
+      "recent_avg": 8.5,
       "three_day_avg": 8.79
     },
     "ivara_prime_chassis_blueprint": {
       "name": "Ivara Prime Chassis Blueprint",
-      "recent_avg": 18.0,
-      "three_day_avg": 18.03
+      "recent_avg": 17.5,
+      "three_day_avg": 18.04
     },
     "ivara_prime_neuroptics_blueprint": {
       "name": "Ivara Prime Neuroptics Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 8.58
+      "recent_avg": 8.5,
+      "three_day_avg": 8.6
     },
     "ivara_prime_systems_blueprint": {
       "name": "Ivara Prime Systems Blueprint",
-      "recent_avg": 11.5,
-      "three_day_avg": 12.3
+      "recent_avg": 13.0,
+      "three_day_avg": 12.36
     },
     "jahu": {
       "name": "Jahu",
       "recent_avg": 10.0,
-      "three_day_avg": 8.93
+      "three_day_avg": 8.95
     },
     "karyst_prime_blade": {
       "name": "Karyst Prime Blade",
-      "recent_avg": 26.0,
-      "three_day_avg": 25.94
+      "recent_avg": 34.5,
+      "three_day_avg": 26.09
     },
     "karyst_prime_blueprint": {
       "name": "Karyst Prime Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.49
+      "recent_avg": 5.0,
+      "three_day_avg": 7.44
     },
     "karyst_prime_handle": {
       "name": "Karyst Prime Handle",
       "recent_avg": 5.0,
-      "three_day_avg": 5.85
+      "three_day_avg": 5.84
     },
     "kavasa_prime_band": {
       "name": "Kavasa Prime Band",
-      "recent_avg": 8.0,
-      "three_day_avg": 8.5
+      "recent_avg": 11.5,
+      "three_day_avg": 8.56
     },
     "kavasa_prime_buckle": {
       "name": "Kavasa Prime Buckle",
-      "recent_avg": 39.5,
-      "three_day_avg": 30.39
+      "recent_avg": 32.0,
+      "three_day_avg": 30.47
     },
     "kavasa_prime_kubrow_collar_blueprint": {
       "name": "Kavasa Prime Kubrow Collar Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.38
+      "recent_avg": 9.5,
+      "three_day_avg": 8.4
     },
     "kestrel_prime_blade": {
       "name": "Kestrel Prime Blade",
-      "recent_avg": 5.0,
-      "three_day_avg": 4.05
+      "recent_avg": 4.5,
+      "three_day_avg": 4.07
     },
     "kestrel_prime_blueprint": {
       "name": "Kestrel Prime Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 3.08
+      "recent_avg": 2.5,
+      "three_day_avg": 3.09
     },
     "kestrel_prime_grip": {
       "name": "Kestrel Prime Grip",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.49
+      "recent_avg": 8.0,
+      "three_day_avg": 8.48
     },
     "khora_prime_blueprint": {
       "name": "Khora Prime Blueprint",
-      "recent_avg": 30.0,
-      "three_day_avg": 29.17
+      "recent_avg": 29.0,
+      "three_day_avg": 29.13
     },
     "khora_prime_chassis_blueprint": {
       "name": "Khora Prime Chassis Blueprint",
-      "recent_avg": 8.0,
+      "recent_avg": 7.5,
       "three_day_avg": 7.71
     },
     "khora_prime_neuroptics_blueprint": {
       "name": "Khora Prime Neuroptics Blueprint",
-      "recent_avg": 34.5,
-      "three_day_avg": 29.34
+      "recent_avg": 29.0,
+      "three_day_avg": 29.36
     },
     "khora_prime_systems_blueprint": {
       "name": "Khora Prime Systems Blueprint",
-      "recent_avg": 8.0,
-      "three_day_avg": 8.18
+      "recent_avg": 8.5,
+      "three_day_avg": 8.19
     },
     "khra": {
       "name": "Khra",
       "recent_avg": 8.0,
-      "three_day_avg": 8.69
+      "three_day_avg": 8.68
     },
     "knell_prime_barrel": {
       "name": "Knell Prime Barrel",
-      "recent_avg": 34.5,
-      "three_day_avg": 35.09
+      "recent_avg": 55.0,
+      "three_day_avg": 34.98
     },
     "knell_prime_blueprint": {
       "name": "Knell Prime Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 5.17
+      "recent_avg": 8.5,
+      "three_day_avg": 5.22
     },
     "knell_prime_receiver": {
       "name": "Knell Prime Receiver",
-      "recent_avg": 4.5,
+      "recent_avg": 5.0,
       "three_day_avg": 4.87
     },
     "kogake_prime_blueprint": {
       "name": "Kogake Prime Blueprint",
-      "recent_avg": 3.5,
-      "three_day_avg": 4.42
+      "recent_avg": 5.0,
+      "three_day_avg": 4.44
     },
     "kogake_prime_boot": {
       "name": "Kogake Prime Boot",
       "recent_avg": 5.0,
-      "three_day_avg": 6.24
+      "three_day_avg": 6.23
     },
     "kogake_prime_gauntlet": {
       "name": "Kogake Prime Gauntlet",
-      "recent_avg": 18.5,
-      "three_day_avg": 19.08
+      "recent_avg": 18.0,
+      "three_day_avg": 19.05
     },
     "kompressa_prime_barrel": {
       "name": "Kompressa Prime Barrel",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.56
+      "recent_avg": 8.0,
+      "three_day_avg": 8.55
     },
     "kompressa_prime_blueprint": {
       "name": "Kompressa Prime Blueprint",
       "recent_avg": 1.0,
-      "three_day_avg": 1.5
+      "three_day_avg": 1.49
     },
     "kronen_prime_blade": {
       "name": "Kronen Prime Blade",
-      "recent_avg": 37.0,
-      "three_day_avg": 38.56
+      "recent_avg": 35.5,
+      "three_day_avg": 38.49
     },
     "kronen_prime_blueprint": {
       "name": "Kronen Prime Blueprint",
@@ -1393,23 +1393,23 @@
     },
     "kronen_prime_handle": {
       "name": "Kronen Prime Handle",
-      "recent_avg": 13.5,
-      "three_day_avg": 10.39
+      "recent_avg": 15.0,
+      "three_day_avg": 10.48
     },
     "larkspur_prime_barrel": {
       "name": "Larkspur Prime Barrel",
-      "recent_avg": 42.0,
-      "three_day_avg": 39.47
+      "recent_avg": 42.5,
+      "three_day_avg": 39.51
     },
     "larkspur_prime_blueprint": {
       "name": "Larkspur Prime Blueprint",
-      "recent_avg": 5.5,
+      "recent_avg": 6.5,
       "three_day_avg": 6.03
     },
     "larkspur_prime_receiver": {
       "name": "Larkspur Prime Receiver",
       "recent_avg": 8.0,
-      "three_day_avg": 8.14
+      "three_day_avg": 8.13
     },
     "larkspur_prime_stock": {
       "name": "Larkspur Prime Stock",
@@ -1418,57 +1418,57 @@
     },
     "latron_prime_barrel": {
       "name": "Latron Prime Barrel",
-      "recent_avg": 19.5,
-      "three_day_avg": 17.64
+      "recent_avg": 16.5,
+      "three_day_avg": 17.7
     },
     "latron_prime_blueprint": {
       "name": "Latron Prime Blueprint",
-      "recent_avg": 20.0,
-      "three_day_avg": 23.34
+      "recent_avg": 21.0,
+      "three_day_avg": 23.36
     },
     "latron_prime_receiver": {
       "name": "Latron Prime Receiver",
-      "recent_avg": 18.0,
-      "three_day_avg": 19.09
+      "recent_avg": 19.5,
+      "three_day_avg": 19.08
     },
     "latron_prime_stock": {
       "name": "Latron Prime Stock",
-      "recent_avg": 26.5,
+      "recent_avg": 20.5,
       "three_day_avg": 20.27
     },
     "lavos_prime_blueprint": {
       "name": "Lavos Prime Blueprint",
-      "recent_avg": 3.0,
-      "three_day_avg": 2.96
+      "recent_avg": 2.5,
+      "three_day_avg": 2.95
     },
     "lavos_prime_chassis_blueprint": {
       "name": "Lavos Prime Chassis Blueprint",
-      "recent_avg": 1.0,
-      "three_day_avg": 1.35
+      "recent_avg": 1.5,
+      "three_day_avg": 1.34
     },
     "lavos_prime_neuroptics_blueprint": {
       "name": "Lavos Prime Neuroptics Blueprint",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.4
+      "recent_avg": 5.0,
+      "three_day_avg": 4.42
     },
     "lavos_prime_systems_blueprint": {
       "name": "Lavos Prime Systems Blueprint",
-      "recent_avg": 17.5,
-      "three_day_avg": 12.18
+      "recent_avg": 10.0,
+      "three_day_avg": 12.17
     },
     "lex_prime_barrel": {
       "name": "Lex Prime Barrel",
-      "recent_avg": 4.0,
+      "recent_avg": 3.0,
       "three_day_avg": 3.39
     },
     "lex_prime_blueprint": {
       "name": "Lex Prime Blueprint",
       "recent_avg": 2.0,
-      "three_day_avg": 2.69
+      "three_day_avg": 2.68
     },
     "lex_prime_receiver": {
       "name": "Lex Prime Receiver",
-      "recent_avg": 4.0,
+      "recent_avg": 3.5,
       "three_day_avg": 4.14
     },
     "limbo_prime_blueprint": {
@@ -1478,23 +1478,23 @@
     },
     "limbo_prime_chassis_blueprint": {
       "name": "Limbo Prime Chassis Blueprint",
-      "recent_avg": 48.5,
+      "recent_avg": 50.0,
       "three_day_avg": 50.4
     },
     "limbo_prime_neuroptics_blueprint": {
       "name": "Limbo Prime Neuroptics Blueprint",
-      "recent_avg": 29.5,
+      "recent_avg": 30.0,
       "three_day_avg": 28.97
     },
     "limbo_prime_systems_blueprint": {
       "name": "Limbo Prime Systems Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 4.57
+      "recent_avg": 5.0,
+      "three_day_avg": 4.58
     },
     "lohk": {
       "name": "Lohk",
       "recent_avg": 9.0,
-      "three_day_avg": 8.32
+      "three_day_avg": 8.34
     },
     "loki_prime_blueprint": {
       "name": "Loki Prime Blueprint",
@@ -1503,23 +1503,23 @@
     },
     "loki_prime_chassis_blueprint": {
       "name": "Loki Prime Chassis Blueprint",
-      "recent_avg": 29.5,
-      "three_day_avg": 24.06
+      "recent_avg": 24.5,
+      "three_day_avg": 24.05
     },
     "loki_prime_neuroptics_blueprint": {
       "name": "Loki Prime Neuroptics Blueprint",
-      "recent_avg": 23.5,
-      "three_day_avg": 16.99
+      "recent_avg": 17.0,
+      "three_day_avg": 16.95
     },
     "loki_prime_systems_blueprint": {
       "name": "Loki Prime Systems Blueprint",
       "recent_avg": 30.0,
-      "three_day_avg": 32.42
+      "three_day_avg": 32.38
     },
     "mag_prime_blueprint": {
       "name": "Mag Prime Blueprint",
-      "recent_avg": 38.0,
-      "three_day_avg": 37.53
+      "recent_avg": 38.5,
+      "three_day_avg": 37.6
     },
     "mag_prime_chassis_blueprint": {
       "name": "Mag Prime Chassis Blueprint",
@@ -1528,73 +1528,73 @@
     },
     "mag_prime_neuroptics_blueprint": {
       "name": "Mag Prime Neuroptics Blueprint",
-      "recent_avg": 12.0,
-      "three_day_avg": 11.59
+      "recent_avg": 14.0,
+      "three_day_avg": 11.64
     },
     "mag_prime_systems_blueprint": {
       "name": "Mag Prime Systems Blueprint",
-      "recent_avg": 18.0,
+      "recent_avg": 18.5,
       "three_day_avg": 16.79
     },
     "magnus_prime_barrel": {
       "name": "Magnus Prime Barrel",
-      "recent_avg": 41.0,
-      "three_day_avg": 31.55
+      "recent_avg": 28.0,
+      "three_day_avg": 31.42
     },
     "magnus_prime_blueprint": {
       "name": "Magnus Prime Blueprint",
       "recent_avg": 6.0,
-      "three_day_avg": 7.83
+      "three_day_avg": 7.81
     },
     "magnus_prime_receiver": {
       "name": "Magnus Prime Receiver",
-      "recent_avg": 7.0,
-      "three_day_avg": 5.97
+      "recent_avg": 5.0,
+      "three_day_avg": 5.95
     },
     "masseter_prime_blade": {
       "name": "Masseter Prime Blade",
-      "recent_avg": 20.0,
-      "three_day_avg": 15.9
+      "recent_avg": 19.5,
+      "three_day_avg": 15.91
     },
     "masseter_prime_blueprint": {
       "name": "Masseter Prime Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 4.0,
       "three_day_avg": 3.78
     },
     "masseter_prime_handle": {
       "name": "Masseter Prime Handle",
-      "recent_avg": 3.5,
+      "recent_avg": 4.0,
       "three_day_avg": 3.92
     },
     "mesa_prime_blueprint": {
       "name": "Mesa Prime Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 5.72
+      "recent_avg": 5.0,
+      "three_day_avg": 5.71
     },
     "mesa_prime_chassis_blueprint": {
       "name": "Mesa Prime Chassis Blueprint",
-      "recent_avg": 7.5,
-      "three_day_avg": 5.68
+      "recent_avg": 10.0,
+      "three_day_avg": 5.73
     },
     "mesa_prime_neuroptics_blueprint": {
       "name": "Mesa Prime Neuroptics Blueprint",
-      "recent_avg": 32.5,
+      "recent_avg": 30.0,
       "three_day_avg": 28.42
     },
     "mesa_prime_systems_blueprint": {
       "name": "Mesa Prime Systems Blueprint",
-      "recent_avg": 11.5,
-      "three_day_avg": 15.24
+      "recent_avg": 15.5,
+      "three_day_avg": 15.18
     },
     "mirage_prime_blueprint": {
       "name": "Mirage Prime Blueprint",
-      "recent_avg": 30.0,
-      "three_day_avg": 27.41
+      "recent_avg": 29.0,
+      "three_day_avg": 27.45
     },
     "mirage_prime_chassis_blueprint": {
       "name": "Mirage Prime Chassis Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 7.3
+      "recent_avg": 8.0,
+      "three_day_avg": 7.33
     },
     "mirage_prime_neuroptics_blueprint": {
       "name": "Mirage Prime Neuroptics Blueprint",
@@ -1608,98 +1608,98 @@
     },
     "nagantaka_prime_barrel": {
       "name": "Nagantaka Prime Barrel",
-      "recent_avg": 7.0,
+      "recent_avg": 7.5,
       "three_day_avg": 8.04
     },
     "nagantaka_prime_blueprint": {
       "name": "Nagantaka Prime Blueprint",
-      "recent_avg": 25.0,
-      "three_day_avg": 17.77
+      "recent_avg": 46.0,
+      "three_day_avg": 18.14
     },
     "nagantaka_prime_receiver": {
       "name": "Nagantaka Prime Receiver",
       "recent_avg": 7.0,
-      "three_day_avg": 6.41
+      "three_day_avg": 6.44
     },
     "nagantaka_prime_stock": {
       "name": "Nagantaka Prime Stock",
       "recent_avg": 8.0,
-      "three_day_avg": 8.33
+      "three_day_avg": 8.32
     },
     "nami_skyla_prime_blade": {
       "name": "Nami Skyla Prime Blade",
-      "recent_avg": 35.0,
-      "three_day_avg": 33.73
+      "recent_avg": 33.5,
+      "three_day_avg": 33.78
     },
     "nami_skyla_prime_blueprint": {
       "name": "Nami Skyla Prime Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.99
+      "recent_avg": 10.0,
+      "three_day_avg": 9.92
     },
     "nami_skyla_prime_handle": {
       "name": "Nami Skyla Prime Handle",
-      "recent_avg": 7.5,
+      "recent_avg": 8.5,
       "three_day_avg": 8.91
     },
     "nautilus_prime_blueprint": {
       "name": "Nautilus Prime Blueprint",
-      "recent_avg": 12.5,
-      "three_day_avg": 12.02
+      "recent_avg": 14.5,
+      "three_day_avg": 12.08
     },
     "nautilus_prime_carapace": {
       "name": "Nautilus Prime Carapace",
-      "recent_avg": 5.5,
+      "recent_avg": 6.0,
       "three_day_avg": 6.53
     },
     "nautilus_prime_cerebrum": {
       "name": "Nautilus Prime Cerebrum",
-      "recent_avg": 22.0,
-      "three_day_avg": 25.21
+      "recent_avg": 30.0,
+      "three_day_avg": 25.18
     },
     "nautilus_prime_systems": {
       "name": "Nautilus Prime Systems",
       "recent_avg": 4.0,
-      "three_day_avg": 3.62
+      "three_day_avg": 3.63
     },
     "nekros_prime_blueprint": {
       "name": "Nekros Prime Blueprint",
-      "recent_avg": 39.5,
-      "three_day_avg": 28.95
+      "recent_avg": 35.0,
+      "three_day_avg": 29.01
     },
     "nekros_prime_chassis_blueprint": {
       "name": "Nekros Prime Chassis Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 9.69
+      "three_day_avg": 9.71
     },
     "nekros_prime_neuroptics_blueprint": {
       "name": "Nekros Prime Neuroptics Blueprint",
-      "recent_avg": 29.0,
-      "three_day_avg": 25.19
+      "recent_avg": 28.0,
+      "three_day_avg": 25.17
     },
     "nekros_prime_systems_blueprint": {
       "name": "Nekros Prime Systems Blueprint",
       "recent_avg": 37.0,
-      "three_day_avg": 30.1
+      "three_day_avg": 30.18
     },
     "netra": {
       "name": "Netra",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.19
+      "recent_avg": 8.0,
+      "three_day_avg": 8.2
     },
     "nezha_prime_blueprint": {
       "name": "Nezha Prime Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 7.23
+      "recent_avg": 10.0,
+      "three_day_avg": 7.27
     },
     "nezha_prime_chassis_blueprint": {
       "name": "Nezha Prime Chassis Blueprint",
       "recent_avg": 33.0,
-      "three_day_avg": 32.45
+      "three_day_avg": 32.47
     },
     "nezha_prime_neuroptics_blueprint": {
       "name": "Nezha Prime Neuroptics Blueprint",
-      "recent_avg": 24.0,
-      "three_day_avg": 25.27
+      "recent_avg": 34.5,
+      "three_day_avg": 25.41
     },
     "nezha_prime_systems_blueprint": {
       "name": "Nezha Prime Systems Blueprint",
@@ -1708,143 +1708,143 @@
     },
     "nidus_prime_blueprint": {
       "name": "Nidus Prime Blueprint",
-      "recent_avg": 9.0,
+      "recent_avg": 9.5,
       "three_day_avg": 9.49
     },
     "nidus_prime_chassis_blueprint": {
       "name": "Nidus Prime Chassis Blueprint",
-      "recent_avg": 39.0,
-      "three_day_avg": 33.01
+      "recent_avg": 37.5,
+      "three_day_avg": 33.07
     },
     "nidus_prime_neuroptics_blueprint": {
       "name": "Nidus Prime Neuroptics Blueprint",
       "recent_avg": 39.0,
-      "three_day_avg": 38.64
+      "three_day_avg": 38.63
     },
     "nidus_prime_systems_blueprint": {
       "name": "Nidus Prime Systems Blueprint",
-      "recent_avg": 8.0,
-      "three_day_avg": 6.9
+      "recent_avg": 6.5,
+      "three_day_avg": 6.91
     },
     "nikana_prime_blade": {
       "name": "Nikana Prime Blade",
-      "recent_avg": 19.0,
-      "three_day_avg": 19.56
+      "recent_avg": 19.5,
+      "three_day_avg": 19.58
     },
     "nikana_prime_blueprint": {
       "name": "Nikana Prime Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 7.6
+      "recent_avg": 17.5,
+      "three_day_avg": 7.72
     },
     "nikana_prime_hilt": {
       "name": "Nikana Prime Hilt",
-      "recent_avg": 50.0,
-      "three_day_avg": 41.99
+      "recent_avg": 42.5,
+      "three_day_avg": 42.03
     },
     "ninkondi_prime_blueprint": {
       "name": "Ninkondi Prime Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.19
+      "recent_avg": 6.0,
+      "three_day_avg": 7.2
     },
     "ninkondi_prime_chain": {
       "name": "Ninkondi Prime Chain",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.77
+      "recent_avg": 5.0,
+      "three_day_avg": 4.79
     },
     "ninkondi_prime_handle": {
       "name": "Ninkondi Prime Handle",
-      "recent_avg": 27.5,
-      "three_day_avg": 31.64
+      "recent_avg": 22.0,
+      "three_day_avg": 31.36
     },
     "nova_prime_blueprint": {
       "name": "Nova Prime Blueprint",
       "recent_avg": 15.0,
-      "three_day_avg": 12.79
+      "three_day_avg": 12.84
     },
     "nova_prime_chassis_blueprint": {
       "name": "Nova Prime Chassis Blueprint",
-      "recent_avg": 28.5,
-      "three_day_avg": 30.75
+      "recent_avg": 30.0,
+      "three_day_avg": 30.65
     },
     "nova_prime_neuroptics_blueprint": {
       "name": "Nova Prime Neuroptics Blueprint",
-      "recent_avg": 18.0,
-      "three_day_avg": 14.33
+      "recent_avg": 16.0,
+      "three_day_avg": 14.34
     },
     "nova_prime_systems_blueprint": {
       "name": "Nova Prime Systems Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.01
+      "recent_avg": 10.5,
+      "three_day_avg": 11.97
     },
     "nyx_prime_blueprint": {
       "name": "Nyx Prime Blueprint",
       "recent_avg": 9.5,
-      "three_day_avg": 9.22
+      "three_day_avg": 9.21
     },
     "nyx_prime_chassis_blueprint": {
       "name": "Nyx Prime Chassis Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 9.0
+      "three_day_avg": 9.01
     },
     "nyx_prime_neuroptics_blueprint": {
       "name": "Nyx Prime Neuroptics Blueprint",
-      "recent_avg": 30.0,
+      "recent_avg": 27.5,
       "three_day_avg": 29.71
     },
     "nyx_prime_systems_blueprint": {
       "name": "Nyx Prime Systems Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.13
+      "recent_avg": 10.0,
+      "three_day_avg": 9.16
     },
     "oberon_prime_blueprint": {
       "name": "Oberon Prime Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 11.08
+      "three_day_avg": 11.02
     },
     "oberon_prime_chassis_blueprint": {
       "name": "Oberon Prime Chassis Blueprint",
-      "recent_avg": 12.0,
-      "three_day_avg": 16.11
+      "recent_avg": 11.0,
+      "three_day_avg": 16.07
     },
     "oberon_prime_neuroptics_blueprint": {
       "name": "Oberon Prime Neuroptics Blueprint",
-      "recent_avg": 42.5,
-      "three_day_avg": 41.81
+      "recent_avg": 55.0,
+      "three_day_avg": 42.02
     },
     "oberon_prime_systems_blueprint": {
       "name": "Oberon Prime Systems Blueprint",
       "recent_avg": 20.0,
-      "three_day_avg": 19.01
+      "three_day_avg": 18.97
     },
     "octavia_prime_blueprint": {
       "name": "Octavia Prime Blueprint",
-      "recent_avg": 52.0,
-      "three_day_avg": 48.53
+      "recent_avg": 47.5,
+      "three_day_avg": 48.49
     },
     "octavia_prime_chassis_blueprint": {
       "name": "Octavia Prime Chassis Blueprint",
-      "recent_avg": 13.5,
-      "three_day_avg": 12.09
+      "recent_avg": 13.0,
+      "three_day_avg": 12.08
     },
     "octavia_prime_neuroptics_blueprint": {
       "name": "Octavia Prime Neuroptics Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 5.71
+      "recent_avg": 9.0,
+      "three_day_avg": 5.77
     },
     "octavia_prime_systems_blueprint": {
       "name": "Octavia Prime Systems Blueprint",
-      "recent_avg": 9.5,
+      "recent_avg": 9.0,
       "three_day_avg": 9.33
     },
     "odonata_prime_blueprint": {
       "name": "Odonata Prime Blueprint",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.99
+      "recent_avg": 8.0,
+      "three_day_avg": 7.98
     },
     "odonata_prime_harness_blueprint": {
       "name": "Odonata Prime Harness Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.49
+      "recent_avg": 10.0,
+      "three_day_avg": 9.5
     },
     "odonata_prime_systems_blueprint": {
       "name": "Odonata Prime Systems Blueprint",
@@ -1854,27 +1854,27 @@
     "odonata_prime_wings_blueprint": {
       "name": "Odonata Prime Wings Blueprint",
       "recent_avg": 30.0,
-      "three_day_avg": 25.46
+      "three_day_avg": 25.51
     },
     "okina_prime_blade": {
       "name": "Okina Prime Blade",
-      "recent_avg": 7.5,
-      "three_day_avg": 7.73
+      "recent_avg": 7.0,
+      "three_day_avg": 7.72
     },
     "okina_prime_blueprint": {
       "name": "Okina Prime Blueprint",
-      "recent_avg": 15.0,
-      "three_day_avg": 14.16
+      "recent_avg": 11.0,
+      "three_day_avg": 14.12
     },
     "okina_prime_handle": {
       "name": "Okina Prime Handle",
-      "recent_avg": 7.5,
-      "three_day_avg": 6.92
+      "recent_avg": 8.0,
+      "three_day_avg": 6.97
     },
     "orthos_prime_blade": {
       "name": "Orthos Prime Blade",
-      "recent_avg": 4.0,
-      "three_day_avg": 4.08
+      "recent_avg": 4.5,
+      "three_day_avg": 4.09
     },
     "orthos_prime_blueprint": {
       "name": "Orthos Prime Blueprint",
@@ -1883,107 +1883,107 @@
     },
     "orthos_prime_handle": {
       "name": "Orthos Prime Handle",
-      "recent_avg": 2.5,
-      "three_day_avg": 2.07
+      "recent_avg": 3.0,
+      "three_day_avg": 2.08
     },
     "pandero_prime_barrel": {
       "name": "Pandero Prime Barrel",
-      "recent_avg": 7.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.18
     },
     "pandero_prime_blueprint": {
       "name": "Pandero Prime Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 6.3
+      "recent_avg": 5.0,
+      "three_day_avg": 6.32
     },
     "pandero_prime_receiver": {
       "name": "Pandero Prime Receiver",
-      "recent_avg": 34.0,
+      "recent_avg": 30.0,
       "three_day_avg": 29.4
     },
     "pangolin_prime_blade": {
       "name": "Pangolin Prime Blade",
-      "recent_avg": 6.5,
-      "three_day_avg": 7.47
+      "recent_avg": 8.5,
+      "three_day_avg": 7.49
     },
     "pangolin_prime_blueprint": {
       "name": "Pangolin Prime Blueprint",
-      "recent_avg": 13.5,
-      "three_day_avg": 12.64
+      "recent_avg": 14.0,
+      "three_day_avg": 12.67
     },
     "pangolin_prime_handle": {
       "name": "Pangolin Prime Handle",
-      "recent_avg": 6.0,
+      "recent_avg": 6.5,
       "three_day_avg": 7.86
     },
     "panthera_prime_barrel": {
       "name": "Panthera Prime Barrel",
       "recent_avg": 32.5,
-      "three_day_avg": 27.73
+      "three_day_avg": 27.76
     },
     "panthera_prime_blueprint": {
       "name": "Panthera Prime Blueprint",
-      "recent_avg": 7.0,
+      "recent_avg": 6.0,
       "three_day_avg": 6.62
     },
     "panthera_prime_receiver": {
       "name": "Panthera Prime Receiver",
-      "recent_avg": 22.5,
-      "three_day_avg": 18.91
+      "recent_avg": 15.5,
+      "three_day_avg": 18.85
     },
     "panthera_prime_stock": {
       "name": "Panthera Prime Stock",
-      "recent_avg": 8.0,
-      "three_day_avg": 8.79
+      "recent_avg": 9.0,
+      "three_day_avg": 8.78
     },
     "paris_prime_blueprint": {
       "name": "Paris Prime Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 3.21
+      "recent_avg": 5.0,
+      "three_day_avg": 3.22
     },
     "paris_prime_grip": {
       "name": "Paris Prime Grip",
-      "recent_avg": 2.5,
+      "recent_avg": 3.5,
       "three_day_avg": 2.99
     },
     "paris_prime_lower_limb": {
       "name": "Paris Prime Lower Limb",
-      "recent_avg": 1.0,
-      "three_day_avg": 2.27
+      "recent_avg": 2.5,
+      "three_day_avg": 2.28
     },
     "paris_prime_string": {
       "name": "Paris Prime String",
-      "recent_avg": 2.5,
-      "three_day_avg": 3.14
+      "recent_avg": 3.0,
+      "three_day_avg": 3.15
     },
     "paris_prime_upper_limb": {
       "name": "Paris Prime Upper Limb",
       "recent_avg": 3.0,
-      "three_day_avg": 2.95
+      "three_day_avg": 2.93
     },
     "perigale_prime_barrel": {
       "name": "Perigale Prime Barrel",
-      "recent_avg": 22.5,
+      "recent_avg": 16.5,
       "three_day_avg": 17.73
     },
     "perigale_prime_blueprint": {
       "name": "Perigale Prime Blueprint",
-      "recent_avg": 3.0,
+      "recent_avg": 2.5,
       "three_day_avg": 2.68
     },
     "perigale_prime_receiver": {
       "name": "Perigale Prime Receiver",
-      "recent_avg": 4.0,
-      "three_day_avg": 4.75
+      "recent_avg": 4.5,
+      "three_day_avg": 4.74
     },
     "perigale_prime_stock": {
       "name": "Perigale Prime Stock",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.43
+      "recent_avg": 10.0,
+      "three_day_avg": 4.49
     },
     "phantasma_prime_barrel": {
       "name": "Phantasma Prime Barrel",
-      "recent_avg": 21.5,
+      "recent_avg": 24.0,
       "three_day_avg": 22.49
     },
     "phantasma_prime_blueprint": {
@@ -1993,83 +1993,83 @@
     },
     "phantasma_prime_receiver": {
       "name": "Phantasma Prime Receiver",
-      "recent_avg": 5.0,
+      "recent_avg": 5.5,
       "three_day_avg": 5.79
     },
     "phantasma_prime_stock": {
       "name": "Phantasma Prime Stock",
-      "recent_avg": 19.5,
-      "three_day_avg": 17.94
+      "recent_avg": 20.0,
+      "three_day_avg": 17.95
     },
     "protea_prime_blueprint": {
       "name": "Protea Prime Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 3.68
+      "recent_avg": 5.0,
+      "three_day_avg": 3.69
     },
     "protea_prime_chassis_blueprint": {
       "name": "Protea Prime Chassis Blueprint",
-      "recent_avg": 17.5,
-      "three_day_avg": 17.89
+      "recent_avg": 15.0,
+      "three_day_avg": 17.88
     },
     "protea_prime_neuroptics_blueprint": {
       "name": "Protea Prime Neuroptics Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.39
+      "three_day_avg": 4.4
     },
     "protea_prime_systems_blueprint": {
       "name": "Protea Prime Systems Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 9.01
+      "recent_avg": 8.0,
+      "three_day_avg": 9.02
     },
     "pyrana_prime_barrel": {
       "name": "Pyrana Prime Barrel",
-      "recent_avg": 5.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.97
     },
     "pyrana_prime_blueprint": {
       "name": "Pyrana Prime Blueprint",
-      "recent_avg": 35.5,
-      "three_day_avg": 42.49
+      "recent_avg": 47.0,
+      "three_day_avg": 42.58
     },
     "pyrana_prime_receiver": {
       "name": "Pyrana Prime Receiver",
-      "recent_avg": 8.0,
-      "three_day_avg": 8.22
+      "recent_avg": 7.5,
+      "three_day_avg": 8.21
     },
     "quassus_prime_blade": {
       "name": "Quassus Prime Blade",
-      "recent_avg": 10.5,
-      "three_day_avg": 10.71
+      "recent_avg": 10.0,
+      "three_day_avg": 10.73
     },
     "quassus_prime_blueprint": {
       "name": "Quassus Prime Blueprint",
-      "recent_avg": 3.5,
+      "recent_avg": 3.0,
       "three_day_avg": 2.72
     },
     "quassus_prime_handle": {
       "name": "Quassus Prime Handle",
-      "recent_avg": 4.5,
-      "three_day_avg": 5.02
+      "recent_avg": 5.0,
+      "three_day_avg": 5.03
     },
     "reaper_prime_blade": {
       "name": "Reaper Prime Blade",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.59
+      "recent_avg": 12.0,
+      "three_day_avg": 12.62
     },
     "reaper_prime_blueprint": {
       "name": "Reaper Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 11.54
+      "recent_avg": 10.5,
+      "three_day_avg": 11.55
     },
     "reaper_prime_handle": {
       "name": "Reaper Prime Handle",
-      "recent_avg": 9.0,
-      "three_day_avg": 16.15
+      "recent_avg": 12.5,
+      "three_day_avg": 16.17
     },
     "redeemer_prime_blade": {
       "name": "Redeemer Prime Blade",
-      "recent_avg": 7.0,
-      "three_day_avg": 6.4
+      "recent_avg": 6.0,
+      "three_day_avg": 6.38
     },
     "redeemer_prime_blueprint": {
       "name": "Redeemer Prime Blueprint",
@@ -2078,33 +2078,33 @@
     },
     "redeemer_prime_handle": {
       "name": "Redeemer Prime Handle",
-      "recent_avg": 69.5,
-      "three_day_avg": 43.65
+      "recent_avg": 40.0,
+      "three_day_avg": 43.68
     },
     "revenant_prime_blueprint": {
       "name": "Revenant Prime Blueprint",
-      "recent_avg": 22.5,
-      "three_day_avg": 24.52
+      "recent_avg": 23.0,
+      "three_day_avg": 24.45
     },
     "revenant_prime_chassis_blueprint": {
       "name": "Revenant Prime Chassis Blueprint",
       "recent_avg": 8.5,
-      "three_day_avg": 6.28
+      "three_day_avg": 6.32
     },
     "revenant_prime_neuroptics_blueprint": {
       "name": "Revenant Prime Neuroptics Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 7.8
+      "recent_avg": 8.5,
+      "three_day_avg": 7.81
     },
     "revenant_prime_systems_blueprint": {
       "name": "Revenant Prime Systems Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 9.22
+      "three_day_avg": 9.23
     },
     "rhino_prime_blueprint": {
       "name": "Rhino Prime Blueprint",
-      "recent_avg": 26.5,
-      "three_day_avg": 21.62
+      "recent_avg": 24.5,
+      "three_day_avg": 21.58
     },
     "rhino_prime_chassis_blueprint": {
       "name": "Rhino Prime Chassis Blueprint",
@@ -2113,13 +2113,13 @@
     },
     "rhino_prime_neuroptics_blueprint": {
       "name": "Rhino Prime Neuroptics Blueprint",
-      "recent_avg": 11.5,
+      "recent_avg": 17.5,
       "three_day_avg": 16.65
     },
     "rhino_prime_systems_blueprint": {
       "name": "Rhino Prime Systems Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 8.33
+      "three_day_avg": 8.35
     },
     "ris": {
       "name": "Ris",
@@ -2128,48 +2128,48 @@
     },
     "rubico_prime_barrel": {
       "name": "Rubico Prime Barrel",
-      "recent_avg": 7.0,
+      "recent_avg": 7.5,
       "three_day_avg": 7.38
     },
     "rubico_prime_blueprint": {
       "name": "Rubico Prime Blueprint",
-      "recent_avg": 25.0,
-      "three_day_avg": 22.37
+      "recent_avg": 24.5,
+      "three_day_avg": 22.44
     },
     "rubico_prime_receiver": {
       "name": "Rubico Prime Receiver",
-      "recent_avg": 5.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.19
     },
     "rubico_prime_stock": {
       "name": "Rubico Prime Stock",
-      "recent_avg": 7.5,
-      "three_day_avg": 8.53
+      "recent_avg": 8.0,
+      "three_day_avg": 8.51
     },
     "sarofang_prime_blade": {
       "name": "Sarofang Prime Blade",
-      "recent_avg": 6.0,
-      "three_day_avg": 8.48
+      "recent_avg": 7.5,
+      "three_day_avg": 8.47
     },
     "sarofang_prime_blueprint": {
       "name": "Sarofang Prime Blueprint",
       "recent_avg": 4.0,
-      "three_day_avg": 3.6
+      "three_day_avg": 3.61
     },
     "sarofang_prime_handle": {
       "name": "Sarofang Prime Handle",
       "recent_avg": 4.5,
-      "three_day_avg": 3.86
+      "three_day_avg": 3.87
     },
     "saryn_prime_blueprint": {
       "name": "Saryn Prime Blueprint",
-      "recent_avg": 20.0,
-      "three_day_avg": 18.2
+      "recent_avg": 16.5,
+      "three_day_avg": 18.15
     },
     "saryn_prime_chassis_blueprint": {
       "name": "Saryn Prime Chassis Blueprint",
-      "recent_avg": 41.5,
-      "three_day_avg": 40.47
+      "recent_avg": 48.5,
+      "three_day_avg": 40.52
     },
     "saryn_prime_neuroptics_blueprint": {
       "name": "Saryn Prime Neuroptics Blueprint",
@@ -2178,13 +2178,13 @@
     },
     "saryn_prime_systems_blueprint": {
       "name": "Saryn Prime Systems Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 7.49
+      "recent_avg": 7.0,
+      "three_day_avg": 7.5
     },
     "scindo_prime_blade": {
       "name": "Scindo Prime Blade",
       "recent_avg": 20.0,
-      "three_day_avg": 16.83
+      "three_day_avg": 16.86
     },
     "scindo_prime_blueprint": {
       "name": "Scindo Prime Blueprint",
@@ -2193,168 +2193,168 @@
     },
     "scindo_prime_handle": {
       "name": "Scindo Prime Handle",
-      "recent_avg": 9.0,
+      "recent_avg": 9.5,
       "three_day_avg": 10.4
     },
     "scourge_prime_barrel": {
       "name": "Scourge Prime Barrel",
-      "recent_avg": 37.0,
-      "three_day_avg": 38.41
+      "recent_avg": 39.5,
+      "three_day_avg": 38.54
     },
     "scourge_prime_blade": {
       "name": "Scourge Prime Blade",
-      "recent_avg": 5.0,
-      "three_day_avg": 5.27
+      "recent_avg": 5.5,
+      "three_day_avg": 5.28
     },
     "scourge_prime_blueprint": {
       "name": "Scourge Prime Blueprint",
       "recent_avg": 15.5,
-      "three_day_avg": 19.75
+      "three_day_avg": 19.69
     },
     "scourge_prime_handle": {
       "name": "Scourge Prime Handle",
-      "recent_avg": 8.0,
-      "three_day_avg": 7.03
+      "recent_avg": 7.5,
+      "three_day_avg": 7.04
     },
     "sevagoth_prime_blueprint": {
       "name": "Sevagoth Prime Blueprint",
       "recent_avg": 6.0,
-      "three_day_avg": 5.17
+      "three_day_avg": 5.18
     },
     "sevagoth_prime_chassis_blueprint": {
       "name": "Sevagoth Prime Chassis Blueprint",
-      "recent_avg": 33.0,
-      "three_day_avg": 29.29
+      "recent_avg": 27.5,
+      "three_day_avg": 29.25
     },
     "sevagoth_prime_neuroptics_blueprint": {
       "name": "Sevagoth Prime Neuroptics Blueprint",
-      "recent_avg": 4.5,
-      "three_day_avg": 2.52
+      "recent_avg": 3.5,
+      "three_day_avg": 2.53
     },
     "sevagoth_prime_systems_blueprint": {
       "name": "Sevagoth Prime Systems Blueprint",
-      "recent_avg": 3.0,
-      "three_day_avg": 3.21
+      "recent_avg": 4.0,
+      "three_day_avg": 3.22
     },
     "shade_prime_blueprint": {
       "name": "Shade Prime Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 5.62
+      "recent_avg": 7.0,
+      "three_day_avg": 5.64
     },
     "shade_prime_carapace": {
       "name": "Shade Prime Carapace",
-      "recent_avg": 30.5,
-      "three_day_avg": 33.93
+      "recent_avg": 36.0,
+      "three_day_avg": 33.95
     },
     "shade_prime_cerebrum": {
       "name": "Shade Prime Cerebrum",
-      "recent_avg": 5.5,
-      "three_day_avg": 6.8
+      "recent_avg": 8.0,
+      "three_day_avg": 6.82
     },
     "shade_prime_systems": {
       "name": "Shade Prime Systems",
-      "recent_avg": 6.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.05
     },
     "sicarus_prime_barrel": {
       "name": "Sicarus Prime Barrel",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.08
+      "recent_avg": 11.0,
+      "three_day_avg": 12.07
     },
     "sicarus_prime_blueprint": {
       "name": "Sicarus Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 10.24
+      "recent_avg": 8.5,
+      "three_day_avg": 10.25
     },
     "sicarus_prime_receiver": {
       "name": "Sicarus Prime Receiver",
       "recent_avg": 42.5,
-      "three_day_avg": 41.73
+      "three_day_avg": 41.76
     },
     "silva_and_aegis_prime_blade": {
       "name": "Silva & Aegis Prime Blade",
-      "recent_avg": 6.5,
-      "three_day_avg": 9.15
+      "recent_avg": 19.5,
+      "three_day_avg": 9.28
     },
     "silva_and_aegis_prime_blueprint": {
       "name": "Silva & Aegis Prime Blueprint",
-      "recent_avg": 8.0,
+      "recent_avg": 8.5,
       "three_day_avg": 9.6
     },
     "silva_and_aegis_prime_guard": {
       "name": "Silva & Aegis Prime Guard",
-      "recent_avg": 25.0,
-      "three_day_avg": 25.38
+      "recent_avg": 27.5,
+      "three_day_avg": 25.4
     },
     "silva_and_aegis_prime_hilt": {
       "name": "Silva & Aegis Prime Hilt",
-      "recent_avg": 10.0,
-      "three_day_avg": 8.71
+      "recent_avg": 6.5,
+      "three_day_avg": 8.66
     },
     "soma_prime_barrel": {
       "name": "Soma Prime Barrel",
-      "recent_avg": 10.5,
-      "three_day_avg": 12.49
+      "recent_avg": 12.0,
+      "three_day_avg": 12.51
     },
     "soma_prime_blueprint": {
       "name": "Soma Prime Blueprint",
-      "recent_avg": 10.0,
-      "three_day_avg": 7.72
+      "recent_avg": 8.0,
+      "three_day_avg": 7.73
     },
     "soma_prime_receiver": {
       "name": "Soma Prime Receiver",
-      "recent_avg": 19.0,
-      "three_day_avg": 12.69
+      "recent_avg": 12.5,
+      "three_day_avg": 12.66
     },
     "soma_prime_stock": {
       "name": "Soma Prime Stock",
-      "recent_avg": 31.5,
-      "three_day_avg": 31.99
+      "recent_avg": 42.5,
+      "three_day_avg": 32.05
     },
     "spira_prime_blade": {
       "name": "Spira Prime Blade",
-      "recent_avg": 22.0,
-      "three_day_avg": 19.25
+      "recent_avg": 23.0,
+      "three_day_avg": 19.29
     },
     "spira_prime_blueprint": {
       "name": "Spira Prime Blueprint",
-      "recent_avg": 4.0,
+      "recent_avg": 5.0,
       "three_day_avg": 4.62
     },
     "spira_prime_pouch": {
       "name": "Spira Prime Pouch",
-      "recent_avg": 49.0,
-      "three_day_avg": 41.75
+      "recent_avg": 57.0,
+      "three_day_avg": 41.95
     },
     "stradavar_prime_barrel": {
       "name": "Stradavar Prime Barrel",
       "recent_avg": 4.5,
-      "three_day_avg": 4.72
+      "three_day_avg": 4.71
     },
     "stradavar_prime_blueprint": {
       "name": "Stradavar Prime Blueprint",
-      "recent_avg": 12.5,
-      "three_day_avg": 13.83
+      "recent_avg": 11.5,
+      "three_day_avg": 13.8
     },
     "stradavar_prime_receiver": {
       "name": "Stradavar Prime Receiver",
-      "recent_avg": 7.0,
-      "three_day_avg": 7.74
+      "recent_avg": 10.0,
+      "three_day_avg": 7.81
     },
     "stradavar_prime_stock": {
       "name": "Stradavar Prime Stock",
       "recent_avg": 8.5,
-      "three_day_avg": 10.9
+      "three_day_avg": 10.89
     },
     "strun_prime_barrel": {
       "name": "Strun Prime Barrel",
-      "recent_avg": 8.0,
-      "three_day_avg": 9.12
+      "recent_avg": 9.5,
+      "three_day_avg": 9.14
     },
     "strun_prime_blueprint": {
       "name": "Strun Prime Blueprint",
-      "recent_avg": 24.0,
-      "three_day_avg": 27.49
+      "recent_avg": 26.5,
+      "three_day_avg": 27.51
     },
     "strun_prime_receiver": {
       "name": "Strun Prime Receiver",
@@ -2368,18 +2368,18 @@
     },
     "styanax_prime_blueprint": {
       "name": "Styanax Prime Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.11
     },
     "styanax_prime_chassis_blueprint": {
       "name": "Styanax Prime Chassis Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.73
+      "three_day_avg": 4.74
     },
     "styanax_prime_neuroptics_blueprint": {
       "name": "Styanax Prime Neuroptics Blueprint",
       "recent_avg": 14.5,
-      "three_day_avg": 13.45
+      "three_day_avg": 13.47
     },
     "styanax_prime_systems_blueprint": {
       "name": "Styanax Prime Systems Blueprint",
@@ -2388,67 +2388,67 @@
     },
     "sybaris_prime_barrel": {
       "name": "Sybaris Prime Barrel",
-      "recent_avg": 34.5,
-      "three_day_avg": 38.58
+      "recent_avg": 40.0,
+      "three_day_avg": 38.67
     },
     "sybaris_prime_blueprint": {
       "name": "Sybaris Prime Blueprint",
       "recent_avg": 6.5,
-      "three_day_avg": 7.84
+      "three_day_avg": 7.82
     },
     "sybaris_prime_receiver": {
       "name": "Sybaris Prime Receiver",
-      "recent_avg": 11.0,
+      "recent_avg": 12.0,
       "three_day_avg": 10.4
     },
     "sybaris_prime_stock": {
       "name": "Sybaris Prime Stock",
-      "recent_avg": 10.0,
-      "three_day_avg": 12.01
+      "recent_avg": 11.0,
+      "three_day_avg": 12.02
     },
     "tatsu_prime_blade": {
       "name": "Tatsu Prime Blade",
       "recent_avg": 5.0,
-      "three_day_avg": 5.51
+      "three_day_avg": 5.53
     },
     "tatsu_prime_blueprint": {
       "name": "Tatsu Prime Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.85
+      "three_day_avg": 4.86
     },
     "tatsu_prime_handle": {
       "name": "Tatsu Prime Handle",
       "recent_avg": 17.5,
-      "three_day_avg": 20.77
+      "three_day_avg": 20.71
     },
     "tekko_prime_blade": {
       "name": "Tekko Prime Blade",
-      "recent_avg": 52.5,
-      "three_day_avg": 30.02
+      "recent_avg": 41.5,
+      "three_day_avg": 29.94
     },
     "tekko_prime_blueprint": {
       "name": "Tekko Prime Blueprint",
-      "recent_avg": 4.5,
+      "recent_avg": 5.0,
       "three_day_avg": 4.47
     },
     "tekko_prime_gauntlet": {
       "name": "Tekko Prime Gauntlet",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.78
+      "recent_avg": 7.0,
+      "three_day_avg": 8.77
     },
     "tenora_prime_barrel": {
       "name": "Tenora Prime Barrel",
-      "recent_avg": 15.5,
-      "three_day_avg": 17.47
+      "recent_avg": 20.0,
+      "three_day_avg": 17.48
     },
     "tenora_prime_blueprint": {
       "name": "Tenora Prime Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 5.11
+      "recent_avg": 4.5,
+      "three_day_avg": 5.12
     },
     "tenora_prime_receiver": {
       "name": "Tenora Prime Receiver",
-      "recent_avg": 30.0,
+      "recent_avg": 29.5,
       "three_day_avg": 29.5
     },
     "tenora_prime_stock": {
@@ -2458,83 +2458,83 @@
     },
     "tiberon_prime_barrel": {
       "name": "Tiberon Prime Barrel",
-      "recent_avg": 19.5,
-      "three_day_avg": 16.93
+      "recent_avg": 17.0,
+      "three_day_avg": 16.97
     },
     "tiberon_prime_blueprint": {
       "name": "Tiberon Prime Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 7.92
+      "recent_avg": 32.5,
+      "three_day_avg": 8.29
     },
     "tiberon_prime_receiver": {
       "name": "Tiberon Prime Receiver",
-      "recent_avg": 10.0,
-      "three_day_avg": 8.81
+      "recent_avg": 9.5,
+      "three_day_avg": 8.83
     },
     "tiberon_prime_stock": {
       "name": "Tiberon Prime Stock",
-      "recent_avg": 37.5,
-      "three_day_avg": 31.86
+      "recent_avg": 37.0,
+      "three_day_avg": 31.88
     },
     "tigris_prime_barrel": {
       "name": "Tigris Prime Barrel",
-      "recent_avg": 5.0,
-      "three_day_avg": 6.71
+      "recent_avg": 6.5,
+      "three_day_avg": 6.68
     },
     "tigris_prime_blueprint": {
       "name": "Tigris Prime Blueprint",
-      "recent_avg": 31.0,
-      "three_day_avg": 31.68
+      "recent_avg": 30.0,
+      "three_day_avg": 31.69
     },
     "tigris_prime_receiver": {
       "name": "Tigris Prime Receiver",
-      "recent_avg": 11.0,
-      "three_day_avg": 11.74
+      "recent_avg": 9.5,
+      "three_day_avg": 11.68
     },
     "tigris_prime_stock": {
       "name": "Tigris Prime Stock",
-      "recent_avg": 7.0,
+      "recent_avg": 7.5,
       "three_day_avg": 8.08
     },
     "tipedo_prime_blueprint": {
       "name": "Tipedo Prime Blueprint",
-      "recent_avg": 4.0,
-      "three_day_avg": 5.09
+      "recent_avg": 6.5,
+      "three_day_avg": 5.11
     },
     "tipedo_prime_handle": {
       "name": "Tipedo Prime Handle",
-      "recent_avg": 35.0,
-      "three_day_avg": 33.2
+      "recent_avg": 30.0,
+      "three_day_avg": 32.86
     },
     "tipedo_prime_ornament": {
       "name": "Tipedo Prime Ornament",
-      "recent_avg": 12.5,
-      "three_day_avg": 11.9
+      "recent_avg": 12.0,
+      "three_day_avg": 11.95
     },
     "titania_prime_blueprint": {
       "name": "Titania Prime Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 10.25
+      "three_day_avg": 10.23
     },
     "titania_prime_chassis_blueprint": {
       "name": "Titania Prime Chassis Blueprint",
       "recent_avg": 10.0,
-      "three_day_avg": 8.82
+      "three_day_avg": 8.84
     },
     "titania_prime_neuroptics_blueprint": {
       "name": "Titania Prime Neuroptics Blueprint",
-      "recent_avg": 9.5,
+      "recent_avg": 9.0,
       "three_day_avg": 8.9
     },
     "titania_prime_systems_blueprint": {
       "name": "Titania Prime Systems Blueprint",
-      "recent_avg": 38.5,
-      "three_day_avg": 36.17
+      "recent_avg": 38.0,
+      "three_day_avg": 36.18
     },
     "trinity_prime_blueprint": {
       "name": "Trinity Prime Blueprint",
-      "recent_avg": 18.0,
-      "three_day_avg": 18.62
+      "recent_avg": 19.5,
+      "three_day_avg": 18.68
     },
     "trinity_prime_chassis_blueprint": {
       "name": "Trinity Prime Chassis Blueprint",
@@ -2543,23 +2543,23 @@
     },
     "trinity_prime_neuroptics_blueprint": {
       "name": "Trinity Prime Neuroptics Blueprint",
-      "recent_avg": 14.0,
+      "recent_avg": 13.5,
       "three_day_avg": 13.4
     },
     "trinity_prime_systems_blueprint": {
       "name": "Trinity Prime Systems Blueprint",
-      "recent_avg": 9.0,
+      "recent_avg": 10.0,
       "three_day_avg": 9.54
     },
     "trumna_prime_barrel": {
       "name": "Trumna Prime Barrel",
-      "recent_avg": 9.5,
-      "three_day_avg": 8.92
+      "recent_avg": 9.0,
+      "three_day_avg": 8.94
     },
     "trumna_prime_blueprint": {
       "name": "Trumna Prime Blueprint",
       "recent_avg": 1.5,
-      "three_day_avg": 1.64
+      "three_day_avg": 1.63
     },
     "trumna_prime_receiver": {
       "name": "Trumna Prime Receiver",
@@ -2574,27 +2574,27 @@
     "vadarya_prime_barrel": {
       "name": "Vadarya Prime Barrel",
       "recent_avg": 4.0,
-      "three_day_avg": 3.4
+      "three_day_avg": 3.42
     },
     "vadarya_prime_blueprint": {
       "name": "Vadarya Prime Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 8.4
+      "recent_avg": 9.0,
+      "three_day_avg": 8.42
     },
     "vadarya_prime_receiver": {
       "name": "Vadarya Prime Receiver",
-      "recent_avg": 2.0,
+      "recent_avg": 3.0,
       "three_day_avg": 2.45
     },
     "vadarya_prime_stock": {
       "name": "Vadarya Prime Stock",
-      "recent_avg": 3.5,
-      "three_day_avg": 3.95
+      "recent_avg": 2.0,
+      "three_day_avg": 3.94
     },
     "valkyr_prime_blueprint": {
       "name": "Valkyr Prime Blueprint",
       "recent_avg": 8.0,
-      "three_day_avg": 6.39
+      "three_day_avg": 6.4
     },
     "valkyr_prime_chassis_blueprint": {
       "name": "Valkyr Prime Chassis Blueprint",
@@ -2613,58 +2613,58 @@
     },
     "vasto_prime_barrel": {
       "name": "Vasto Prime Barrel",
-      "recent_avg": 8.0,
-      "three_day_avg": 9.1
+      "recent_avg": 8.5,
+      "three_day_avg": 9.09
     },
     "vasto_prime_blueprint": {
       "name": "Vasto Prime Blueprint",
-      "recent_avg": 6.0,
-      "three_day_avg": 9.09
+      "recent_avg": 7.5,
+      "three_day_avg": 8.9
     },
     "vasto_prime_receiver": {
       "name": "Vasto Prime Receiver",
-      "recent_avg": 8.5,
-      "three_day_avg": 10.34
+      "recent_avg": 9.5,
+      "three_day_avg": 10.03
     },
     "vauban_prime_blueprint": {
       "name": "Vauban Prime Blueprint",
-      "recent_avg": 18.5,
-      "three_day_avg": 16.53
+      "recent_avg": 17.5,
+      "three_day_avg": 16.57
     },
     "vauban_prime_chassis_blueprint": {
       "name": "Vauban Prime Chassis Blueprint",
       "recent_avg": 27.5,
-      "three_day_avg": 21.82
+      "three_day_avg": 21.92
     },
     "vauban_prime_neuroptics_blueprint": {
       "name": "Vauban Prime Neuroptics Blueprint",
-      "recent_avg": 26.0,
-      "three_day_avg": 31.42
+      "recent_avg": 27.5,
+      "three_day_avg": 31.4
     },
     "vauban_prime_systems_blueprint": {
       "name": "Vauban Prime Systems Blueprint",
       "recent_avg": 44.0,
-      "three_day_avg": 42.63
+      "three_day_avg": 42.69
     },
     "vectis_prime_barrel": {
       "name": "Vectis Prime Barrel",
-      "recent_avg": 24.0,
-      "three_day_avg": 23.41
+      "recent_avg": 29.5,
+      "three_day_avg": 23.49
     },
     "vectis_prime_blueprint": {
       "name": "Vectis Prime Blueprint",
-      "recent_avg": 15.5,
-      "three_day_avg": 10.02
+      "recent_avg": 11.0,
+      "three_day_avg": 10.05
     },
     "vectis_prime_receiver": {
       "name": "Vectis Prime Receiver",
-      "recent_avg": 66.5,
+      "recent_avg": 60.0,
       "three_day_avg": 60.37
     },
     "vectis_prime_stock": {
       "name": "Vectis Prime Stock",
-      "recent_avg": 26.0,
-      "three_day_avg": 25.19
+      "recent_avg": 23.0,
+      "three_day_avg": 25.1
     },
     "velox_prime_barrel": {
       "name": "Velox Prime Barrel",
@@ -2673,63 +2673,63 @@
     },
     "velox_prime_blueprint": {
       "name": "Velox Prime Blueprint",
-      "recent_avg": 4.0,
+      "recent_avg": 3.0,
       "three_day_avg": 3.18
     },
     "velox_prime_receiver": {
       "name": "Velox Prime Receiver",
-      "recent_avg": 4.0,
-      "three_day_avg": 5.09
+      "recent_avg": 4.5,
+      "three_day_avg": 5.08
     },
     "venato_prime_blade": {
       "name": "Venato Prime Blade",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.98
+      "recent_avg": 8.5,
+      "three_day_avg": 8.97
     },
     "venato_prime_blueprint": {
       "name": "Venato Prime Blueprint",
-      "recent_avg": 2.5,
-      "three_day_avg": 3.05
+      "recent_avg": 3.5,
+      "three_day_avg": 3.06
     },
     "venato_prime_handle": {
       "name": "Venato Prime Handle",
-      "recent_avg": 3.5,
-      "three_day_avg": 3.79
+      "recent_avg": 4.0,
+      "three_day_avg": 3.8
     },
     "venka_prime_blades": {
       "name": "Venka Prime Blades",
-      "recent_avg": 9.0,
-      "three_day_avg": 8.61
+      "recent_avg": 10.0,
+      "three_day_avg": 8.62
     },
     "venka_prime_blueprint": {
       "name": "Venka Prime Blueprint",
-      "recent_avg": 8.5,
+      "recent_avg": 5.0,
       "three_day_avg": 5.22
     },
     "venka_prime_gauntlet": {
       "name": "Venka Prime Gauntlet",
-      "recent_avg": 24.5,
-      "three_day_avg": 25.33
+      "recent_avg": 25.0,
+      "three_day_avg": 25.35
     },
     "volnus_prime_blueprint": {
       "name": "Volnus Prime Blueprint",
-      "recent_avg": 4.5,
-      "three_day_avg": 4.1
+      "recent_avg": 3.5,
+      "three_day_avg": 4.08
     },
     "volnus_prime_handle": {
       "name": "Volnus Prime Handle",
-      "recent_avg": 19.5,
+      "recent_avg": 23.0,
       "three_day_avg": 24.68
     },
     "volnus_prime_head": {
       "name": "Volnus Prime Head",
-      "recent_avg": 9.0,
+      "recent_avg": 9.5,
       "three_day_avg": 7.65
     },
     "volt_prime_blueprint": {
       "name": "Volt Prime Blueprint",
-      "recent_avg": 13.0,
-      "three_day_avg": 13.62
+      "recent_avg": 14.5,
+      "three_day_avg": 13.66
     },
     "volt_prime_chassis_blueprint": {
       "name": "Volt Prime Chassis Blueprint",
@@ -2738,43 +2738,43 @@
     },
     "volt_prime_neuroptics_blueprint": {
       "name": "Volt Prime Neuroptics Blueprint",
-      "recent_avg": 30.0,
-      "three_day_avg": 29.15
+      "recent_avg": 29.0,
+      "three_day_avg": 29.14
     },
     "volt_prime_systems_blueprint": {
       "name": "Volt Prime Systems Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 9.59
+      "recent_avg": 8.5,
+      "three_day_avg": 9.58
     },
     "vome": {
       "name": "Vome",
-      "recent_avg": 9.5,
+      "recent_avg": 9.0,
       "three_day_avg": 8.84
     },
     "voruna_prime_blueprint": {
       "name": "Voruna Prime Blueprint",
-      "recent_avg": 20.0,
-      "three_day_avg": 19.95
+      "recent_avg": 20.5,
+      "three_day_avg": 19.96
     },
     "voruna_prime_chassis_blueprint": {
       "name": "Voruna Prime Chassis Blueprint",
-      "recent_avg": 8.0,
-      "three_day_avg": 7.88
+      "recent_avg": 9.5,
+      "three_day_avg": 7.87
     },
     "voruna_prime_neuroptics_blueprint": {
       "name": "Voruna Prime Neuroptics Blueprint",
       "recent_avg": 3.0,
-      "three_day_avg": 2.33
+      "three_day_avg": 2.34
     },
     "voruna_prime_systems_blueprint": {
       "name": "Voruna Prime Systems Blueprint",
-      "recent_avg": 7.5,
-      "three_day_avg": 7.53
+      "recent_avg": 9.5,
+      "three_day_avg": 7.56
     },
     "wisp_prime_blueprint": {
       "name": "Wisp Prime Blueprint",
-      "recent_avg": 36.0,
-      "three_day_avg": 36.13
+      "recent_avg": 33.5,
+      "three_day_avg": 36.12
     },
     "wisp_prime_chassis_blueprint": {
       "name": "Wisp Prime Chassis Blueprint",
@@ -2783,23 +2783,23 @@
     },
     "wisp_prime_neuroptics_blueprint": {
       "name": "Wisp Prime Neuroptics Blueprint",
-      "recent_avg": 5.5,
-      "three_day_avg": 5.33
+      "recent_avg": 6.0,
+      "three_day_avg": 5.34
     },
     "wisp_prime_systems_blueprint": {
       "name": "Wisp Prime Systems Blueprint",
-      "recent_avg": 5.0,
-      "three_day_avg": 5.64
+      "recent_avg": 6.0,
+      "three_day_avg": 5.66
     },
     "wukong_prime_blueprint": {
       "name": "Wukong Prime Blueprint",
       "recent_avg": 30.0,
-      "three_day_avg": 29.68
+      "three_day_avg": 29.71
     },
     "wukong_prime_chassis_blueprint": {
       "name": "Wukong Prime Chassis Blueprint",
-      "recent_avg": 9.5,
-      "three_day_avg": 11.26
+      "recent_avg": 10.0,
+      "three_day_avg": 11.24
     },
     "wukong_prime_neuroptics_blueprint": {
       "name": "Wukong Prime Neuroptics Blueprint",
@@ -2808,33 +2808,33 @@
     },
     "wukong_prime_systems_blueprint": {
       "name": "Wukong Prime Systems Blueprint",
-      "recent_avg": 13.0,
-      "three_day_avg": 14.23
+      "recent_avg": 11.5,
+      "three_day_avg": 14.19
     },
     "wyrm_prime_blueprint": {
       "name": "Wyrm Prime Blueprint",
-      "recent_avg": 13.5,
+      "recent_avg": 14.0,
       "three_day_avg": 14.13
     },
     "wyrm_prime_carapace": {
       "name": "Wyrm Prime Carapace",
-      "recent_avg": 14.0,
+      "recent_avg": 15.0,
       "three_day_avg": 14.64
     },
     "wyrm_prime_cerebrum": {
       "name": "Wyrm Prime Cerebrum",
-      "recent_avg": 26.5,
-      "three_day_avg": 22.81
+      "recent_avg": 29.0,
+      "three_day_avg": 22.89
     },
     "wyrm_prime_systems": {
       "name": "Wyrm Prime Systems",
-      "recent_avg": 34.5,
-      "three_day_avg": 34.65
+      "recent_avg": 37.5,
+      "three_day_avg": 34.69
     },
     "xaku_prime_blueprint": {
       "name": "Xaku Prime Blueprint",
-      "recent_avg": 14.0,
-      "three_day_avg": 14.67
+      "recent_avg": 16.5,
+      "three_day_avg": 14.7
     },
     "xaku_prime_chassis_blueprint": {
       "name": "Xaku Prime Chassis Blueprint",
@@ -2844,12 +2844,12 @@
     "xaku_prime_neuroptics_blueprint": {
       "name": "Xaku Prime Neuroptics Blueprint",
       "recent_avg": 3.0,
-      "three_day_avg": 3.12
+      "three_day_avg": 3.11
     },
     "xaku_prime_systems_blueprint": {
       "name": "Xaku Prime Systems Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 4.18
+      "three_day_avg": 4.19
     },
     "xata": {
       "name": "Xata",
@@ -2868,18 +2868,18 @@
     },
     "yareli_prime_neuroptics_blueprint": {
       "name": "Yareli Prime Neuroptics Blueprint",
-      "recent_avg": 9.0,
-      "three_day_avg": 9.49
+      "recent_avg": 8.0,
+      "three_day_avg": 9.47
     },
     "yareli_prime_systems_blueprint": {
       "name": "Yareli Prime Systems Blueprint",
-      "recent_avg": 12.0,
-      "three_day_avg": 12.72
+      "recent_avg": 10.0,
+      "three_day_avg": 12.68
     },
     "zakti_prime_barrel": {
       "name": "Zakti Prime Barrel",
-      "recent_avg": 9.5,
-      "three_day_avg": 6.59
+      "recent_avg": 7.0,
+      "three_day_avg": 6.6
     },
     "zakti_prime_blueprint": {
       "name": "Zakti Prime Blueprint",
@@ -2889,62 +2889,62 @@
     "zakti_prime_receiver": {
       "name": "Zakti Prime Receiver",
       "recent_avg": 5.5,
-      "three_day_avg": 6.52
+      "three_day_avg": 6.51
     },
     "zephyr_prime_blueprint": {
       "name": "Zephyr Prime Blueprint",
-      "recent_avg": 14.5,
-      "three_day_avg": 18.6
+      "recent_avg": 17.5,
+      "three_day_avg": 18.58
     },
     "zephyr_prime_chassis_blueprint": {
       "name": "Zephyr Prime Chassis Blueprint",
-      "recent_avg": 9.0,
+      "recent_avg": 7.5,
       "three_day_avg": 7.21
     },
     "zephyr_prime_neuroptics_blueprint": {
       "name": "Zephyr Prime Neuroptics Blueprint",
       "recent_avg": 5.0,
-      "three_day_avg": 6.06
+      "three_day_avg": 6.05
     },
     "zephyr_prime_systems_blueprint": {
       "name": "Zephyr Prime Systems Blueprint",
       "recent_avg": 40.0,
-      "three_day_avg": 39.71
+      "three_day_avg": 39.72
     },
     "zhuge_prime_barrel": {
       "name": "Zhuge Prime Barrel",
-      "recent_avg": 19.5,
-      "three_day_avg": 17.42
+      "recent_avg": 27.5,
+      "three_day_avg": 17.56
     },
     "zhuge_prime_blueprint": {
       "name": "Zhuge Prime Blueprint",
-      "recent_avg": 6.5,
-      "three_day_avg": 6.33
+      "recent_avg": 10.0,
+      "three_day_avg": 6.38
     },
     "zhuge_prime_grip": {
       "name": "Zhuge Prime Grip",
-      "recent_avg": 6.0,
+      "recent_avg": 7.5,
       "three_day_avg": 6.82
     },
     "zhuge_prime_receiver": {
       "name": "Zhuge Prime Receiver",
-      "recent_avg": 10.0,
-      "three_day_avg": 8.18
+      "recent_avg": 7.0,
+      "three_day_avg": 8.16
     },
     "zhuge_prime_string": {
       "name": "Zhuge Prime String",
-      "recent_avg": 14.5,
-      "three_day_avg": 11.08
+      "recent_avg": 9.0,
+      "three_day_avg": 11.05
     },
     "zylok_prime_barrel": {
       "name": "Zylok Prime Barrel",
       "recent_avg": 5.0,
-      "three_day_avg": 6.02
+      "three_day_avg": 6.01
     },
     "zylok_prime_blueprint": {
       "name": "Zylok Prime Blueprint",
-      "recent_avg": 60.0,
-      "three_day_avg": 15.86
+      "recent_avg": 25.0,
+      "three_day_avg": 15.99
     },
     "zylok_prime_receiver": {
       "name": "Zylok Prime Receiver",
@@ -2953,23 +2953,23 @@
     },
     "citrine_prime_blueprint": {
       "name": "Citrine Prime Blueprint",
-      "recent_avg": 17.5,
-      "three_day_avg": 16.08
+      "recent_avg": 16.0,
+      "three_day_avg": 16.1
     },
     "citrine_prime_chassis_blueprint": {
       "name": "Citrine Prime Chassis Blueprint",
-      "recent_avg": 8.5,
-      "three_day_avg": 8.1
+      "recent_avg": 9.0,
+      "three_day_avg": 8.11
     },
     "citrine_prime_neuroptics_blueprint": {
       "name": "Citrine Prime Neuroptics Blueprint",
-      "recent_avg": 44.5,
-      "three_day_avg": 39.88
+      "recent_avg": 40.0,
+      "three_day_avg": 39.6
     },
     "citrine_prime_systems_blueprint": {
       "name": "Citrine Prime Systems Blueprint",
       "recent_avg": 8.0,
-      "three_day_avg": 8.32
+      "three_day_avg": 8.3
     },
     "corufell_prime_blueprint": {
       "name": "Corufell Prime Blueprint",
@@ -2979,22 +2979,22 @@
     "corufell_prime_handle": {
       "name": "Corufell Prime Handle",
       "recent_avg": 7.0,
-      "three_day_avg": 6.03
+      "three_day_avg": 6.04
     },
     "corufell_prime_receiver": {
       "name": "Corufell Prime Receiver",
       "recent_avg": 20.0,
-      "three_day_avg": 20.43
+      "three_day_avg": 20.4
     },
     "corufell_prime_stock": {
       "name": "Corufell Prime Stock",
-      "recent_avg": 6.5,
-      "three_day_avg": 6.7
+      "recent_avg": 5.5,
+      "three_day_avg": 6.69
     },
     "steflos_prime_barrel": {
       "name": "Steflos Prime Barrel",
-      "recent_avg": 30.0,
-      "three_day_avg": 27.85
+      "recent_avg": 24.5,
+      "three_day_avg": 27.82
     },
     "steflos_prime_blueprint": {
       "name": "Steflos Prime Blueprint",
@@ -3003,18 +3003,18 @@
     },
     "steflos_prime_receiver": {
       "name": "Steflos Prime Receiver",
-      "recent_avg": 5.0,
-      "three_day_avg": 6.23
+      "recent_avg": 7.5,
+      "three_day_avg": 6.26
     },
     "steflos_prime_stock": {
       "name": "Steflos Prime Stock",
-      "recent_avg": 6.0,
-      "three_day_avg": 7.9
+      "recent_avg": 9.0,
+      "three_day_avg": 7.91
     },
     "kompressa_prime_receiver": {
       "name": "Kompressa Prime Receiver",
-      "recent_avg": 4.0,
-      "three_day_avg": 4.25
+      "recent_avg": 4.5,
+      "three_day_avg": 4.24
     }
   }
 }
