@@ -2630,7 +2630,7 @@
   "axi_c12_relic": {
     "name": "Axi C12",
     "tier": "Axi",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Vadarya Prime Stock",
@@ -11098,7 +11098,7 @@
   "axi_s20_relic": {
     "name": "Axi S20",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -11171,7 +11171,7 @@
   "axi_s21_relic": {
     "name": "Axi S21",
     "tier": "Axi",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Cedo Prime Stock",
@@ -12047,7 +12047,7 @@
   "axi_t13_relic": {
     "name": "Axi T13",
     "tier": "Axi",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "2X Forma Blueprint",
@@ -14602,7 +14602,7 @@
   "lith_a12_relic": {
     "name": "Lith A12",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -14675,7 +14675,7 @@
   "lith_a13_relic": {
     "name": "Lith A13",
     "tier": "Lith",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Paris Prime Lower Limb",
@@ -16646,7 +16646,7 @@
   "lith_c15_relic": {
     "name": "Lith C15",
     "tier": "Lith",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Burston Prime Receiver",
@@ -20223,7 +20223,7 @@
   "lith_k12_relic": {
     "name": "Lith K12",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Braton Prime Stock",
@@ -21391,7 +21391,7 @@
   "lith_l8_relic": {
     "name": "Lith L8",
     "tier": "Lith",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Akbronco Prime Link",
@@ -24676,7 +24676,7 @@
   "lith_q3_relic": {
     "name": "Lith Q3",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Bronco Prime Blueprint",
@@ -25844,7 +25844,7 @@
   "lith_s19_relic": {
     "name": "Lith S19",
     "tier": "Lith",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -26939,7 +26939,7 @@
   "lith_t14_relic": {
     "name": "Lith T14",
     "tier": "Lith",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Fang Prime Handle",
@@ -30881,7 +30881,7 @@
   "meso_c11_relic": {
     "name": "Meso C11",
     "tier": "Meso",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Paris Prime Blueprint",
@@ -32122,7 +32122,7 @@
   "meso_d9_relic": {
     "name": "Meso D9",
     "tier": "Meso",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Burston Prime Blueprint",
@@ -35188,7 +35188,7 @@
   "meso_k8_relic": {
     "name": "Meso K8",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Lex Prime Barrel",
@@ -35261,7 +35261,7 @@
   "meso_k9_relic": {
     "name": "Meso K9",
     "tier": "Meso",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Fang Prime Blueprint",
@@ -35626,7 +35626,7 @@
   "meso_l5_relic": {
     "name": "Meso L5",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -41539,7 +41539,7 @@
   "meso_v15_relic": {
     "name": "Meso V15",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "2X Forma Blueprint",
@@ -41685,7 +41685,7 @@
   "meso_v17_relic": {
     "name": "Meso V17",
     "tier": "Meso",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -42707,7 +42707,7 @@
   "meso_x1_relic": {
     "name": "Meso X1",
     "tier": "Meso",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Paris Prime Grip",
@@ -45262,7 +45262,7 @@
   "neo_c10_relic": {
     "name": "Neo C10",
     "tier": "Neo",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -45335,7 +45335,7 @@
   "neo_c11_relic": {
     "name": "Neo C11",
     "tier": "Neo",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Lex Prime Receiver",
@@ -45846,7 +45846,7 @@
   "neo_c8_relic": {
     "name": "Neo C8",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Cedo Prime Stock",
@@ -45919,7 +45919,7 @@
   "neo_c9_relic": {
     "name": "Neo C9",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -48620,7 +48620,7 @@
   "neo_k10_relic": {
     "name": "Neo K10",
     "tier": "Neo",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -54898,7 +54898,7 @@
   "neo_t11_relic": {
     "name": "Neo T11",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Forma Blueprint",
@@ -55774,7 +55774,7 @@
   "neo_v12_relic": {
     "name": "Neo V12",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Akbronco Prime Blueprint",
@@ -55847,7 +55847,7 @@
   "neo_v13_relic": {
     "name": "Neo V13",
     "tier": "Neo",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Lavos Prime Neuroptics Blueprint",
@@ -56723,7 +56723,7 @@
   "neo_y1_relic": {
     "name": "Neo Y1",
     "tier": "Neo",
-    "vaulted": false,
+    "vaulted": true,
     "rewards": [
       {
         "name": "Fang Prime Blueprint",
@@ -56796,7 +56796,7 @@
   "neo_y2_relic": {
     "name": "Neo Y2",
     "tier": "Neo",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Lex Prime Blueprint",
