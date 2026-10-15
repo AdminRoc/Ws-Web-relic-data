@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T18:07:38Z",
+ "generated": "2026-10-15T19:09:27Z",
  "majors": [
   43,
   44
@@ -6426,8 +6426,18 @@
   },
   "44.1.2": {
    "date": "2026-10-15",
-   "name": "Hotfix 44.1.2",
-   "title": "October 15, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.2 &#xa; Image Description: A Vessel stands in "
+   "name": "Hotfix 44.1.2 + 2.1",
+   "title": "October 15, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.2 + 2.1 &#xa; Iceblade of Narin: The Icebind: "
+  },
+  "2.1": {
+   "date": "2026-10-15",
+   "name": "Hotfix 44.1.2 + 2.1",
+   "title": "October 15, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.2 + 2.1 &#xa; Iceblade of Narin: The Icebind: "
+  },
+  "2": {
+   "date": "2026-10-15",
+   "name": "Update 2",
+   "note": "major-version approx (earliest section date)"
   }
  }
 }
