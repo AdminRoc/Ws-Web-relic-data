@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T05:50:51Z",
+ "generated": "2026-10-23T15:18:50Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -50530,6 +50530,53 @@
      "name": "Mesa Prime Blueprint",
      "rarity": "Common",
      "urlName": "mesa_prime_blueprint",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "axi_c13_relic": {
+   "name": "Axi C13",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "active",
+   "events": [],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": null
+    },
+    {
+     "name": "Voruna Prime Chassis Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "voruna_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Caliban Prime Neuroptics Blueprint",
+     "rarity": "Rare",
+     "urlName": "caliban_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Braton Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Sarofang Prime Handle",
+     "rarity": "Common",
+     "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Barrel",
+     "rarity": "Common",
+     "urlName": "bronco_prime_barrel",
      "zh": null
     }
    ],
