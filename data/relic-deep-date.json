@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T15:18:50Z",
+ "generated": "2026-10-23T15:26:22Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -2625,6 +2625,12 @@
      "zh": "Forma 蓝图"
     },
     {
+     "name": "Braton Prime Receiver",
+     "rarity": "Common",
+     "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
      "name": "Cobra & Crane Prime Guard",
      "rarity": "Rare",
      "urlName": "cobra_and_crane_prime_guard",
@@ -2646,12 +2652,6 @@
      "name": "Revenant Prime Chassis Blueprint",
      "rarity": "Common",
      "urlName": "revenant_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Braton Prime Receiver",
-     "rarity": "Common",
-     "urlName": "braton_prime_receiver",
      "zh": null
     }
    ],
@@ -2836,6 +2836,62 @@
      "name": "Alternox Prime Receiver",
      "rarity": "Common",
      "urlName": "alternox_prime_receiver",
+     "zh": null
+    }
+   ],
+   "varzia": false,
+   "varziaSet": null
+  },
+  "axi_c13_relic": {
+   "name": "Axi C13",
+   "tier": "Axi",
+   "isBaro": false,
+   "status": "active",
+   "events": [
+    {
+     "type": "released",
+     "version": "44.1.3",
+     "gameDate": "2026-10-23",
+     "gameDateTZ": "UTC+8",
+     "ts": "2026-10-22T19:04:17Z",
+     "source": "patchlogs"
+    }
+   ],
+   "rewards": [
+    {
+     "name": "Forma Blueprint",
+     "rarity": "Common",
+     "urlName": "",
+     "zh": "Forma 蓝图"
+    },
+    {
+     "name": "Voruna Prime Chassis Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "voruna_prime_chassis_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Caliban Prime Neuroptics Blueprint",
+     "rarity": "Rare",
+     "urlName": "caliban_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Braton Prime Receiver",
+     "rarity": "Uncommon",
+     "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Sarofang Prime Handle",
+     "rarity": "Common",
+     "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Barrel",
+     "rarity": "Common",
+     "urlName": "bronco_prime_barrel",
      "zh": null
     }
    ],
@@ -3331,15 +3387,15 @@
      "zh": null
     },
     {
-     "name": "Euphona Prime Receiver",
-     "rarity": "Rare",
-     "urlName": "euphona_prime_receiver",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Euphona Prime Receiver",
+     "rarity": "Rare",
+     "urlName": "euphona_prime_receiver",
      "zh": null
     }
    ],
@@ -5811,15 +5867,15 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Magnus Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "magnus_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Magnus Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "magnus_prime_blueprint",
      "zh": null
     },
     {
@@ -6892,15 +6948,15 @@
      "zh": "Forma 蓝图"
     },
     {
-     "name": "Paris Prime Upper Limb",
-     "rarity": "Common",
-     "urlName": "paris_prime_upper_limb",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime Upper Limb",
+     "rarity": "Common",
+     "urlName": "paris_prime_upper_limb",
      "zh": null
     },
     {
@@ -7212,6 +7268,12 @@
      "zh": "Forma 蓝图"
     },
     {
+     "name": "Braton Prime Receiver",
+     "rarity": "Common",
+     "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
      "name": "Pandero Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "pandero_prime_barrel",
@@ -7221,12 +7283,6 @@
      "name": "Bronco Prime Blueprint",
      "rarity": "Common",
      "urlName": "bronco_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Braton Prime Receiver",
-     "rarity": "Common",
-     "urlName": "braton_prime_receiver",
      "zh": null
     },
     {
@@ -7596,6 +7652,12 @@
      "zh": "Forma 蓝图"
     },
     {
+     "name": "Bronco Prime Barrel",
+     "rarity": "Uncommon",
+     "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
      "name": "Hydroid Prime Chassis Blueprint",
      "rarity": "Common",
      "urlName": "hydroid_prime_chassis_blueprint",
@@ -7605,12 +7667,6 @@
      "name": "Bronco Prime Blueprint",
      "rarity": "Common",
      "urlName": "bronco_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Barrel",
-     "rarity": "Uncommon",
-     "urlName": "bronco_prime_barrel",
      "zh": null
     },
     {
@@ -12166,15 +12222,15 @@
      "zh": null
     },
     {
-     "name": "Tekko Prime Gauntlet",
-     "rarity": "Common",
-     "urlName": "tekko_prime_gauntlet",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Tekko Prime Gauntlet",
+     "rarity": "Common",
+     "urlName": "tekko_prime_gauntlet",
      "zh": null
     },
     {
@@ -14469,15 +14525,15 @@
      "zh": null
     },
     {
-     "name": "Corinth Prime Stock",
-     "rarity": "Rare",
-     "urlName": "corinth_prime_stock",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Corinth Prime Stock",
+     "rarity": "Rare",
+     "urlName": "corinth_prime_stock",
      "zh": null
     },
     {
@@ -14909,15 +14965,15 @@
      "zh": null
     },
     {
-     "name": "Dual Zoren Prime Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "dual_zoren_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Caliban Prime Neuroptics Blueprint",
      "rarity": "Rare",
      "urlName": "caliban_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
+     "name": "Dual Zoren Prime Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "dual_zoren_prime_blueprint",
      "zh": null
     },
     {
@@ -17187,15 +17243,15 @@
      "zh": null
     },
     {
-     "name": "Magnus Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "magnus_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Common",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Magnus Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "magnus_prime_blueprint",
      "zh": null
     },
     {
@@ -25295,15 +25351,15 @@
      "zh": null
     },
     {
-     "name": "Magnus Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "magnus_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Common",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Magnus Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "magnus_prime_blueprint",
      "zh": null
     },
     {
@@ -25615,15 +25671,15 @@
      "zh": null
     },
     {
-     "name": "Bronco Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "bronco_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Bronco Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "bronco_prime_blueprint",
      "zh": null
     },
     {
@@ -26113,6 +26169,12 @@
      "zh": "Forma 蓝图"
     },
     {
+     "name": "Sarofang Prime Handle",
+     "rarity": "Common",
+     "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
@@ -26134,12 +26196,6 @@
      "name": "Voruna Prime Neuroptics Blueprint",
      "rarity": "Uncommon",
      "urlName": "voruna_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Sarofang Prime Handle",
-     "rarity": "Common",
-     "urlName": "sarofang_prime_handle",
      "zh": null
     }
    ],
@@ -32032,15 +32088,15 @@
    ],
    "rewards": [
     {
-     "name": "Pangolin Prime Handle",
-     "rarity": "Common",
-     "urlName": "pangolin_prime_handle",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Pangolin Prime Handle",
+     "rarity": "Common",
+     "urlName": "pangolin_prime_handle",
      "zh": null
     },
     {
@@ -32222,15 +32278,15 @@
      "zh": null
     },
     {
-     "name": "Revenant Prime Chassis Blueprint",
-     "rarity": "Common",
-     "urlName": "revenant_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Common",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Revenant Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "revenant_prime_chassis_blueprint",
      "zh": null
     },
     {
@@ -34142,15 +34198,15 @@
      "zh": null
     },
     {
-     "name": "Pangolin Prime Handle",
-     "rarity": "Common",
-     "urlName": "pangolin_prime_handle",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Pangolin Prime Handle",
+     "rarity": "Common",
+     "urlName": "pangolin_prime_handle",
      "zh": null
     },
     {
@@ -37646,15 +37702,15 @@
      "zh": null
     },
     {
-     "name": "Tenora Prime Stock",
-     "rarity": "Uncommon",
-     "urlName": "tenora_prime_stock",
-     "zh": null
-    },
-    {
      "name": "Bronco Prime Barrel",
      "rarity": "Uncommon",
      "urlName": "bronco_prime_barrel",
+     "zh": null
+    },
+    {
+     "name": "Tenora Prime Stock",
+     "rarity": "Uncommon",
+     "urlName": "tenora_prime_stock",
      "zh": null
     },
     {
@@ -38484,15 +38540,15 @@
      "zh": null
     },
     {
-     "name": "Revenant Prime Chassis Blueprint",
-     "rarity": "Common",
-     "urlName": "revenant_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Revenant Prime Chassis Blueprint",
+     "rarity": "Common",
+     "urlName": "revenant_prime_chassis_blueprint",
      "zh": null
     },
     {
@@ -39806,6 +39862,12 @@
      "zh": null
     },
     {
+     "name": "Caliban Prime Neuroptics Blueprint",
+     "rarity": "Rare",
+     "urlName": "caliban_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
      "name": "Vadarya Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "vadarya_prime_receiver",
@@ -39815,12 +39877,6 @@
      "name": "Kompressa Prime Blueprint",
      "rarity": "Common",
      "urlName": "kompressa_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Caliban Prime Neuroptics Blueprint",
-     "rarity": "Rare",
-     "urlName": "caliban_prime_neuroptics_blueprint",
      "zh": null
     },
     {
@@ -45665,15 +45721,15 @@
      "zh": null
     },
     {
-     "name": "Karyst Prime Blueprint",
-     "rarity": "Common",
-     "urlName": "karyst_prime_blueprint",
-     "zh": null
-    },
-    {
      "name": "Braton Prime Receiver",
      "rarity": "Uncommon",
      "urlName": "braton_prime_receiver",
+     "zh": null
+    },
+    {
+     "name": "Karyst Prime Blueprint",
+     "rarity": "Common",
+     "urlName": "karyst_prime_blueprint",
      "zh": null
     },
     {
@@ -47714,6 +47770,12 @@
      "zh": null
     },
     {
+     "name": "Sarofang Prime Handle",
+     "rarity": "Common",
+     "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
      "name": "Sevagoth Prime Chassis Blueprint",
      "rarity": "Rare",
      "urlName": "sevagoth_prime_chassis_blueprint",
@@ -47729,12 +47791,6 @@
      "name": "Kompressa Prime Blueprint",
      "rarity": "Common",
      "urlName": "kompressa_prime_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Sarofang Prime Handle",
-     "rarity": "Common",
-     "urlName": "sarofang_prime_handle",
      "zh": null
     }
    ],
@@ -49243,15 +49299,15 @@
      "zh": null
     },
     {
-     "name": "Paris Prime String",
-     "rarity": "Common",
-     "urlName": "paris_prime_string",
-     "zh": null
-    },
-    {
      "name": "Sarofang Prime Handle",
      "rarity": "Common",
      "urlName": "sarofang_prime_handle",
+     "zh": null
+    },
+    {
+     "name": "Paris Prime String",
+     "rarity": "Common",
+     "urlName": "paris_prime_string",
      "zh": null
     },
     {
@@ -50375,6 +50431,12 @@
      "zh": null
     },
     {
+     "name": "Caliban Prime Neuroptics Blueprint",
+     "rarity": "Uncommon",
+     "urlName": "caliban_prime_neuroptics_blueprint",
+     "zh": null
+    },
+    {
      "name": "Ember Prime Blueprint",
      "rarity": "Rare",
      "urlName": "ember_prime_blueprint",
@@ -50396,12 +50458,6 @@
      "name": "Volt Prime Chassis Blueprint",
      "rarity": "Common",
      "urlName": "volt_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Caliban Prime Neuroptics Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "caliban_prime_neuroptics_blueprint",
      "zh": null
     }
    ],
@@ -50535,61 +50591,14 @@
    ],
    "varzia": false,
    "varziaSet": null
-  },
-  "axi_c13_relic": {
-   "name": "Axi C13",
-   "tier": "Axi",
-   "isBaro": false,
-   "status": "active",
-   "events": [],
-   "rewards": [
-    {
-     "name": "Forma Blueprint",
-     "rarity": "Common",
-     "urlName": "",
-     "zh": null
-    },
-    {
-     "name": "Voruna Prime Chassis Blueprint",
-     "rarity": "Uncommon",
-     "urlName": "voruna_prime_chassis_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Caliban Prime Neuroptics Blueprint",
-     "rarity": "Rare",
-     "urlName": "caliban_prime_neuroptics_blueprint",
-     "zh": null
-    },
-    {
-     "name": "Braton Prime Receiver",
-     "rarity": "Uncommon",
-     "urlName": "braton_prime_receiver",
-     "zh": null
-    },
-    {
-     "name": "Sarofang Prime Handle",
-     "rarity": "Common",
-     "urlName": "sarofang_prime_handle",
-     "zh": null
-    },
-    {
-     "name": "Bronco Prime Barrel",
-     "rarity": "Common",
-     "urlName": "bronco_prime_barrel",
-     "zh": null
-    }
-   ],
-   "varzia": false,
-   "varziaSet": null
   }
  },
  "varziaRelics": [
+  "axi_a23_relic",
   "lith_b12_relic",
   "meso_i3_relic",
   "meso_v16_relic",
-  "neo_p11_relic",
   "neo_o4_relic",
-  "axi_a23_relic"
+  "neo_p11_relic"
  ]
 }
