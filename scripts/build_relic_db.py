@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import urllib.request
+from copy import deepcopy
 
 from relic_release import validate_relic_key_continuity
 
@@ -38,6 +39,13 @@ DROPS_SOURCE_URLS = [
 LOCAL_RELIC_PATH = os.path.join(
     os.path.dirname(REPO_ROOT), "How-To-Design-The-UI", "warframe-items", "data", "json", "Relics.json"
 )
+REQUIEM_SOURCE_KEYS = {
+    "Requiem Eterna Relic": "requiem_eterna_relic",
+    "Requiem I": "requiem_i_relic",
+    "Requiem II": "requiem_ii_relic",
+    "Requiem III": "requiem_iii_relic",
+    "Requiem IV": "requiem_iv_relic",
+}
 
 
 def fetch_json(url=None):
@@ -76,6 +84,31 @@ def relic_tier(name):
         if name.startswith(tier):
             return tier
     return "Other"
+
+
+def source_relic_key(base_name, market_url_name):
+    """Resolve source identity, including canonical Requiem keys without marketInfo."""
+    if market_url_name:
+        return market_url_name
+    if base_name == "Requiem Relic":
+        return None
+    if relic_tier(base_name) == "Requiem":
+        return REQUIEM_SOURCE_KEYS.get(base_name)
+    return None
+
+
+def preserve_marketless_requiem_records(relics, previous_relics, source_names):
+    """Keep known Requiem records intact when WFCD omits their marketInfo."""
+    for source_name in sorted(source_names):
+        key = REQUIEM_SOURCE_KEYS.get(source_name)
+        if not key:
+            raise RuntimeError(f"Unknown marketless Requiem identity in WFCD source: {source_name}")
+        if key not in previous_relics:
+            raise RuntimeError(f"Cannot safely build {key}; no previous canonical record exists")
+        previous = previous_relics[key]
+        if previous.get("name") != source_name or previous.get("tier") != "Requiem":
+            raise RuntimeError(f"Previous canonical identity does not match WFCD source for {key}")
+        relics[key] = deepcopy(previous)
 
 
 def fetch_asset(urls, item_type, minimum):
@@ -173,12 +206,25 @@ def build():
 
     # Group by base relic name
     relics = {}
+    relics_path = os.path.join(DATA_DIR, "relics.json")
+    previous_relics = {}
+    if os.path.exists(relics_path):
+        with open(relics_path, "r", encoding="utf-8") as f:
+            previous_relics = json.load(f)
+    marketless_requiem_names = set()
 
     for entry in all_relics:
         base = base_relic_name(entry["name"])
         tier = relic_tier(base)
-        url_name = entry.get("marketInfo", {}).get("urlName", "")
+        url_name = source_relic_key(base, entry.get("marketInfo", {}).get("urlName", ""))
         if not url_name:
+            if base == "Requiem Relic":
+                continue
+            if tier == "Requiem":
+                raise RuntimeError(f"Unknown marketless Requiem identity in WFCD source: {base}")
+            continue
+        if tier == "Requiem" and not entry.get("marketInfo", {}).get("urlName"):
+            marketless_requiem_names.add(base)
             continue
 
         if url_name not in relics:
@@ -217,6 +263,8 @@ def build():
                     "chances": {refinement: chance} if refinement else {},
                 })
 
+    preserve_marketless_requiem_records(relics, previous_relics, marketless_requiem_names)
+
     print("Loading shared market names and official drop-table index...")
     market_items = fetch_asset(NAMES_SOURCE_URLS, list, 1500)
     drops = fetch_asset(DROPS_SOURCE_URLS, dict, 2000)
@@ -234,10 +282,7 @@ def build():
                                     "highestRarity": reward["rarity"]}
     print(f"  Grouped into {len(relics)} unique relics ({len(reward_set)} unique reward items)")
 
-    relics_path = os.path.join(DATA_DIR, "relics.json")
-    if os.path.exists(relics_path):
-        with open(relics_path, "r", encoding="utf-8") as f:
-            previous_relics = json.load(f)
+    if previous_relics:
         approved_renames = validate_relic_key_continuity(previous_relics, relics)
         if approved_renames:
             print("  Approved identity correction after exact reward validation: "

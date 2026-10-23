@@ -65,6 +65,9 @@ jobs:
       - name: Run relic identity and release safety tests
         run: python -m unittest discover -s tests -v
 
+      - name: Capture previous canonical relic database for lifecycle continuity
+        run: git show HEAD:data/relics.json > "$RUNNER_TEMP/relics-previous.json"
+
       - name: Build Relic Database (A)
         run: python scripts/build_relic_db.py
 
@@ -73,6 +76,7 @@ jobs:
           python scripts/relic_release.py
           --migrate-approved-key-renames
           --refresh-official-reward-snapshots
+          --previous-relics "$RUNNER_TEMP/relics-previous.json"
 
       - name: Build Price Database (B)
         id: price

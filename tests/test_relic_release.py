@@ -260,6 +260,70 @@ class RelicReleaseTests(unittest.TestCase):
         self.assertEqual({r["rarity"] for r in forma_rows}, {"Common", "Uncommon"})
         self.assertEqual(len(forma_rows), 2)
 
+    def test_new_active_relic_gets_unknown_history_only_when_absent_from_baseline(self):
+        relic = make_axi_y2_relic()
+        relic["name"] = "Axi C13"
+        relic["vaulted"] = False
+        key = "axi_c13_relic"
+        existing = make_axi_y2_relic()
+        full_row, summary_row = make_lifecycle_record(existing)
+        full = {"generated": "old", "relics": {"axi_y2_relic": full_row}, "varziaRelics": []}
+        summary = {"generated": "old", "items": {"axi_y2_relic": summary_row}, "varziaRelics": []}
+        current = {"axi_y2_relic": existing, key: relic}
+
+        changed = migrate_approved_lifecycle_keys(
+            current, full, summary,
+            refresh_official_rewards=True,
+            previous_relics={},
+        )
+
+        self.assertTrue(changed)
+        row = full["relics"][key]
+        self.assertEqual(row["status"], "active")
+        self.assertEqual(row["events"], [])
+        self.assertEqual(len(row["rewards"]), 6)
+        self.assertEqual(summary["items"][key]["released"], None)
+        self.assertNotEqual(full["generated"], "old")
+        self.assertEqual(full["generated"], summary["generated"])
+        self.assertEqual(validate_lifecycle_release(current, full, summary), 2)
+        self.assertFalse(migrate_approved_lifecycle_keys(
+            current, full, summary,
+            refresh_official_rewards=True,
+            previous_relics={},
+        ))
+
+    def test_new_lifecycle_seed_rejects_key_missing_from_baseline(self):
+        relic = make_axi_y2_relic()
+        relic["name"] = "Axi C13"
+        relic["vaulted"] = False
+        key = "axi_c13_relic"
+        existing = make_axi_y2_relic()
+        full_row, summary_row = make_lifecycle_record(existing)
+        with self.assertRaisesRegex(RuntimeError, "not new relative to previous relic database"):
+            migrate_approved_lifecycle_keys(
+                {"axi_y2_relic": existing, key: relic},
+                {"generated": "g", "relics": {"axi_y2_relic": full_row}, "varziaRelics": []},
+                {"generated": "g", "items": {"axi_y2_relic": summary_row}, "varziaRelics": []},
+                refresh_official_rewards=True,
+                previous_relics={key: copy.deepcopy(relic)},
+            )
+
+    def test_new_lifecycle_seed_rejects_one_sided_missing_key_sets(self):
+        relic = make_axi_y2_relic()
+        relic["name"] = "Axi C13"
+        relic["vaulted"] = False
+        key = "axi_c13_relic"
+        existing = make_axi_y2_relic()
+        full_row, summary_row = make_lifecycle_record(existing)
+        with self.assertRaisesRegex(RuntimeError, "missing lifecycle keys differ"):
+            migrate_approved_lifecycle_keys(
+                {"axi_y2_relic": existing, key: relic},
+                {"generated": "g", "relics": {"axi_y2_relic": full_row}, "varziaRelics": []},
+                {"generated": "g", "items": {"axi_y2_relic": summary_row, key: {}}, "varziaRelics": []},
+                refresh_official_rewards=True,
+                previous_relics={},
+            )
+
     def test_deep_date_resolver_uses_exact_canonical_identity_only(self):
         relic = make_axi_y2_relic()
         self.assertEqual(

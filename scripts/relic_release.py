@@ -12,6 +12,7 @@ import copy
 import json
 import math
 import os
+import re
 from pathlib import Path
 from typing import Any, Callable
 
@@ -309,6 +310,7 @@ def migrate_approved_lifecycle_keys(
     full: dict,
     summary: dict,
     refresh_official_rewards: bool = False,
+    previous_relics: dict | None = None,
 ) -> bool:
     """Apply the approved key correction and optional official reward snapshot refresh."""
     changed = False
@@ -337,6 +339,9 @@ def migrate_approved_lifecycle_keys(
             if lifecycle_signature != canonical_signature:
                 raise RuntimeError(f"Lifecycle reward identity mismatch after re-keying {new_key}")
 
+    if refresh_official_rewards and previous_relics is not None:
+        changed |= seed_new_active_lifecycle_keys(relics, full, summary, previous_relics)
+
     if refresh_official_rewards:
         updated = refresh_official_reward_snapshots(relics, full)
         if updated:
@@ -347,6 +352,72 @@ def migrate_approved_lifecycle_keys(
             )
     validate_lifecycle_release(relics, full, summary)
     return changed
+
+
+def seed_new_active_lifecycle_keys(
+    relics: dict,
+    full: dict,
+    summary: dict,
+    previous_relics: dict,
+) -> bool:
+    """Create unknown-history lifecycle rows only for verified, newly added active relics."""
+    relics = _require_object(relics, "relics")
+    previous_relics = _require_object(previous_relics, "previous relic database")
+    full_rows = _require_object(full.get("relics"), "deep-date.relics")
+    summary_rows = _require_object(summary.get("items"), "deep-date-summary.items")
+    expected = {key for key, value in relics.items() if value.get("tier") != "Requiem"}
+
+    if set(full_rows) - expected or set(summary_rows) - expected:
+        raise RuntimeError("Cannot seed lifecycle keys while lifecycle data has extra keys")
+    full_missing = expected - set(full_rows)
+    summary_missing = expected - set(summary_rows)
+    if full_missing != summary_missing:
+        raise RuntimeError("Cannot seed lifecycle keys; missing lifecycle keys differ between full and summary")
+    if not full_missing:
+        return False
+    if full.get("generated") != summary.get("generated"):
+        raise RuntimeError("Cannot seed lifecycle keys while lifecycle generations differ")
+
+    candidates = []
+    for key in sorted(full_missing):
+        if key in previous_relics:
+            raise RuntimeError(f"Cannot seed {key}; it is not new relative to previous relic database")
+        relic = _require_object(relics[key], f"relics.{key}")
+        name = relic.get("name")
+        tier = relic.get("tier")
+        if not isinstance(name, str) or not name.strip() or tier not in {"Lith", "Meso", "Neo", "Axi"}:
+            raise RuntimeError(f"Cannot seed {key}; relic identity or tier is not a normal relic")
+        canonical_key = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_") + "_relic"
+        if key != canonical_key:
+            raise RuntimeError(f"Cannot seed {key}; canonical identity key is {canonical_key}")
+        if relic.get("vaulted") is not False:
+            raise RuntimeError(f"Cannot seed {key}; new relic is not confirmed active by canonical data")
+        _validate_official_rewards(relic, key)
+        candidates.append((key, relic))
+
+    for key, relic in candidates:
+        rewards = [
+            {"name": reward["name"], "rarity": reward["rarity"], "urlName": reward["urlName"], "zh": None}
+            for reward in relic["rewards"]
+        ]
+        full_rows[key] = {
+            "name": relic["name"], "tier": relic["tier"], "isBaro": False,
+            "status": "active", "events": [], "rewards": rewards,
+            "varzia": False, "varziaSet": None,
+        }
+        summary_rows[key] = {
+            "name": relic["name"], "tier": relic["tier"], "status": "active",
+            "released": None, "releasedTZ": None, "vaultedAt": None,
+            "vaultedTZ": None, "lastChange": None,
+            "varzia": False, "varziaSet": None,
+        }
+
+    from datetime import datetime, timezone
+    generated = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    full["generated"] = generated
+    summary["generated"] = generated
+    print("Seeded new active relic lifecycle rows with unknown history: " + ", ".join(key for key, _ in candidates))
+    return True
 
 
 def validate_lifecycle_release(relics: dict, full: dict, summary: dict) -> int:
@@ -438,6 +509,7 @@ def validate_data_dir(
     data_dir: Path,
     migrate: bool = False,
     refresh_official_rewards: bool = False,
+    previous_relics_path: Path | None = None,
 ) -> int:
     relics_path = data_dir / "relics.json"
     full_path = data_dir / "relic-deep-date.json"
@@ -447,12 +519,16 @@ def validate_data_dir(
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
     original_full = copy.deepcopy(full)
     original_summary = copy.deepcopy(summary)
+    previous_relics = None
+    if previous_relics_path is not None:
+        previous_relics = json.loads(previous_relics_path.read_text(encoding="utf-8"))
     if migrate:
         migrate_approved_lifecycle_keys(
             relics,
             full,
             summary,
             refresh_official_rewards=refresh_official_rewards,
+            previous_relics=previous_relics,
         )
     elif refresh_official_rewards:
         updated = refresh_official_reward_snapshots(relics, full)
@@ -478,6 +554,11 @@ def main() -> None:
         help="apply the exact approved relic lifecycle key correction, then validate",
     )
     parser.add_argument(
+        "--previous-relics",
+        type=Path,
+        help="pre-build canonical relic database used to distinguish additions from lost lifecycle history",
+    )
+    parser.add_argument(
         "--refresh-official-reward-snapshots",
         action="store_true",
         help="refresh only reward snapshots from validated official relic tables, preserving lifecycle history",
@@ -488,6 +569,7 @@ def main() -> None:
         data_dir,
         migrate=args.migrate_approved_key_renames,
         refresh_official_rewards=args.refresh_official_reward_snapshots,
+        previous_relics_path=args.previous_relics,
     )
 
 
