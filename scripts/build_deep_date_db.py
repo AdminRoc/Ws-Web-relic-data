@@ -410,9 +410,11 @@ def fetch_varzia_relics():
     uname_map = {}
     for item in items:
         uname = item.get("uniqueName", "")
-        mkt = item.get("marketInfo", {})
-        url_name = mkt.get("urlName", "")
-        if url_name and "Bronze" in uname:  # Bronze = Intact refinement
+        if "Bronze" not in uname:  # Bronze = Intact refinement
+            continue
+        mkt = item.get("marketInfo") or {}
+        url_name = mkt.get("urlName") or _market_relic_url_name(item.get("name", ""))
+        if url_name:
             uname_map[uname] = url_name
 
     # 3) 映射 vaultTrader 遗物（去除路径中 /StoreItems/ 前缀差异）
@@ -426,6 +428,14 @@ def fetch_varzia_relics():
         else:
             print("  WARN: unmapped vaultTrader relic: %s" % uname.split("/")[-1])
     return results
+
+
+def _market_relic_url_name(display_name):
+    """Derive a canonical Market slug when WFCD has no urlName for a relic."""
+    match = re.fullmatch(r"(Lith|Meso|Neo|Axi)\s+([A-Z]\d+)\s+Intact", str(display_name).strip(), re.I)
+    if not match:
+        return ""
+    return f"{match.group(1).lower()}_{match.group(2).lower()}_relic"
 
 
 def _load_previous_varzia():
