@@ -76,6 +76,9 @@ jobs:
         run: |
           python scripts/relic_release.py
 
+      - name: Build relic release manifest
+        run: python3 scripts/build_release_manifest.py
+
       - name: Show detected changes (diff vs previous run)
         run: |
           echo "=== relics changed since last commit ==="
@@ -88,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/relic-deep-date.json data/relic-deep-date-summary.json data/update-versions.json
+          git add data/relic-deep-date.json data/relic-deep-date-summary.json data/update-versions.json data/release-manifest.json
           if git diff --staged --quiet; then
             echo "No state changes detected"
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -99,51 +102,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Write deep-date data to EdgeOne KV
+      - name: Verify and publish relic raw release pointer
         env:
           KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
-        run: |
-          set -euo pipefail
-          publish() {
-            local file="$1"
-            local key="$2"
-            python3 - "$key" "data/$file" /tmp/kv-payload.json <<'PY'
-          import json, pathlib, sys
-          key, source, target = sys.argv[1:]
-          value = pathlib.Path(source).read_text(encoding='utf-8')
-          json.loads(value)
-          pathlib.Path(target).write_text(json.dumps({'key': key, 'value': value}, ensure_ascii=False), encoding='utf-8')
-          PY
-            curl --silent --show-error --fail-with-body --retry 8 --retry-all-errors \
-              --retry-delay 20 --retry-max-time 300 --connect-timeout 20 --max-time 60 \
-              -X POST "https://relic.wfspeed.run/api/update-kv" \
-              -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
-              -H "Content-Type: application/json" --data-binary @/tmp/kv-payload.json
-            python3 - "$key" "data/$file" <<'PY'
-          import hashlib, sys, urllib.request
-          key, source = sys.argv[1:]
-          expected = open(source, 'rb').read()
-          with urllib.request.urlopen('https://relic.wfspeed.run/api/kv?key=' + key, timeout=60) as response:
-              actual = response.read()
-          if hashlib.sha256(actual).digest() != hashlib.sha256(expected).digest():
-              raise SystemExit('readback hash mismatch for ' + key)
-          PY
-          }
-          publish relic-deep-date.json relic_deep_date_json
-          publish relic-deep-date-summary.json relic_deep_date_summary_json
-
-      - name: Refresh jsDelivr fallbacks for changed data
-        if: steps.commit.outputs.changed == 'true'
-        run: |
-          set +e
-          changed_files="$(git diff-tree --no-commit-id --name-only -r HEAD -- data/)"
-          for file in $changed_files; do
-            code="$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
-              --connect-timeout 15 --max-time 45 \
-              "https://purge.jsdelivr.net/gh/AdminRoc/Ws-Web-relic-data@main/${file}")"
-            if [ "$code" = "200" ]; then
-              echo "Purged jsDelivr cache for $file"
-            else
-              echo "::warning::jsDelivr purge returned HTTP ${code:-000} for $file"
-            fi
-          done
+        run: python3 scripts/publish_release_pointer.py

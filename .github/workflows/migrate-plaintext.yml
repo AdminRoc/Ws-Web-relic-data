@@ -1,88 +1,39 @@
-name: Migrate relic data to plaintext
+name: Validate and publish committed relic release
 
 on:
   workflow_dispatch:
-    inputs:
-      confirm:
-        description: Type PLAINTEXT to convert the current tracked data files in place.
-        required: true
 
 concurrency:
   group: relic-data-publish
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  migrate:
-    if: inputs.confirm == 'PLAINTEXT'
+  validate-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout current committed relic data
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
-      - run: pip install cryptography -q
-      - name: Convert existing artifacts without changing paths
-        env:
-          PRICE_DATA_SECRET: ${{ secrets.PRICE_DATA_SECRET }}
-        run: python3 scripts/encrypt_price.py --decrypt-all
-      - name: Validate plaintext artifacts
+
+      - name: Verify current plaintext files and release manifest
         run: |
+          python3 scripts/build_release_manifest.py --verify
           python3 - <<'PY'
           import glob, json
-          bad = []
-          for path in glob.glob('data/**/*.json', recursive=True):
-              obj = json.load(open(path, encoding='utf-8'))
-              if isinstance(obj, dict) and obj.get('ct'):
-                  bad.append(path)
-          if bad:
-              raise SystemExit('encrypted files remain: ' + ', '.join(bad))
-          print('all tracked data artifacts are plaintext JSON')
+          files = glob.glob('data/**/*.json', recursive=True)
+          for path in files:
+              value = json.load(open(path, encoding='utf-8'))
+              if isinstance(value, dict) and value.get('ct'):
+                  raise SystemExit('encrypted artifact found: ' + path)
+          print(f'VERIFY OK: {len(files)} committed JSON files')
           PY
-      - name: Commit migration
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet && exit 0
-          git commit -m "data: migrate current relic artifacts to plaintext [skip ci]"
-          git pull --rebase origin main
-          git push origin main
-      - name: Publish current plaintext data to wfspeed-relic KV
+
+      - name: Verify pinned raw files and publish the small pointer
         env:
           KV_WRITE_TOKEN: ${{ secrets.KV_WRITE_TOKEN }}
-        run: |
-          set -euo pipefail
-          test -n "${KV_WRITE_TOKEN}" || { echo 'Missing KV_WRITE_TOKEN'; exit 1; }
-          publish() {
-            local file="$1"
-            local key="$2"
-            python3 - "$key" "data/$file" /tmp/kv-payload.json <<'PY'
-          import json, pathlib, sys
-          key, source, target = sys.argv[1:]
-          value = pathlib.Path(source).read_text(encoding='utf-8')
-          json.loads(value)
-          pathlib.Path(target).write_text(json.dumps({'key': key, 'value': value}, ensure_ascii=False), encoding='utf-8')
-          PY
-            curl --silent --show-error --fail-with-body --retry 8 --retry-all-errors \
-              --retry-delay 20 --retry-max-time 300 --connect-timeout 20 --max-time 60 \
-              -X POST "https://relic.wfspeed.run/api/update-kv" \
-              -H "Authorization: Bearer ${KV_WRITE_TOKEN}" \
-              -H "Content-Type: application/json" --data-binary @/tmp/kv-payload.json
-            python3 - "$key" "data/$file" <<'PY'
-          import hashlib, sys, urllib.request
-          key, source = sys.argv[1:]
-          expected = open(source, 'rb').read()
-          with urllib.request.urlopen('https://relic.wfspeed.run/api/kv?key=' + key, timeout=60) as response:
-              actual = response.read()
-          if hashlib.sha256(actual).digest() != hashlib.sha256(expected).digest():
-              raise SystemExit('readback hash mismatch for ' + key)
-          PY
-          }
-          for file in relics.json reward-items.json item-categories.json item-names-zh.json relic-deep-date.json; do
-            publish "$file" "${file//[.-]/_}"
-          done
-          publish prices-summary.json prices_summary_json
-          publish relic-deep-date-summary.json relic_deep_date_summary_json
+        run: python3 scripts/publish_release_pointer.py
