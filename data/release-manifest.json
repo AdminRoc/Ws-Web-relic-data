@@ -9,12 +9,12 @@
       "sha256": "aa7ef83a27a51b43668cb266dff604f0465125bf3cb19990f4faa06790086ca5"
     },
     "prices-summary.json": {
-      "bytes": 81520,
-      "sha256": "f9b462a089a8b7393dc1a023431f0c512b09de3004f4d5da99765a7b90b01238"
+      "bytes": 81546,
+      "sha256": "4f113f7d7c1c8afce6c046c98d95587437fc624ad02d508de6645de76d0e4f3f"
     },
     "prices.json": {
-      "bytes": 3929079,
-      "sha256": "fe7150a493b98cd97e799dae16cbe6df39b1beaa176a56b6e1fa38b1ffd7bb57"
+      "bytes": 3927214,
+      "sha256": "697d299a889ae7b0e20c44de6920aeacbee1b11e723606132394d84e23d3efae"
     },
     "relic-deep-date-summary.json": {
       "bytes": 185380,
@@ -41,7 +41,7 @@
       "sha256": "3099bd35461a08078044d9218e910503d35d1e20e2bff3cd6c6515acadcd64ca"
     }
   },
-  "release_id": "2c3213939780e3b184d5164e32c72f99771c583c19dc897e1ef53bfa1a69192f",
+  "release_id": "29a909f7893d6933c21c55934a59a7200c41d9976d8783006347e937b00438b3",
   "repository": "AdminRoc/Ws-Web-relic-data",
   "schema_version": 1
 }
