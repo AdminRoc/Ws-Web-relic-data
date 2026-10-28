@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T17:08:04Z",
+ "generated": "2026-10-28T18:08:35Z",
  "majors": [
   43,
   44
@@ -6446,8 +6446,18 @@
   },
   "44.1.4": {
    "date": "2026-10-27",
-   "name": "Hotfix 44.1.4",
-   "title": "October 27, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.4 &#xa; Changes Reduced the Nami Skyla Prime B"
+   "name": "Hotfix 44.1.4 + 4.1",
+   "title": "October 27, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.4 + 4.1 &#xa; Iceblade of Narin: The Icebind: "
+  },
+  "4.1": {
+   "date": "2026-10-27",
+   "name": "Hotfix 44.1.4 + 4.1",
+   "title": "October 27, 2026 Forum Post - Iceblade of Narin: The Icebind: Hotfix 44.1.4 + 4.1 &#xa; Iceblade of Narin: The Icebind: "
+  },
+  "4": {
+   "date": "2026-10-27",
+   "name": "Update 4",
+   "note": "major-version approx (earliest section date)"
   }
  }
 }
