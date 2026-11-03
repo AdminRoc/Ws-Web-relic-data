@@ -18,11 +18,11 @@
     },
     "relic-deep-date-summary.json": {
       "bytes": 185375,
-      "sha256": "3cf0e2bc8a0b43889789b057020f5acc85edba34b439720e0fbc9e44aa51784d"
+      "sha256": "b7fb6795d432f920c31d39f3a3259ba3d9a71359f78780d8180dfb0238ace3de"
     },
     "relic-deep-date.json": {
       "bytes": 1071588,
-      "sha256": "1fb7a190f00be05aa7f953f89f1d0caffeee7d628dcf90bde15d78f6e40185ee"
+      "sha256": "ce82d863123d849eca665356e9139d3b74e9d7a35156e134927d12411420e1ae"
     },
     "relics.json": {
       "bytes": 1398597,
@@ -34,14 +34,14 @@
     },
     "update-versions.json": {
       "bytes": 265321,
-      "sha256": "a85fe30060b3f3d030efddf8f2c3ce28056baaf9c2c0f9beb8200b54bf1ae931"
+      "sha256": "658aee9544a90f3d4f96ebfe3c49f230a778403cfc164007e19ebce5099b4a9d"
     },
     "varzia-pin.json": {
       "bytes": 784,
       "sha256": "3099bd35461a08078044d9218e910503d35d1e20e2bff3cd6c6515acadcd64ca"
     }
   },
-  "release_id": "d87dd58f9c4ff5d243af22e10c91e261bd88ac72f29423eabc4bf9210325119a",
+  "release_id": "afa254d4cc636ad2cd1b0c0a7095baa8eac87f7c4e29cd13f37137390ac9f7e2",
   "repository": "AdminRoc/Ws-Web-relic-data",
   "schema_version": 1
 }
