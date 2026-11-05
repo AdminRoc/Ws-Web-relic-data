@@ -13,9 +13,6 @@ on:
         type: boolean
         required: false
         default: false
-  schedule:
-    - cron: "5 * * * *"
-
 concurrency:
   group: relic-data-publish
   cancel-in-progress: false
