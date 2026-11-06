@@ -15,11 +15,14 @@ Outputs:
 """
 
 import json
+import math
 import os
 import sys
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -28,6 +31,8 @@ DATA_DIR = os.path.join(REPO_ROOT, "data")
 WM_API = "https://api.warframe.market"
 MAX_HISTORY_HOURS = 72
 REQUEST_DELAY = 0.35  # seconds between API calls (~2.8 req/s under the 3/s limit)
+MAX_FETCH_RETRIES = 4  # attempts per API request, including the initial attempt
+MAX_BACKOFF_SECONDS = 30
 MAX_ITEMS_PER_RUN = 0  # 0 = all items
 
 # Item name -> category classification patterns
@@ -78,8 +83,41 @@ def fetch_json(url):
         "Platform": "pc",
         "Accept": "application/json",
     })
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    for attempt in range(MAX_FETCH_RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as error:
+            retryable = error.code in (408, 425, 429) or 500 <= error.code <= 599
+            if not retryable or attempt + 1 >= MAX_FETCH_RETRIES:
+                error.close()
+                raise
+            retry_after = error.headers.get("Retry-After") if error.headers else None
+            error.close()
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError,
+                json.JSONDecodeError, UnicodeDecodeError):
+            if attempt + 1 >= MAX_FETCH_RETRIES:
+                raise
+            retry_after = None
+
+        delay = min(2 ** attempt, MAX_BACKOFF_SECONDS)
+        if retry_after:
+            try:
+                header_seconds = float(retry_after)
+                if math.isfinite(header_seconds) and header_seconds > 0:
+                    delay = max(delay, header_seconds)
+            except ValueError:
+                try:
+                    retry_at = parsedate_to_datetime(retry_after)
+                    if retry_at.tzinfo is None:
+                        retry_at = retry_at.replace(tzinfo=timezone.utc)
+                    delay = max(delay, (retry_at - datetime.now(timezone.utc)).total_seconds())
+                except (TypeError, ValueError, OverflowError):
+                    pass
+        delay = max(0.0, delay)
+        print(f"  WM API transient failure; retry {attempt + 2}/{MAX_FETCH_RETRIES} after {delay:.1f}s", flush=True)
+        time.sleep(delay)
+    raise RuntimeError("WM API retry loop exhausted")
 
 
 def _slugify(name):
@@ -278,6 +316,10 @@ def build():
     except Exception as e:
         print(f"  WARN: classifier fetch failed ({e}); falling back to keyword heuristic")
         classify = classify_item
+
+    # Keep the manifest request and the first order request inside the same
+    # serialized <=3 requests/second budget as the per-item loop.
+    time.sleep(REQUEST_DELAY)
 
     for i, item in enumerate(tradable_items):
         url_name = item["urlName"]
