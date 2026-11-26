@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T17:08:18Z",
+ "generated": "2026-11-26T21:23:23Z",
  "note": "gameDate = 显示日期：gameDateTZ=UTC+8 时为精确北京时间（来自 patchlogs UTC 时间戳），gameDateTZ=US-ET 时为美国游戏日期（wiki 来源，无法精确转换北京时间）。安魂遗物已排除",
  "relics": {
   "axi_a1_relic": {
@@ -2079,8 +2079,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T4VoidProjectionSevagothHydroidVaultABronze"
   },
   "axi_c1_relic": {
    "name": "Axi C1",
@@ -7554,8 +7554,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T4VoidProjectionNidusSarynVaultABronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "axi_n13_relic": {
    "name": "Axi N13",
@@ -7682,8 +7682,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T4VoidProjectionSevagothHydroidVaultBBronze"
   },
   "axi_o1_relic": {
    "name": "Axi O1",
@@ -23031,8 +23031,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T1VoidProjectionNidusSarynVaultABronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "lith_s18_relic": {
    "name": "Lith S18",
@@ -23207,8 +23207,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T1VoidProjectionSevagothHydroidVaultABronze"
   },
   "lith_t1_relic": {
    "name": "Lith T1",
@@ -28609,8 +28609,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T2VoidProjectionSevagothHydroidVaultABronze"
   },
   "meso_f1_relic": {
    "name": "Meso F1",
@@ -31482,8 +31482,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T2VoidProjectionNidusSarynVaultBBronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "meso_n1_relic": {
    "name": "Meso N1",
@@ -35382,8 +35382,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T2VoidProjectionNidusSarynVaultABronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "meso_t1_relic": {
    "name": "Meso T1",
@@ -42175,8 +42175,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T3VoidProjectionSevagothHydroidVaultBBronze"
   },
   "neo_i1_relic": {
    "name": "Neo I1",
@@ -44857,8 +44857,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T3VoidProjectionNidusSarynVaultABronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "neo_n20_relic": {
    "name": "Neo N20",
@@ -45241,8 +45241,8 @@
      "zh": null
     }
    ],
-   "varzia": false,
-   "varziaSet": null
+   "varzia": true,
+   "varziaSet": "T3VoidProjectionSevagothHydroidVaultABronze"
   },
   "neo_o1_relic": {
    "name": "Neo O1",
@@ -47730,8 +47730,8 @@
      "zh": null
     }
    ],
-   "varzia": true,
-   "varziaSet": "T3VoidProjectionNidusSarynVaultBBronze"
+   "varzia": false,
+   "varziaSet": null
   },
   "neo_s20_relic": {
    "name": "Neo S20",
@@ -50594,11 +50594,11 @@
   }
  },
  "varziaRelics": [
-  "lith_s17_relic",
-  "meso_s15_relic",
-  "meso_m5_relic",
-  "neo_n19_relic",
-  "neo_s19_relic",
-  "axi_n12_relic"
+  "lith_s20_relic",
+  "meso_e8_relic",
+  "neo_n25_relic",
+  "neo_h5_relic",
+  "axi_b10_relic",
+  "axi_n14_relic"
  ]
 }
