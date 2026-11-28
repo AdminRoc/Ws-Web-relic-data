@@ -2703,7 +2703,7 @@
   "axi_c13_relic": {
     "name": "Axi C13",
     "tier": "Axi",
-    "vaulted": true,
+    "vaulted": false,
     "rewards": [
       {
         "name": "Forma Blueprint",
